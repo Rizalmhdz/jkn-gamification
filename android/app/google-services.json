@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "129943866617",
+    "firebase_url": "https://gamification-jkn-mobile-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gamification-jkn-mobile",
+    "storage_bucket": "gamification-jkn-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129943866617:android:3a89253813fbef268d2628",
+        "android_client_info": {
+          "package_name": "com.example.jkn_gamification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgOxb2KEQfGUBjHJWQGqePmW4trbUqbPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
