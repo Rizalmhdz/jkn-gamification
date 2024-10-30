@@ -3,7 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jkn_gamification/berita_page.dart';
 import 'package:jkn_gamification/home_page.dart';
+import 'package:jkn_gamification/service/navbar_visibility_provider.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:provider/provider.dart';
 
 
 class Menu extends StatefulWidget {
@@ -13,6 +15,9 @@ class Menu extends StatefulWidget {
 
 class _MenuState extends State<Menu> {
   late PersistentTabController _controller;
+
+
+  late bool isNavBarVisible;
 
   @override
   void initState() {
@@ -47,7 +52,7 @@ class _MenuState extends State<Menu> {
       ),
       PersistentBottomNavBarItem(
           icon: Icon(Icons.credit_card_rounded, color: Colors.white),
-          activeColorPrimary: Colors.blue,  // Set active color
+          activeColorPrimary: isNavBarVisible ? Colors.blue : Colors.transparent, // Set active color
           inactiveColorPrimary: Colors.grey,
           title: ("Kartu")
       ),
@@ -68,6 +73,7 @@ class _MenuState extends State<Menu> {
 
   @override
   Widget build(BuildContext context) {
+    isNavBarVisible = Provider.of<NavBarVisibilityProvider>(context).isVisible;
     return PersistentTabView(
       context,
       controller: _controller,
@@ -80,7 +86,7 @@ class _MenuState extends State<Menu> {
       popBehaviorOnSelectedNavBarItemPress: PopBehavior.once,
       padding: const EdgeInsets.only(top: 8),
       backgroundColor: Colors.white,
-      isVisible: true,
+      isVisible: isNavBarVisible,
       animationSettings: const NavBarAnimationSettings(
         navBarItemAnimation: ItemAnimationSettings( // Navigation Bar's items animation properties.
           duration: Duration(milliseconds: 400),

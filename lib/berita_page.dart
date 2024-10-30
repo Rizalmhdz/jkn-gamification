@@ -1,5 +1,8 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:jkn_gamification/membaca_berita_page.dart';
+import 'package:jkn_gamification/service/navbar_visibility_provider.dart';
+import 'package:provider/provider.dart';
 
 
 class BeritaPage extends StatefulWidget {
@@ -173,10 +176,14 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
                 child: Row(
                   children: <Widget>[
                     ...List.generate(latestArticles.length, (index) {
-                      Map<String, dynamic> article = otherNews[index];
+                      Map<String, dynamic> article = latestArticles[index];
+
                       return artikelCard(
                         article["judul"],
+                        article["isi"],
+                        article["dilihat"],
                         "assets/berita/${article["key"]}.jpg",
+                        article["tanggal"]
                       );
                     }),
                   ],
@@ -190,11 +197,25 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
             SizedBox(height: 16),
             ...List.generate(otherNews.length, (index) {
               Map<String, dynamic> article = otherNews[index];
-              return beritaCard(
-                article["judul"],
-                article["dilihat"].toString(),
-                "assets/berita/${article["key"]}.jpg",
-                article["tanggal"],
+              return Column(
+                children: [
+                  beritaCard(
+                        article["judul"],
+                        article["isi"],
+                        article["dilihat"],
+                        "assets/berita/${article["key"]}.jpg",
+                        article["tanggal"]
+                    ),
+                  index < otherNews.length - 1?
+                      Container(
+                        child: Divider(
+                          thickness: 1,
+                        ),
+                        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      ) :
+                      Container()
+
+                ],
               );
             }),
           ],
@@ -202,8 +223,26 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
       );
     }
 
-    Widget artikelCard(String title, String imagePath,) {
-      return Container(
+  Widget artikelCard(String judul, String isi, String dilihat, String imagePath, String tanggal) {
+    return InkWell(
+      onTap: () {
+        Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(false);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MembacaBeritaPage(
+                judul: judul,
+                isi: isi,
+                dilihat: dilihat,
+                imagePath: imagePath,
+                tanggal: tanggal
+            ),
+          ),
+        ).then((_) {
+          Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(true);
+        });
+      },
+      child: Container(
         width: 420, // Lebar card, sesuaikan sesuai kebutuhan
         child: Card(
           color: Colors.white,
@@ -216,7 +255,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
           child: Column(
             children: <Widget>[
               Image.asset(
-                imagePath, // Ganti dengan gambar sesuai kebutuhan
+                imagePath,
                 height: 180,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -224,7 +263,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  title,
+                  judul,
                   style: TextStyle(
                     fontWeight: FontWeight.normal,
                     fontSize: 14.0,
@@ -234,71 +273,89 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
             ],
           ),
         ),
-      );
-    }
-
-  Widget beritaCard(String title, String views, String imagePath, String date) {
-    return Card(
-      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      color: Colors.white,
-      elevation: 0,
-      child: Container(
-        height: 100,
-        width: double.infinity,  // Atur lebar untuk mengisi space tersedia
-        child: Stack(
-          children: <Widget>[
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.asset(
-                imagePath,
-                height: 100,
-                width: 100,
-                fit: BoxFit.cover,
-              ),
-            ),
-            Positioned(
-              top: 0,
-              left: 115,
-              right: 10,  // Menambahkan right untuk membatasi lebar Text
-              child: Text(
-                title,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15.0,
-                ),
-                maxLines: 3,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              left: 115,  // Menyesuaikan left agar sesuai dengan `title`
-              child: Row(
-                children: [
-                  Icon(Icons.visibility, size: 20, color: Colors.grey),
-                  SizedBox(width: 5),
-                  Text('$views', style: TextStyle(fontSize: 12, color: Colors.grey)),
-                ],
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              right: 10,
-              child: Row(
-                children: [
-                  Icon(Icons.access_time, size: 20, color: Colors.grey),
-                  SizedBox(width: 5),
-                  Text(date, style: TextStyle(fontSize: 12, color: Colors.grey)),
-                ],
-              ),
-            )
-          ],
-        ),
       ),
     );
   }
 
-
+  Widget beritaCard(String judul, String isi, String dilihat, String imagePath, String tanggal) {
+    return InkWell(
+      onTap: () {
+        Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(false);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MembacaBeritaPage(
+                judul: judul,
+                isi: isi,
+                dilihat: dilihat,
+                imagePath: imagePath,
+                tanggal: tanggal
+            ),
+          ),
+        ).then((_) {
+          Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(true);
+        });
+      },
+      child: Card(
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        color: Colors.white,
+        elevation: 0,
+        child: Container(
+          height: 100,
+          width: double.infinity, // Atur lebar untuk mengisi space tersedia
+          child: Stack(
+            children: <Widget>[
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  imagePath,
+                  height: 100,
+                  width: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Positioned(
+                top: 0,
+                left: 115,
+                right: 10, // Menambahkan right untuk membatasi lebar Text
+                child: Text(
+                  judul,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0,
+                  ),
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                left: 115, // Menyesuaikan left agar sesuai dengan `title`
+                child: Row(
+                  children: [
+                    Icon(Icons.visibility, size: 20, color: Colors.grey),
+                    SizedBox(width: 5),
+                    Text(dilihat, style: TextStyle(fontSize: 12, color: Colors.grey)),
+                  ],
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                right: 10,
+                child: Row(
+                  children: [
+                    Icon(Icons.access_time, size: 20, color: Colors.grey),
+                    SizedBox(width: 5),
+                    Text(tanggal, style: TextStyle(fontSize: 12, color: Colors.grey)),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
 }
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:jkn_gamification/home_page.dart';
 import 'package:jkn_gamification/menu.dart';
+import 'package:jkn_gamification/service/navbar_visibility_provider.dart';
+import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 import 'login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,12 +15,18 @@ void main() async {
   );
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
-  runApp(MyApp(isLoggedIn: isLoggedIn));
+  runApp(
+      ChangeNotifierProvider(
+        create: (context) => NavBarVisibilityProvider(),
+        child: MyApp(isLoggedIn: isLoggedIn)),
+      );
 }
 
 class MyApp extends StatelessWidget {
   final bool isLoggedIn;
-  MyApp({required this.isLoggedIn});
+  MyApp({
+    required this.isLoggedIn,
+  });
 
   @override
   Widget build(BuildContext context) {
