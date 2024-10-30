@@ -63,10 +63,11 @@ class _MenuState extends State<Menu> {
           title: ("FAQ")
       ),
       PersistentBottomNavBarItem(
+
           icon: Icon(Icons.account_circle_rounded),
           activeColorPrimary: Colors.blue,   // Set active color
           inactiveColorPrimary: Colors.grey,
-          title: ("Profile")
+          title: ("Profile"),
       ),
     ];
   }
@@ -75,7 +76,6 @@ class _MenuState extends State<Menu> {
   Widget build(BuildContext context) {
     isNavBarVisible = Provider.of<NavBarVisibilityProvider>(context).isVisible;
     return PersistentTabView(
-      margin: EdgeInsets.symmetric(vertical: 10),
       context,
       controller: _controller,
       screens: _buildScreens(),
