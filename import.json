@@ -1,2242 +1,2374 @@
 {
-    "users":
-      {
-        "1234567890123": {
-          "user_data": {
-            "jenis_id": "jkn_id",
-            "no_id": "1234567890123",
-            "password": "password001"
-          },
-          "biodata": {
-            "nama": "Agus Setiawan",
-            "tanggal_lahir": "01/01/1990",
-            "tempat_lahir": "Jakarta",
-            "jenis_kelamin": "Laki-laki",
-            "Agama": "Islam",
-            "alamat": "Jl. Merdeka No. 1, Jakarta Pusat"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "01/10/2024",
-              "id_rekam_medis": "RM001"
-            },
-            {
-              "tanggal": "15/11/2024",
-              "id_rekam_medis": null
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Silver",
-            "jumlah_poin": 290,
-            "rank": 15
-          },
-          "task_user": [1, 2, 3, 4, 5, 6, 7]
-        },
-        "1234567890123456": {
-          "user_data": {
-            "jenis_id": "nik",
-            "no_id": "1234567890123456",
-            "password": "password002"
-          },
-          "biodata": {
-            "nama": "Budi Santoso",
-            "tanggal_lahir": "05/02/1988",
-            "tempat_lahir": "Bandung",
-            "jenis_kelamin": "Laki-laki",
-            "Agama": "Kristen",
-            "alamat": "Jl. Pahlawan No. 2, Bandung"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "05/10/2024",
-              "id_rekam_medis": "RM002"
-            },
-            {
-              "tanggal": "20/11/2024",
-              "id_rekam_medis": null
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Gold",
-            "jumlah_poin": 550,
-            "rank": 10
-          },
-          "task_user": [8, 9, 10, 11, 12, 13]
-        },
-        "1234567890124": {
-          "user_data": {
-            "jenis_id": "jkn_id",
-            "no_id": "1234567890124",
-            "password": "password003"
-          },
-          "biodata": {
-            "nama": "Citra Lestari",
-            "tanggal_lahir": "12/03/1995",
-            "tempat_lahir": "Surabaya",
-            "jenis_kelamin": "Perempuan",
-            "Agama": "Hindu",
-            "alamat": "Jl. Mawar No. 3, Surabaya"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "10/10/2024",
-              "id_rekam_medis": "RM003"
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Gold",
-            "jumlah_poin": 700,
-            "rank": 7
-          },
-          "task_user": [14, 15, 16, 17]
-        },
-        "1234567890130": {
-          "user_data": {
-            "jenis_id": "jkn_id",
-            "no_id": "1234567890130",
-            "password": "password013"
-          },
-          "biodata": {
-            "nama": "Maya Sari",
-            "tanggal_lahir": "05/01/1991",
-            "tempat_lahir": "Manado",
-            "jenis_kelamin": "Perempuan",
-            "Agama": "Kristen",
-            "alamat": "Jl. Sam Ratulangi No. 13, Manado"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "30/10/2024",
-              "id_rekam_medis": null
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Bronze",
-            "jumlah_poin": 100,
-            "rank": 19
-          },
-          "task_user": [54, 55]
-        },
-        "1234567890123461": {
-          "user_data": {
-            "jenis_id": "nik",
-            "no_id": "1234567890123461",
-            "password": "password014"
-          },
-          "biodata": {
-            "nama": "Nurul Aini",
-            "tanggal_lahir": "12/02/1993",
-            "tempat_lahir": "Padang",
-            "jenis_kelamin": "Perempuan",
-            "Agama": "Islam",
-            "alamat": "Jl. Andalas No. 14, Padang"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "02/11/2024",
-              "id_rekam_medis": "RM013"
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Silver",
-            "jumlah_poin": 600,
-            "rank": 11
-          },
-          "task_user": [56, 57, 58]
-        }
-      ,
-        "1234567890131": {
-          "user_data": {
-            "jenis_id": "jkn_id",
-            "no_id": "1234567890131",
-            "password": "password015"
-          },
-          "biodata": {
-            "nama": "Oki Setiawan",
-            "tanggal_lahir": "18/03/1988",
-            "tempat_lahir": "Pontianak",
-            "jenis_kelamin": "Laki-laki",
-            "Agama": "Islam",
-            "alamat": "Jl. Gajah Mada No. 15, Pontianak"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "04/11/2024",
-              "id_rekam_medis": null
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Bronze",
-            "jumlah_poin": 100,
-            "rank": 18
-          },
-          "task_user": [59, 60]
-        }
-      ,
-        "1234567890123462": {
-          "user_data": {
-            "jenis_id": "nik",
-            "no_id": "1234567890123462",
-            "password": "password016"
-          },
-          "biodata": {
-            "nama": "Putri Amelia",
-            "tanggal_lahir": "25/04/1994",
-            "tempat_lahir": "Pekanbaru",
-            "jenis_kelamin": "Perempuan",
-            "Agama": "Islam",
-            "alamat": "Jl. Sudirman No. 16, Pekanbaru"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "06/11/2024",
-              "id_rekam_medis": "RM014"
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Gold",
-            "jumlah_poin": 1050,
-            "rank": 5
-          },
-          "task_user": [61, 62, 63, 64]
-        }
-      ,
-        "1234567890132": {
-          "user_data": {
-            "jenis_id": "jkn_id",
-            "no_id": "1234567890132",
-            "password": "password017"
-          },
-          "biodata": {
-            "nama": "Qori Rahman",
-            "tanggal_lahir": "10/05/1989",
-            "tempat_lahir": "Palangkaraya",
-            "jenis_kelamin": "Laki-laki",
-            "Agama": "Islam",
-            "alamat": "Jl. Tjilik Riwut No. 17, Palangkaraya"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "08/11/2024",
-              "id_rekam_medis": null
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Bronze",
-            "jumlah_poin": 100,
-            "rank": 17
-          },
-          "task_user": [65, 66]
-        }
-      ,
-        "1234567890123463": {
-          "user_data": {
-            "jenis_id": "nik",
-            "no_id": "1234567890123463",
-            "password": "password018"
-          },
-          "biodata": {
-            "nama": "Rina Susanti",
-            "tanggal_lahir": "18/06/1990",
-            "tempat_lahir": "Balikpapan",
-            "jenis_kelamin": "Perempuan",
-            "Agama": "Islam",
-            "alamat": "Jl. Soekarno Hatta No. 18, Balikpapan"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "10/11/2024",
-              "id_rekam_medis": "RM015"
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Silver",
-            "jumlah_poin": 500,
-            "rank": 14
-          },
-          "task_user": [67, 68, 69]
-        }
-      ,
-        "1234567890133": {
-          "user_data": {
-            "jenis_id": "jkn_id",
-            "no_id": "1234567890133",
-            "password": "password019"
-          },
-          "biodata": {
-            "nama": "Siti Aminah",
-            "tanggal_lahir": "25/07/1991",
-            "tempat_lahir": "Banjarmasin",
-            "jenis_kelamin": "Perempuan",
-            "Agama": "Islam",
-            "alamat": "Jl. Hasan Basri No. 19, Banjarmasin"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "12/11/2024",
-              "id_rekam_medis": "RM016"
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Gold",
-            "jumlah_poin": 1200,
-            "rank": 6
-          },
-          "task_user": [70, 71, 72, 73]
-        }
-      ,
-        "1234567890123464": {
-          "user_data": {
-            "jenis_id": "nik",
-            "no_id": "1234567890123464",
-            "password": "password020"
-          },
-          "biodata": {
-            "nama": "Tommy Pranata",
-            "tanggal_lahir": "05/08/1987",
-            "tempat_lahir": "Medan",
-            "jenis_kelamin": "Laki-laki",
-            "Agama": "Kristen",
-            "alamat": "Jl. Gatot Subroto No. 20, Medan"
-          },
-          "kunjungan": [
-            {
-              "tanggal": "14/11/2024",
-              "id_rekam_medis": null
-            }
-          ],
-          "stats": {
-            "kategori_stats": "Bronze",
-            "jumlah_poin": 100,
-            "rank": 21
-          },
-          "task_user": [74, 75]
-        }
-      },
-    "faskes": {
-      "F001": {
-        "id_faskes": "F001",
-        "nama_faskes": "RS Sehat Sentosa",
-        "lokasi": "Jl. Kesehatan No. 1, Jakarta",
-        "deskripsi": "Rumah sakit umum dengan layanan lengkap"
-      },
-      "F001": {
-        "id_faskes": "F002",
-        "nama_faskes": "Klinik Harapan Bunda",
-        "lokasi": "Jl. Merdeka No. 10, Bandung",
-        "deskripsi": "Klinik keluarga dengan layanan rawat jalan"
-      },
-      "F003": {
-        "id_faskes": "F003",
-        "nama_faskes": "Puskesmas Sejahtera",
-        "lokasi": "Jl. Pembangunan No. 5, Surabaya",
-        "deskripsi": "Puskesmas dengan layanan imunisasi"
-      },
-      "F004": {
-        "id_faskes": "F004",
-        "nama_faskes": "RS Jantung Nasional",
-        "lokasi": "Jl. Jantung Sehat No. 99, Jakarta",
-        "deskripsi": "Rumah sakit spesialis jantung"
-      },
-      "F005": {
-        "id_faskes": "F005",
-        "nama_faskes": "Klinik Mata Indah",
-        "lokasi": "Jl. Matahari No. 20, Yogyakarta",
-        "deskripsi": "Klinik spesialis mata"
-      },
-      "F006": {
-        "id_faskes": "F006",
-        "nama_faskes": "RSU Kota Semarang",
-        "lokasi": "Jl. Pemuda No. 45, Semarang",
-        "deskripsi": "Rumah sakit umum daerah"
-      },
-      "F007": {
-        "id_faskes": "F007",
-        "nama_faskes": "Klinik Gigi Cemerlang",
-        "lokasi": "Jl. Senyum Manis No. 7, Medan",
-        "deskripsi": "Klinik spesialis gigi dan mulut"
-      },
-      "F008": {
-        "id_faskes": "F008",
-        "nama_faskes": "RS Orthopedi Surabaya",
-        "lokasi": "Jl. Tulang Sehat No. 8, Surabaya",
-        "deskripsi": "Rumah sakit spesialis orthopedi"
-      },
-      "F009": {
-        "id_faskes": "F009",
-        "nama_faskes": "Puskesmas Kelurahan Melati",
-        "lokasi": "Jl. Melati Indah No. 3, Jakarta",
-        "deskripsi": "Puskesmas dengan layanan ibu dan anak"
-      },
-      "F010": {
-        "id_faskes": "F010",
-        "nama_faskes": "RS Kanker Nasional",
-        "lokasi": "Jl. Harapan No. 12, Bandung",
-        "deskripsi": "Rumah sakit spesialis kanker"
-      }
+  "dokter": {
+    "123456789001": {
+      "id_faskes": "F001",
+      "nama_dokter": "Dr. Andi Wijaya",
+      "no_sip": "123456789001",
+      "spesialisasi": "Umum"
     },
-    "dokter": {
-       "123456789001" : {
-        "no_sip": "123456789001",
-        "id_faskes": "F001",
-        "nama_dokter": "Dr. Andi Wijaya",
-        "spesialisasi": "Umum"
-      },
-      "123456789002" : {
-        "no_sip": "123456789002",
-        "id_faskes": "F002",
-        "nama_dokter": "Dr. Budi Santoso",
-        "spesialisasi": "Anak"
-      },
-      "123456789003" : {
-        "no_sip": "123456789003",
-        "id_faskes": "F003",
-        "nama_dokter": "Dr. Clara Dewi",
-        "spesialisasi": "Kebidanan"
-      },
-      "123456789004" : {
-        "no_sip": "123456789004",
-        "id_faskes": "F004",
-        "nama_dokter": "Dr. Dedi Supriyadi",
-        "spesialisasi": "Jantung"
-      },
-      "123456789005" : {
-        "no_sip": "123456789005",
-        "id_faskes": "F005",
-        "nama_dokter": "Dr. Eka Putri",
-        "spesialisasi": "Mata"
-      },
-      "123456789006" : {
-        "no_sip": "123456789006",
-        "id_faskes": "F006",
-        "nama_dokter": "Dr. Faisal Hakim",
-        "spesialisasi": "Bedah Umum"
-      },
-      "123456789007" : {
-        "no_sip": "123456789007",
-        "id_faskes": "F007",
-        "nama_dokter": "Dr. Gita Lestari",
-        "spesialisasi": "Gigi"
-      },
-      "123456789008" : {
-        "no_sip": "123456789008",
-        "id_faskes": "F008",
-        "nama_dokter": "Dr. Hendro Setiawan",
-        "spesialisasi": "Orthopedi"
-      },
-      "123456789009" : {
-        "no_sip": "123456789009",
-        "id_faskes": "F009",
-        "nama_dokter": "Dr. Indah Sari",
-        "spesialisasi": "Umum"
-      },
-      "123456789010" : {
-        "no_sip": "123456789010",
-        "id_faskes": "F010",
-        "nama_dokter": "Dr. Joko Susilo",
-        "spesialisasi": "Onkologi"
-      }
+    "123456789002": {
+      "id_faskes": "F002",
+      "nama_dokter": "Dr. Budi Santoso",
+      "no_sip": "123456789002",
+      "spesialisasi": "Anak"
     },
-    "obat": {
-
-      "O001": {
-        "id_obat": "O001",
-        "nama_obat": "Paracetamol",
-        "deskripsi": "Antipiretik dan analgesik untuk menurunkan demam dan menghilangkan nyeri"
-      },
-      "O002": {
-        "id_obat": "O002",
-        "nama_obat": "Amoxicillin",
-        "deskripsi": "Antibiotik untuk infeksi bakteri"
-      },
-      "O003": {
-        "id_obat": "O003",
-        "nama_obat": "Ibuprofen",
-        "deskripsi": "Anti-inflamasi non-steroid untuk mengurangi peradangan dan nyeri"
-      },
-      "O004": {
-        "id_obat": "O004",
-        "nama_obat": "Metformin",
-        "deskripsi": "Obat untuk mengontrol kadar gula darah pada diabetes tipe 2"
-      },
-      "O005": {
-        "id_obat": "O005",
-        "nama_obat": "Amlodipine",
-        "deskripsi": "Obat untuk menurunkan tekanan darah tinggi"
-      },
-      "O005": {
-        "id_obat": "O006",
-        "nama_obat": "Lansoprazole",
-        "deskripsi": "Obat untuk mengatasi masalah asam lambung"
-      },
-      "O006": {
-        "id_obat": "O007",
-        "nama_obat": "Cetirizine",
-        "deskripsi": "Antihistamin untuk mengatasi alergi"
-      },
-      "O008": {
-        "id_obat": "O008",
-        "nama_obat": "Salbutamol",
-        "deskripsi": "Bronkodilator untuk mengatasi asma"
-      },
-      "O009": {
-        "id_obat": "O009",
-        "nama_obat": "Hydrocortisone",
-        "deskripsi": "Steroid untuk mengurangi peradangan"
-      },
-      "O010": {
-        "id_obat": "O010",
-        "nama_obat": "Azithromycin",
-        "deskripsi": "Antibiotik untuk berbagai infeksi bakteri"
-      },
-      "O011": {
-        "id_obat": "O011",
-        "nama_obat": "Simvastatin",
-        "deskripsi": "Obat untuk menurunkan kadar kolesterol"
-      },
-      "O012": {
-        "id_obat": "O012",
-        "nama_obat": "Omeprazole",
-        "deskripsi": "Obat untuk mengurangi produksi asam lambung"
-      },
-      "O013": {
-        "id_obat": "O013",
-        "nama_obat": "Lisinopril",
-        "deskripsi": "Obat untuk mengobati tekanan darah tinggi"
-      },
-      "O014": {
-        "id_obat": "O014",
-        "nama_obat": "Clopidogrel",
-        "deskripsi": "Obat untuk mencegah penggumpalan darah"
-      },
-      "O015": {
-        "id_obat": "O015",
-        "nama_obat": "Captopril",
-        "deskripsi": "Obat untuk menurunkan tekanan darah dan mengobati gagal jantung"
-      },
-      "O016": {
-        "id_obat": "O016",
-        "nama_obat": "Furosemide",
-        "deskripsi": "Diuretik untuk mengatasi retensi cairan"
-      },
-      "O017": {
-        "id_obat": "O017",
-        "nama_obat": "Dexamethasone",
-        "deskripsi": "Steroid untuk mengatasi peradangan dan alergi"
-      },
-      "O018": {
-        "id_obat": "O018",
-        "nama_obat": "Atorvastatin",
-        "deskripsi": "Obat untuk menurunkan kadar kolesterol"
-      },
-      "O019": {
-        "id_obat": "O019",
-        "nama_obat": "Ketoconazole",
-        "deskripsi": "Antijamur untuk mengatasi infeksi jamur"
-      },
-      "O020": {
-        "id_obat": "O020",
-        "nama_obat": "Diazepam",
-        "deskripsi": "Obat untuk mengatasi kecemasan dan kejang otot"
-      },
-      "O021": {
-        "id_obat": "O021",
-        "nama_obat": "Prednisone",
-        "deskripsi": "Steroid untuk mengatasi peradangan"
-      },
-      "O022": {
-        "id_obat": "O022",
-        "nama_obat": "Metronidazole",
-        "deskripsi": "Antibiotik untuk infeksi bakteri dan protozoa"
-      },
-      "O023": {
-        "id_obat": "O023",
-        "nama_obat": "Diclofenac",
-        "deskripsi": "Anti-inflamasi non-steroid untuk mengurangi nyeri dan peradangan"
-      },
-      "O024": {
-        "id_obat": "O024",
-        "nama_obat": "Allopurinol",
-        "deskripsi": "Obat untuk mengobati asam urat"
-      },
-      "O025": {
-        "id_obat": "O025",
-        "nama_obat": "Acyclovir",
-        "deskripsi": "Antivirus untuk mengobati infeksi herpes"
-      },
-      "O026": {
-        "id_obat": "O026",
-        "nama_obat": "Glibenclamide",
-        "deskripsi": "Obat untuk menurunkan kadar gula darah"
-      },
-      "O027": {
-        "id_obat": "O027",
-        "nama_obat": "Ciprofloxacin",
-        "deskripsi": "Antibiotik untuk berbagai infeksi bakteri"
-      },
-      "O028": {
-        "id_obat": "O028",
-        "nama_obat": "Vitamin C",
-        "deskripsi": "Suplemen untuk meningkatkan daya tahan tubuh"
-      },
-      "O029": {
-        "id_obat": "O029",
-        "nama_obat": "Calcium Carbonate",
-        "deskripsi": "Suplemen kalsium untuk kesehatan tulang"
-      },
-      "O030": {
-        "id_obat": "O030",
-        "nama_obat": "Bisacodyl",
-        "deskripsi": "Obat pencahar untuk mengatasi sembelit"
-      },
-      "O031": {
-        "id_obat": "O031",
-        "nama_obat": "Loperamide",
-        "deskripsi": "Obat untuk mengatasi diare"
-      },
-      "O032": {
-        "id_obat": "O032",
-        "nama_obat": "Ranitidine",
-        "deskripsi": "Obat untuk mengurangi asam lambung"
-      },
-      "O033": {
-        "id_obat": "O033",
-        "nama_obat": "Erythromycin",
-        "deskripsi": "Antibiotik untuk infeksi bakteri"
-      },
-      "O034": {
-        "id_obat": "O034",
-        "nama_obat": "Clindamycin",
-        "deskripsi": "Antibiotik untuk infeksi bakteri"
-      },
-      "O035": {
-        "id_obat": "O035",
-        "nama_obat": "Nifedipine",
-        "deskripsi": "Obat untuk mengobati tekanan darah tinggi dan angina"
-      },
-      "O036": {
-        "id_obat": "O036",
-        "nama_obat": "Glibenclamide",
-        "deskripsi": "Obat untuk menurunkan kadar gula darah"
-      },
-      "O037": {
-        "id_obat": "O037",
-        "nama_obat": "Folic Acid",
-        "deskripsi": "Vitamin B9 untuk mencegah anemia dan penting bagi kehamilan"
-      },
-      "O038": {
-        "id_obat": "O038",
-        "nama_obat": "Gentamicin",
-        "deskripsi": "Antibiotik untuk infeksi bakteri"
-      },
-      "O039": {
-        "id_obat": "O039",
-        "nama_obat": "Enalapril",
-        "deskripsi": "Obat untuk mengobati tekanan darah tinggi dan gagal jantung"
-      },
-      "O040": {
-        "id_obat": "O040",
-        "nama_obat": "Amiodarone",
-        "deskripsi": "Obat untuk mengatasi aritmia jantung"
-      },
-      "O041": {
-        "id_obat": "O041",
-        "nama_obat": "Warfarin",
-        "deskripsi": "Obat pengencer darah untuk mencegah pembekuan"
-      },
-      "O042": {
-        "id_obat": "O042",
-        "nama_obat": "Morphine",
-        "deskripsi": "Analgesik opioid untuk nyeri berat"
-      },
-      "O043": {
-        "id_obat": "O043",
-        "nama_obat": "Spironolactone",
-        "deskripsi": "Diuretik untuk mengurangi retensi cairan"
-      },
-      "O044": {
-        "id_obat": "O044",
-        "nama_obat": "Hydrochlorothiazide",
-        "deskripsi": "Diuretik untuk mengobati tekanan darah tinggi"
-      },
-      "O045": {
-        "id_obat": "O045",
-        "nama_obat": "Fluconazole",
-        "deskripsi": "Antijamur untuk infeksi jamur"
-      },
-      "O046": {
-        "id_obat": "O046",
-        "nama_obat": "Methotrexate",
-        "deskripsi": "Obat kemoterapi untuk kanker dan penyakit autoimun"
-      },
-      "O047": {
-        "id_obat": "O047",
-        "nama_obat": "Alprazolam",
-        "deskripsi": "Obat untuk mengatasi kecemasan dan panik"
-      },
-      "O048": {
-        "id_obat": "O048",
-        "nama_obat": "Gabapentin",
-        "deskripsi": "Obat antikonvulsan untuk epilepsi dan nyeri saraf"
-      },
-      "O049": {
-        "id_obat": "O049",
-        "nama_obat": "Tamoxifen",
-        "deskripsi": "Obat untuk mengobati kanker payudara"
-      },
-      "O050": {
-        "id_obat": "O050",
-        "nama_obat": "Insulin",
-        "deskripsi": "Hormon untuk mengontrol kadar gula darah pada diabetes"
-      }
+    "123456789003": {
+      "id_faskes": "F003",
+      "nama_dokter": "Dr. Clara Dewi",
+      "no_sip": "123456789003",
+      "spesialisasi": "Kebidanan"
     },
-    "rekam_medis": {
-      "RM001": {
-        "id": "RM001",
-        "user_id": "1234567890123",
-        "data": {
-          "dokter": "Dr. Andi Wijaya",
-          "no_sip": "123456789001",
-          "tanggal": "01/10/2024",
-          "id_faskes": "F001",
-          "keluhan": "Batuk dan demam",
-          "diagnosa": "Infeksi Saluran Pernapasan Atas",
-          "obat": [
-            {
-              "id_obat": "O001",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 3,
-              "jumlah_dalam_satuan": 15
-            },
-            {
-              "id_obat": "O002",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 3,
-              "jumlah_dalam_satuan": 15
-            }
-          ]
-        }
-      },
-      "RM002": {
-        "id": "RM002",
-        "user_id": "1234567890123456",
-        "data": {
-          "dokter": "Dr. Budi Santoso",
-          "no_sip": "123456789002",
-          "tanggal": "05/10/2024",
-          "id_faskes": "F002",
-          "keluhan": "Demam tinggi",
-          "diagnosa": "Demam Berdarah",
-          "obat": [
-            {
-              "id_obat": "O001",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 4,
-              "jumlah_dalam_satuan": 20
-            }
-          ]
-        }
-      },
-      "RM003": {
-        "id": "RM003",
-        "user_id": "1234567890124",
-        "data": {
-          "dokter": "Dr. Clara Dewi",
-          "no_sip": "123456789003",
-          "tanggal": "10/10/2024",
-          "id_faskes": "F003",
-          "keluhan": "Sakit perut",
-          "diagnosa": "Gastritis",
-          "obat": [
-            {
-              "id_obat": "O006",
-              "takaran": 30,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 2,
-              "jumlah_dalam_satuan": 10
-            }
-          ]
-        }
-      },
-      "RM004": {
-        "id": "RM004",
-        "user_id": "1234567890125",
-        "data": {
-          "dokter": "Dr. Dedi Supriyadi",
-          "no_sip": "123456789004",
-          "tanggal": "12/10/2024",
-          "id_faskes": "F004",
-          "keluhan": "Nyeri dada",
-          "diagnosa": "Angina Pektoris",
-          "obat": [
-            {
-              "id_obat": "O035",
-              "takaran": 10,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 1,
-              "jumlah_dalam_satuan": 30
-            },
-            {
-              "id_obat": "O014",
-              "takaran": 75,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 1,
-              "jumlah_dalam_satuan": 30
-            }
-          ]
-        }
-      },
-      "RM005": {
-        "id": "RM005",
-        "user_id": "1234567890123457",
-        "data": {
-          "dokter": "Dr. Eka Putri",
-          "no_sip": "123456789005",
-          "tanggal": "14/10/2024",
-          "id_faskes": "F005",
-          "keluhan": "Penglihatan kabur",
-          "diagnosa": "Katarak",
-          "obat": [
-            {
-              "id_obat": "O005",
-              "takaran": 5,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 1,
-              "jumlah_dalam_satuan": 30
-            }
-          ]
-        }
-      },
-      "RM006": {
-        "id": "RM006",
-        "user_id": "1234567890126",
-        "data": {
-          "dokter": "Dr. Faisal Hakim",
-          "no_sip": "123456789006",
-          "tanggal": "16/10/2024",
-          "id_faskes": "F006",
-          "keluhan": "Nyeri sendi",
-          "diagnosa": "Osteoartritis",
-          "obat": [
-            {
-              "id_obat": "O003",
-              "takaran": 400,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 3,
-              "jumlah_dalam_satuan": 15
-            },
-            {
-              "id_obat": "O023",
-              "takaran": 50,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 2,
-              "jumlah_dalam_satuan": 10
-            }
-          ]
-        }
-      },
-      "RM007": {
-        "id": "RM007",
-        "user_id": "1234567890123458",
-        "data": {
-          "dokter": "Dr. Hendro Setiawan",
-          "no_sip": "123456789008",
-          "tanggal": "18/10/2024",
-          "id_faskes": "F008",
-          "keluhan": "Cedera lutut",
-          "diagnosa": "Ligamen Robek",
-          "obat": [
-            {
-              "id_obat": "O042",
-              "takaran": 10,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 2,
-              "jumlah_dalam_satuan": 20
-            }
-          ]
-        }
-      },
-      "RM009": {
-        "id": "RM009",
-        "user_id": "1234567890123459",
-        "data": {
-          "dokter": "Dr. Indah Sari",
-          "no_sip": "123456789009",
-          "tanggal": "22/10/2024",
-          "id_faskes": "F009",
-          "keluhan": "Sakit kepala",
-          "diagnosa": "Migrain",
-          "obat": [
-            {
-              "id_obat": "O003",
-              "takaran": 400,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 2,
-              "jumlah_dalam_satuan": 10
-            }
-          ]
-        }
-      },
-      "RM011": {
-        "id": "RM011",
-        "user_id": "1234567890129",
-        "data": {
-          "dokter": "Dr. Budi Santoso",
-          "no_sip": "123456789002",
-          "tanggal": "26/10/2024",
-          "id_faskes": "F002",
-          "keluhan": "Batuk kronis",
-          "diagnosa": "Asma",
-          "obat": [
-            {
-              "id_obat": "O008",
-              "takaran": 2,
-              "satuan": "puff",
-              "kali_konsumsi_perhari": 3,
-              "jumlah_dalam_satuan": 1
-            }
-          ]
-        }
-      },
-      "RM012": {
-        "id": "RM012",
-        "user_id": "1234567890123460",
-        "data": {
-          "dokter": "Dr. Andi Wijaya",
-          "no_sip": "123456789001",
-          "tanggal": "28/10/2024",
-          "id_faskes": "F001",
-          "keluhan": "Nyeri punggung",
-          "diagnosa": "Herniated Disc",
-          "obat": [
-            {
-              "id_obat": "O023",
-              "takaran": 50,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 2,
-              "jumlah_dalam_satuan": 20
-            }
-          ]
-        }
-      },
-      "RM013": {
-        "id": "RM013",
-        "user_id": "1234567890123461",
-        "data": {
-          "dokter": "Dr. Clara Dewi",
-          "no_sip": "123456789003",
-          "tanggal": "02/11/2024",
-          "id_faskes": "F003",
-          "keluhan": "Infeksi saluran kemih",
-          "diagnosa": "Infeksi Bakteri",
-          "obat": [
-            {
-              "id_obat": "O027",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 2,
-              "jumlah_dalam_satuan": 14
-            }
-          ]
-        }
-      },
-      "RM014": {
-        "id": "RM014",
-        "user_id": "1234567890123462",
-        "data": {
-          "dokter": "Dr. Eka Putri",
-          "no_sip": "123456789005",
-          "tanggal": "06/11/2024",
-          "id_faskes": "F005",
-          "keluhan": "Gangguan penglihatan",
-          "diagnosa": "Glaukoma",
-          "obat": [
-            {
-              "id_obat": "O005",
-              "takaran": 5,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 1,
-              "jumlah_dalam_satuan": 30
-            }
-          ]
-        }
-      },
-      "RM015": {
-        "id": "RM015",
-        "user_id": "1234567890123463",
-        "data": {
-          "dokter": "Dr. Gita Lestari",
-          "no_sip": "123456789007",
-          "tanggal": "10/11/2024",
-          "id_faskes": "F007",
-          "keluhan": "Sakit gigi",
-          "diagnosa": "Infeksi Gusi",
-          "obat": [
-            {
-              "id_obat": "O002",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 3,
-              "jumlah_dalam_satuan": 21
-            }
-          ]
-        }
-      },
-      "RM016": {
-        "id": "RM016",
-        "user_id": "1234567890133",
-        "data": {
-          "dokter": "Dr. Indah Sari",
-          "no_sip": "123456789009",
-          "tanggal": "12/11/2024",
-          "id_faskes": "F009",
-          "keluhan": "Demam dan ruam",
-          "diagnosa": "Campak",
-          "obat": [
-            {
-              "id_obat": "O001",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 3,
-              "jumlah_dalam_satuan": 15
-            },
-            {
-              "id_obat": "O028",
-              "takaran": 500,
-              "satuan": "mg",
-              "kali_konsumsi_perhari": 1,
-              "jumlah_dalam_satuan": 10
-            }
-          ]
-        }
-      }
+    "123456789004": {
+      "id_faskes": "F004",
+      "nama_dokter": "Dr. Dedi Supriyadi",
+      "no_sip": "123456789004",
+      "spesialisasi": "Jantung"
     },
-
-    "kategori_task": {
-      "1" : {
-        "id": "1",
-        "nama_kategori": "Meminum Obat",
-        "poin": 10
-      },
-      "2" : {
-        "id": "2",
-        "nama_kategori": "Kunjungan Faskes",
-        "poin": 40
-      },
-      "3" : {
-        "id": "3",
-        "nama_kategori": "Skrining Kesehatan",
-        "poin": 50
-      },
-      "4" : {
-        "id": "4",
-        "nama_kategori": "Melengkapi Biodata",
-        "poin": 100
-      }
+    "123456789005": {
+      "id_faskes": "F005",
+      "nama_dokter": "Dr. Eka Putri",
+      "no_sip": "123456789005",
+      "spesialisasi": "Mata"
     },
-
-
-    "tasks": {
-      "1": {
-        "id_tasks": 1,
-        "user_id": "1234567890123",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "2": {
-        "id_tasks": 2,
-        "user_id": "1234567890123",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM001"
-        },
-        "poin_diperoleh": 40
-      },
-      "3": {
-        "id_tasks": 3,
-        "user_id": "1234567890123",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM001",
-          "id_obat": "O001",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 15
-        },
-        "poin_diperoleh": 0
-      },
-      "4": {
-        "id_tasks": 4,
-        "user_id": "1234567890123",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM001",
-          "id_obat": "O002",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 15
-        },
-        "poin_diperoleh": 0
-      },
-      "5": {
-        "id_tasks": 5,
-        "user_id": "1234567890123",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM001",
-          "id_obat": "O001",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 150
-      },
-      "6": {
-        "id_tasks": 6,
-        "user_id": "1234567890123",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM001",
-          "id_obat": "O002",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 150
-      },
-      "7": {
-        "id_tasks": 7,
-        "user_id": "1234567890123",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "8": {
-        "id_tasks": 8,
-        "user_id": "1234567890123456",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "9": {
-        "id_tasks": 9,
-        "user_id": "1234567890123456",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM002"
-        },
-        "poin_diperoleh": 40
-      },
-      "10": {
-        "id_tasks": 10,
-        "user_id": "1234567890123456",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM002",
-          "id_obat": "O001",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 20
-        },
-        "poin_diperoleh": 0
-      },
-      "11": {
-        "id_tasks": 11,
-        "user_id": "1234567890123456",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM002",
-          "id_obat": "O001",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 200
-      },
-      "12": {
-        "id_tasks": 12,
-        "user_id": "1234567890123456",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "13": {
-        "id_tasks": 13,
-        "user_id": "1234567890123456",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "20/11/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "14": {
-        "id_tasks": 14,
-        "user_id": "1234567890124",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "15": {
-        "id_tasks": 15,
-        "user_id": "1234567890124",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM003"
-        },
-        "poin_diperoleh": 40
-      },
-      "16": {
-        "id_tasks": 16,
-        "user_id": "1234567890124",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM003",
-          "id_obat": "O006",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 100
-      },
-      "17": {
-        "id_tasks": 17,
-        "user_id": "1234567890124",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "18": {
-        "id_tasks": 18,
-        "user_id": "1234567890125",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "19": {
-        "id_tasks": 19,
-        "user_id": "1234567890125",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM004"
-        },
-        "poin_diperoleh": 40
-      },
-      "20": {
-        "id_tasks": 20,
-        "user_id": "1234567890125",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM004",
-          "id_obat": "O035",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 30
-        },
-        "poin_diperoleh": 0
-      },
-      "21": {
-        "id_tasks": 21,
-        "user_id": "1234567890125",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM004",
-          "id_obat": "O035",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 300
-      },
-      "22": {
-        "id_tasks": 22,
-        "user_id": "1234567890125",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM004",
-          "id_obat": "O014",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 30
-        },
-        "poin_diperoleh": 0
-      },
-      "23": {
-        "id_tasks": 23,
-        "user_id": "1234567890125",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM004",
-          "id_obat": "O014",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 300
-      },
-      "24": {
-        "id_tasks": 24,
-        "user_id": "1234567890125",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "25": {
-        "id_tasks": 25,
-        "user_id": "1234567890125",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "25/11/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "26": {
-        "id_tasks": 26,
-        "user_id": "1234567890123457",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "27": {
-        "id_tasks": 27,
-        "user_id": "1234567890123457",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM005"
-        },
-        "poin_diperoleh": 40
-      },
-      "28": {
-        "id_tasks": 28,
-        "user_id": "1234567890123457",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM005",
-          "id_obat": "O005",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 30
-        },
-        "poin_diperoleh": 0
-      },
-      "29": {
-        "id_tasks": 29,
-        "user_id": "1234567890123457",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM005",
-          "id_obat": "O005",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 300
-      },
-      "30": {
-        "id_tasks": 30,
-        "user_id": "1234567890123457",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "31": {
-        "id_tasks": 31,
-        "user_id": "1234567890126",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "32": {
-        "id_tasks": 32,
-        "user_id": "1234567890126",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM006"
-        },
-        "poin_diperoleh": 40
-      },
-      "33": {
-        "id_tasks": 33,
-        "user_id": "1234567890126",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM006",
-          "id_obat": "O003",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 15
-        },
-        "poin_diperoleh": 0
-      },
-      "34": {
-        "id_tasks": 34,
-        "user_id": "1234567890126",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM006",
-          "id_obat": "O003",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 150
-      },
-      "35": {
-        "id_tasks": 35,
-        "user_id": "1234567890126",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM006",
-          "id_obat": "O023",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 10
-        },
-        "poin_diperoleh": 0
-      },
-      "36": {
-        "id_tasks": 36,
-        "user_id": "1234567890126",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM006",
-          "id_obat": "O023",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 100
-      },
-      "37": {
-        "id_tasks": 37,
-        "user_id": "1234567890126",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "38": {
-        "id_tasks": 38,
-        "user_id": "1234567890123458",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "39": {
-        "id_tasks": 39,
-        "user_id": "1234567890123458",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM007"
-        },
-        "poin_diperoleh": 40
-      },
-      "40": {
-        "id_tasks": 40,
-        "user_id": "1234567890123458",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM007",
-          "id_obat": "O042",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 20
-        },
-        "poin_diperoleh": 0
-      },
-      "41": {
-        "id_tasks": 41,
-        "user_id": "1234567890123458",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM007",
-          "id_obat": "O042",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 200
-      },
-      "42": {
-        "id_tasks": 42,
-        "user_id": "1234567890123458",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "43": {
-        "id_tasks": 43,
-        "user_id": "1234567890127",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "44": {
-        "id_tasks": 44,
-        "user_id": "1234567890127",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "20/10/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "45": {
-        "id_tasks": 45,
-        "user_id": "1234567890127",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "46": {
-        "id_tasks": 46,
-        "user_id": "1234567890123459",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "47": {
-        "id_tasks": 47,
-        "user_id": "1234567890123459",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM009"
-        },
-        "poin_diperoleh": 40
-      },
-      "48": {
-        "id_tasks": 48,
-        "user_id": "1234567890123459",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM009",
-          "id_obat": "O003",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 10
-        },
-        "poin_diperoleh": 0
-      },
-      "49": {
-        "id_tasks": 49,
-        "user_id": "1234567890123459",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM009",
-          "id_obat": "O003",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 100
-      },
-      "50": {
-        "id_tasks": 50,
-        "user_id": "1234567890123459",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "51": {
-        "id_tasks": 51,
-        "user_id": "1234567890128",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "52": {
-        "id_tasks": 52,
-        "user_id": "1234567890128",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "24/10/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "53": {
-        "id_tasks": 53,
-        "user_id": "1234567890128",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "54": {
-        "id_tasks": 54,
-        "user_id": "1234567890129",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "55": {
-        "id_tasks": 55,
-        "user_id": "1234567890129",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM011"
-        },
-        "poin_diperoleh": 40
-      },
-      "56": {
-        "id_tasks": 56,
-        "user_id": "1234567890129",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM011",
-          "id_obat": "O008",
-          "jumlah_obat": 1,
-          "dosis": 1,
-          "sisa": 1
-        },
-        "poin_diperoleh": 0
-      },
-      "57": {
-        "id_tasks": 57,
-        "user_id": "1234567890129",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM011",
-          "id_obat": "O008",
-          "jumlah_obat": 1,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 10
-      },
-      "58": {
-        "id_tasks": 58,
-        "user_id": "1234567890129",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "59": {
-        "id_tasks": 59,
-        "user_id": "1234567890123460",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "60": {
-        "id_tasks": 60,
-        "user_id": "1234567890123460",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM012"
-        },
-        "poin_diperoleh": 40
-      },
-      "61": {
-        "id_tasks": 61,
-        "user_id": "1234567890123460",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM012",
-          "id_obat": "O023",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 20
-        },
-        "poin_diperoleh": 0
-      },
-      "62": {
-        "id_tasks": 62,
-        "user_id": "1234567890123460",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM012",
-          "id_obat": "O023",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 200
-      },
-      "63": {
-        "id_tasks": 63,
-        "user_id": "1234567890123460",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "64": {
-        "id_tasks": 64,
-        "user_id": "1234567890123460",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "28/11/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "65": {
-        "id_tasks": 65,
-        "user_id": "1234567890123460",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM012",
-          "id_obat": "O014",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 200
-      },
-      "66": {
-        "id_tasks": 66,
-        "user_id": "1234567890123460",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM012",
-          "id_obat": "O005",
-          "jumlah_obat": 17,
-          "dosis": 1,
-          "sisa": 17
-        },
-        "poin_diperoleh": 0
-      },
-      "67": {
-        "id_tasks": 67,
-        "user_id": "1234567890123460",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM012",
-          "id_obat": "O005",
-          "jumlah_obat": 17,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 170
-      },
-      "68": {
-        "id_tasks": 68,
-        "user_id": "1234567890123460",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "69": {
-        "id_tasks": 68,
-        "user_id": "1234567890123460",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 40
-      },
-      "69": {
-        "id_tasks": 69,
-        "user_id": "1234567890130",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "70": {
-        "id_tasks": 70,
-        "user_id": "1234567890130",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "30/10/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "71": {
-        "id_tasks": 71,
-        "user_id": "1234567890130",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "71": {
-        "id_tasks": 71,
-        "user_id": "1234567890130",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "belum selesai",
-        "detail": {},
-        "poin_diperoleh": 0
-      },
-      "72": {
-        "id_tasks": 72,
-        "user_id": "1234567890123461",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "73": {
-        "id_tasks": 73,
-        "user_id": "1234567890123461",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM013"
-        },
-        "poin_diperoleh": 40
-      },
-      "74": {
-        "id_tasks": 74,
-        "user_id": "1234567890123461",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM013",
-          "id_obat": "O027",
-          "jumlah_obat": 14,
-          "dosis": 1,
-          "sisa": 14
-        },
-        "poin_diperoleh": 0
-      },
-      "75": {
-        "id_tasks": 75,
-        "user_id": "1234567890123461",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM013",
-          "id_obat": "O027",
-          "jumlah_obat": 14,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 140
-      },
-      "76": {
-        "id_tasks": 76,
-        "user_id": "1234567890123461",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "77": {
-        "id_tasks": 77,
-        "user_id": "1234567890123461",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM013",
-          "id_obat": "O001",
-          "jumlah_obat": 27,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 270
-      },
-      "78": {
-        "id_tasks": 78,
-        "user_id": "1234567890131",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "79": {
-        "id_tasks": 79,
-        "user_id": "1234567890131",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "04/11/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "80": {
-        "id_tasks": 80,
-        "user_id": "1234567890131",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "belum selesai",
-        "detail": {},
-        "poin_diperoleh": 0
-      },
-      "81": {
-        "id_tasks": 81,
-        "user_id": "1234567890123462",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "82": {
-        "id_tasks": 82,
-        "user_id": "1234567890123462",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM014"
-        },
-        "poin_diperoleh": 40
-      },
-      "83": {
-        "id_tasks": 83,
-        "user_id": "1234567890123462",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM014",
-          "id_obat": "O005",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 30
-        },
-        "poin_diperoleh": 0
-      },
-      "84": {
-        "id_tasks": 84,
-        "user_id": "1234567890123462",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM014",
-          "id_obat": "O005",
-          "jumlah_obat": 30,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 300
-      },
-      "85": {
-        "id_tasks": 85,
-        "user_id": "1234567890123462",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "86": {
-        "id_tasks": 86,
-        "user_id": "1234567890123462",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "06/12/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "87": {
-        "id_tasks": 87,
-        "user_id": "1234567890123462",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM014",
-          "id_obat": "O012",
-          "jumlah_obat": 20,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 200
-      },
-      "88": {
-        "id_tasks": 88,
-        "user_id": "1234567890123462",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "89": {
-        "id_tasks": 89,
-        "user_id": "1234567890123462",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM014",
-          "id_obat": "O001",
-          "jumlah_obat": 31,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 310
-      },
-      "90": {
-        "id_tasks": 90,
-        "user_id": "1234567890132",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "91": {
-        "id_tasks": 91,
-        "user_id": "1234567890123463",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "92": {
-        "id_tasks": 92,
-        "user_id": "1234567890123463",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM015"
-        },
-        "poin_diperoleh": 40
-      },
-      "93": {
-        "id_tasks": 93,
-        "user_id": "1234567890123463",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM015",
-          "id_obat": "O002",
-          "jumlah_obat": 21,
-          "dosis": 1,
-          "sisa": 21
-        },
-        "poin_diperoleh": 0
-      },
-      "94": {
-        "id_tasks": 94,
-        "user_id": "1234567890123463",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM015",
-          "id_obat": "O002",
-          "jumlah_obat": 21,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 210
-      },
-      "95": {
-        "id_tasks": 95,
-        "user_id": "1234567890123463",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "96": {
-        "id_tasks": 96,
-        "user_id": "1234567890123463",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM015",
-          "id_obat": "O003",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 100
-      },
-      "97": {
-        "id_tasks": 97,
-        "user_id": "1234567890133",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "98": {
-        "id_tasks": 98,
-        "user_id": "1234567890133",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM016"
-        },
-        "poin_diperoleh": 40
-      },
-      "99": {
-        "id_tasks": 99,
-        "user_id": "1234567890133",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM016",
-          "id_obat": "O001",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 15
-        },
-        "poin_diperoleh": 0
-      },
-      "100": {
-        "id_tasks": 100,
-        "user_id": "1234567890133",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM016",
-          "id_obat": "O001",
-          "jumlah_obat": 15,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 150
-      },
-      "101": {
-        "id_tasks": 101,
-        "user_id": "1234567890133",
-        "kategori_task": "Meminum Obat",
-        "status": "belum selesai",
-        "detail": {
-          "id_rekam_medis": "RM016",
-          "id_obat": "O028",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 10
-        },
-        "poin_diperoleh": 0
-      },
-      "102": {
-        "id_tasks": 102,
-        "user_id": "1234567890133",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM016",
-          "id_obat": "O028",
-          "jumlah_obat": 10,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 100
-      },
-      "103": {
-        "id_tasks": 103,
-        "user_id": "1234567890133",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 50
-      },
-      "104": {
-        "id_tasks": 104,
-        "user_id": "1234567890133",
-        "kategori_task": "Meminum Obat",
-        "status": "selesai",
-        "detail": {
-          "id_rekam_medis": "RM016",
-          "id_obat": "O001",
-          "jumlah_obat": 76,
-          "dosis": 1,
-          "sisa": 0
-        },
-        "poin_diperoleh": 760
-      },
-      "105": {
-        "id_tasks": 105,
-        "user_id": "1234567890123464",
-        "kategori_task": "Melengkapi Biodata",
-        "status": "selesai",
-        "detail": {},
-        "poin_diperoleh": 100
-      },
-      "106": {
-        "id_tasks": 106,
-        "user_id": "1234567890123464",
-        "kategori_task": "Kunjungan Faskes",
-        "status": "belum selesai",
-        "detail": {
-          "tanggal": "14/11/2024"
-        },
-        "poin_diperoleh": 0
-      },
-      "107": {
-        "id_tasks": 107,
-        "user_id": "1234567890123464",
-        "kategori_task": "Skrining Kesehatan",
-        "status": "belum selesai",
-        "detail": {},
-        "poin_diperoleh": 0
-      }
+    "123456789006": {
+      "id_faskes": "F006",
+      "nama_dokter": "Dr. Faisal Hakim",
+      "no_sip": "123456789006",
+      "spesialisasi": "Bedah Umum"
     },
+    "123456789007": {
+      "id_faskes": "F007",
+      "nama_dokter": "Dr. Gita Lestari",
+      "no_sip": "123456789007",
+      "spesialisasi": "Gigi"
+    },
+    "123456789008": {
+      "id_faskes": "F008",
+      "nama_dokter": "Dr. Hendro Setiawan",
+      "no_sip": "123456789008",
+      "spesialisasi": "Orthopedi"
+    },
+    "123456789009": {
+      "id_faskes": "F009",
+      "nama_dokter": "Dr. Indah Sari",
+      "no_sip": "123456789009",
+      "spesialisasi": "Umum"
+    },
+    "123456789010": {
+      "id_faskes": "F010",
+      "nama_dokter": "Dr. Joko Susilo",
+      "no_sip": "123456789010",
+      "spesialisasi": "Onkologi"
+    }
+  },
+  "faskes": {
+    "F001": {
+      "deskripsi": "Klinik keluarga dengan layanan rawat jalan",
+      "id_faskes": "F002",
+      "lokasi": "Jl. Merdeka No. 10, Bandung",
+      "nama_faskes": "Klinik Harapan Bunda"
+    },
+    "F003": {
+      "deskripsi": "Puskesmas dengan layanan imunisasi",
+      "id_faskes": "F003",
+      "lokasi": "Jl. Pembangunan No. 5, Surabaya",
+      "nama_faskes": "Puskesmas Sejahtera"
+    },
+    "F004": {
+      "deskripsi": "Rumah sakit spesialis jantung",
+      "id_faskes": "F004",
+      "lokasi": "Jl. Jantung Sehat No. 99, Jakarta",
+      "nama_faskes": "RS Jantung Nasional"
+    },
+    "F005": {
+      "deskripsi": "Klinik spesialis mata",
+      "id_faskes": "F005",
+      "lokasi": "Jl. Matahari No. 20, Yogyakarta",
+      "nama_faskes": "Klinik Mata Indah"
+    },
+    "F006": {
+      "deskripsi": "Rumah sakit umum daerah",
+      "id_faskes": "F006",
+      "lokasi": "Jl. Pemuda No. 45, Semarang",
+      "nama_faskes": "RSU Kota Semarang"
+    },
+    "F007": {
+      "deskripsi": "Klinik spesialis gigi dan mulut",
+      "id_faskes": "F007",
+      "lokasi": "Jl. Senyum Manis No. 7, Medan",
+      "nama_faskes": "Klinik Gigi Cemerlang"
+    },
+    "F008": {
+      "deskripsi": "Rumah sakit spesialis orthopedi",
+      "id_faskes": "F008",
+      "lokasi": "Jl. Tulang Sehat No. 8, Surabaya",
+      "nama_faskes": "RS Orthopedi Surabaya"
+    },
+    "F009": {
+      "deskripsi": "Puskesmas dengan layanan ibu dan anak",
+      "id_faskes": "F009",
+      "lokasi": "Jl. Melati Indah No. 3, Jakarta",
+      "nama_faskes": "Puskesmas Kelurahan Melati"
+    },
+    "F010": {
+      "deskripsi": "Rumah sakit spesialis kanker",
+      "id_faskes": "F010",
+      "lokasi": "Jl. Harapan No. 12, Bandung",
+      "nama_faskes": "RS Kanker Nasional"
+    }
+  },
+  "kategori_task": [
+    null,
+    {
+      "id": "1",
+      "nama_kategori": "Meminum Obat",
+      "poin": 10
+    },
+    {
+      "id": "2",
+      "nama_kategori": "Kunjungan Faskes",
+      "poin": 40
+    },
+    {
+      "id": "3",
+      "nama_kategori": "Skrining Kesehatan",
+      "poin": 50
+    },
+    {
+      "id": "4",
+      "nama_kategori": "Melengkapi Biodata",
+      "poin": 100
+    }
+  ],
   "leaderboard": {
-    "1234567890126": 1900,
-    "1234567890125": 1820,
-    "1234567890123458": 1600,
-    "1234567890133": 1200,
-    "1234567890123462": 1050,
-    "1234567890124": 700,
-    "1234567890123457": 950,
-    "1234567890123460": 800,
-    "1234567890123456": 550,
-    "1234567890123461": 600,
-    "1234567890129": 450,
-    "1234567890123459": 400,
-    "1234567890123463": 500,
     "1234567890123": 290,
+    "1234567890123456": 550,
+    "1234567890123457": 950,
+    "1234567890123458": 1600,
+    "1234567890123459": 400,
+    "1234567890123460": 800,
+    "1234567890123461": 600,
+    "1234567890123462": 1050,
+    "1234567890123463": 500,
+    "1234567890123464": 100,
+    "1234567890124": 700,
+    "1234567890125": 1820,
+    "1234567890126": 1900,
     "1234567890127": 160,
-    "1234567890132": 100,
-    "1234567890131": 100,
-    "1234567890130": 100,
     "1234567890128": 100,
-    "1234567890123464": 100
-  }
+    "1234567890129": 450,
+    "1234567890130": 100,
+    "1234567890131": 100,
+    "1234567890132": 100,
+    "1234567890133": 1200
+  },
+  "obat": {
+    "O001": {
+      "deskripsi": "Antipiretik dan analgesik untuk menurunkan demam dan menghilangkan nyeri",
+      "id_obat": "O001",
+      "nama_obat": "Paracetamol"
+    },
+    "O002": {
+      "deskripsi": "Antibiotik untuk infeksi bakteri",
+      "id_obat": "O002",
+      "nama_obat": "Amoxicillin"
+    },
+    "O003": {
+      "deskripsi": "Anti-inflamasi non-steroid untuk mengurangi peradangan dan nyeri",
+      "id_obat": "O003",
+      "nama_obat": "Ibuprofen"
+    },
+    "O004": {
+      "deskripsi": "Obat untuk mengontrol kadar gula darah pada diabetes tipe 2",
+      "id_obat": "O004",
+      "nama_obat": "Metformin"
+    },
+    "O005": {
+      "deskripsi": "Obat untuk mengatasi masalah asam lambung",
+      "id_obat": "O006",
+      "nama_obat": "Lansoprazole"
+    },
+    "O006": {
+      "deskripsi": "Antihistamin untuk mengatasi alergi",
+      "id_obat": "O007",
+      "nama_obat": "Cetirizine"
+    },
+    "O008": {
+      "deskripsi": "Bronkodilator untuk mengatasi asma",
+      "id_obat": "O008",
+      "nama_obat": "Salbutamol"
+    },
+    "O009": {
+      "deskripsi": "Steroid untuk mengurangi peradangan",
+      "id_obat": "O009",
+      "nama_obat": "Hydrocortisone"
+    },
+    "O010": {
+      "deskripsi": "Antibiotik untuk berbagai infeksi bakteri",
+      "id_obat": "O010",
+      "nama_obat": "Azithromycin"
+    },
+    "O011": {
+      "deskripsi": "Obat untuk menurunkan kadar kolesterol",
+      "id_obat": "O011",
+      "nama_obat": "Simvastatin"
+    },
+    "O012": {
+      "deskripsi": "Obat untuk mengurangi produksi asam lambung",
+      "id_obat": "O012",
+      "nama_obat": "Omeprazole"
+    },
+    "O013": {
+      "deskripsi": "Obat untuk mengobati tekanan darah tinggi",
+      "id_obat": "O013",
+      "nama_obat": "Lisinopril"
+    },
+    "O014": {
+      "deskripsi": "Obat untuk mencegah penggumpalan darah",
+      "id_obat": "O014",
+      "nama_obat": "Clopidogrel"
+    },
+    "O015": {
+      "deskripsi": "Obat untuk menurunkan tekanan darah dan mengobati gagal jantung",
+      "id_obat": "O015",
+      "nama_obat": "Captopril"
+    },
+    "O016": {
+      "deskripsi": "Diuretik untuk mengatasi retensi cairan",
+      "id_obat": "O016",
+      "nama_obat": "Furosemide"
+    },
+    "O017": {
+      "deskripsi": "Steroid untuk mengatasi peradangan dan alergi",
+      "id_obat": "O017",
+      "nama_obat": "Dexamethasone"
+    },
+    "O018": {
+      "deskripsi": "Obat untuk menurunkan kadar kolesterol",
+      "id_obat": "O018",
+      "nama_obat": "Atorvastatin"
+    },
+    "O019": {
+      "deskripsi": "Antijamur untuk mengatasi infeksi jamur",
+      "id_obat": "O019",
+      "nama_obat": "Ketoconazole"
+    },
+    "O020": {
+      "deskripsi": "Obat untuk mengatasi kecemasan dan kejang otot",
+      "id_obat": "O020",
+      "nama_obat": "Diazepam"
+    },
+    "O021": {
+      "deskripsi": "Steroid untuk mengatasi peradangan",
+      "id_obat": "O021",
+      "nama_obat": "Prednisone"
+    },
+    "O022": {
+      "deskripsi": "Antibiotik untuk infeksi bakteri dan protozoa",
+      "id_obat": "O022",
+      "nama_obat": "Metronidazole"
+    },
+    "O023": {
+      "deskripsi": "Anti-inflamasi non-steroid untuk mengurangi nyeri dan peradangan",
+      "id_obat": "O023",
+      "nama_obat": "Diclofenac"
+    },
+    "O024": {
+      "deskripsi": "Obat untuk mengobati asam urat",
+      "id_obat": "O024",
+      "nama_obat": "Allopurinol"
+    },
+    "O025": {
+      "deskripsi": "Antivirus untuk mengobati infeksi herpes",
+      "id_obat": "O025",
+      "nama_obat": "Acyclovir"
+    },
+    "O026": {
+      "deskripsi": "Obat untuk menurunkan kadar gula darah",
+      "id_obat": "O026",
+      "nama_obat": "Glibenclamide"
+    },
+    "O027": {
+      "deskripsi": "Antibiotik untuk berbagai infeksi bakteri",
+      "id_obat": "O027",
+      "nama_obat": "Ciprofloxacin"
+    },
+    "O028": {
+      "deskripsi": "Suplemen untuk meningkatkan daya tahan tubuh",
+      "id_obat": "O028",
+      "nama_obat": "Vitamin C"
+    },
+    "O029": {
+      "deskripsi": "Suplemen kalsium untuk kesehatan tulang",
+      "id_obat": "O029",
+      "nama_obat": "Calcium Carbonate"
+    },
+    "O030": {
+      "deskripsi": "Obat pencahar untuk mengatasi sembelit",
+      "id_obat": "O030",
+      "nama_obat": "Bisacodyl"
+    },
+    "O031": {
+      "deskripsi": "Obat untuk mengatasi diare",
+      "id_obat": "O031",
+      "nama_obat": "Loperamide"
+    },
+    "O032": {
+      "deskripsi": "Obat untuk mengurangi asam lambung",
+      "id_obat": "O032",
+      "nama_obat": "Ranitidine"
+    },
+    "O033": {
+      "deskripsi": "Antibiotik untuk infeksi bakteri",
+      "id_obat": "O033",
+      "nama_obat": "Erythromycin"
+    },
+    "O034": {
+      "deskripsi": "Antibiotik untuk infeksi bakteri",
+      "id_obat": "O034",
+      "nama_obat": "Clindamycin"
+    },
+    "O035": {
+      "deskripsi": "Obat untuk mengobati tekanan darah tinggi dan angina",
+      "id_obat": "O035",
+      "nama_obat": "Nifedipine"
+    },
+    "O036": {
+      "deskripsi": "Obat untuk menurunkan kadar gula darah",
+      "id_obat": "O036",
+      "nama_obat": "Glibenclamide"
+    },
+    "O037": {
+      "deskripsi": "Vitamin B9 untuk mencegah anemia dan penting bagi kehamilan",
+      "id_obat": "O037",
+      "nama_obat": "Folic Acid"
+    },
+    "O038": {
+      "deskripsi": "Antibiotik untuk infeksi bakteri",
+      "id_obat": "O038",
+      "nama_obat": "Gentamicin"
+    },
+    "O039": {
+      "deskripsi": "Obat untuk mengobati tekanan darah tinggi dan gagal jantung",
+      "id_obat": "O039",
+      "nama_obat": "Enalapril"
+    },
+    "O040": {
+      "deskripsi": "Obat untuk mengatasi aritmia jantung",
+      "id_obat": "O040",
+      "nama_obat": "Amiodarone"
+    },
+    "O041": {
+      "deskripsi": "Obat pengencer darah untuk mencegah pembekuan",
+      "id_obat": "O041",
+      "nama_obat": "Warfarin"
+    },
+    "O042": {
+      "deskripsi": "Analgesik opioid untuk nyeri berat",
+      "id_obat": "O042",
+      "nama_obat": "Morphine"
+    },
+    "O043": {
+      "deskripsi": "Diuretik untuk mengurangi retensi cairan",
+      "id_obat": "O043",
+      "nama_obat": "Spironolactone"
+    },
+    "O044": {
+      "deskripsi": "Diuretik untuk mengobati tekanan darah tinggi",
+      "id_obat": "O044",
+      "nama_obat": "Hydrochlorothiazide"
+    },
+    "O045": {
+      "deskripsi": "Antijamur untuk infeksi jamur",
+      "id_obat": "O045",
+      "nama_obat": "Fluconazole"
+    },
+    "O046": {
+      "deskripsi": "Obat kemoterapi untuk kanker dan penyakit autoimun",
+      "id_obat": "O046",
+      "nama_obat": "Methotrexate"
+    },
+    "O047": {
+      "deskripsi": "Obat untuk mengatasi kecemasan dan panik",
+      "id_obat": "O047",
+      "nama_obat": "Alprazolam"
+    },
+    "O048": {
+      "deskripsi": "Obat antikonvulsan untuk epilepsi dan nyeri saraf",
+      "id_obat": "O048",
+      "nama_obat": "Gabapentin"
+    },
+    "O049": {
+      "deskripsi": "Obat untuk mengobati kanker payudara",
+      "id_obat": "O049",
+      "nama_obat": "Tamoxifen"
+    },
+    "O050": {
+      "deskripsi": "Hormon untuk mengontrol kadar gula darah pada diabetes",
+      "id_obat": "O050",
+      "nama_obat": "Insulin"
+    }
+  },
+  "rekam_medis": {
+    "RM001": {
+      "data": {
+        "diagnosa": "Infeksi Saluran Pernapasan Atas",
+        "dokter": "Dr. Andi Wijaya",
+        "id_faskes": "F001",
+        "keluhan": "Batuk dan demam",
+        "no_sip": "123456789001",
+        "obat": [
+          {
+            "id_obat": "O001",
+            "jumlah_dalam_satuan": 15,
+            "kali_konsumsi_perhari": 3,
+            "satuan": "mg",
+            "takaran": 500
+          },
+          {
+            "id_obat": "O002",
+            "jumlah_dalam_satuan": 15,
+            "kali_konsumsi_perhari": 3,
+            "satuan": "mg",
+            "takaran": 500
+          }
+        ],
+        "tanggal": "01/10/2024"
+      },
+      "id": "RM001",
+      "user_id": "1234567890123"
+    },
+    "RM002": {
+      "data": {
+        "diagnosa": "Demam Berdarah",
+        "dokter": "Dr. Budi Santoso",
+        "id_faskes": "F002",
+        "keluhan": "Demam tinggi",
+        "no_sip": "123456789002",
+        "obat": [
+          {
+            "id_obat": "O001",
+            "jumlah_dalam_satuan": 20,
+            "kali_konsumsi_perhari": 4,
+            "satuan": "mg",
+            "takaran": 500
+          }
+        ],
+        "tanggal": "05/10/2024"
+      },
+      "id": "RM002",
+      "user_id": "1234567890123456"
+    },
+    "RM003": {
+      "data": {
+        "diagnosa": "Gastritis",
+        "dokter": "Dr. Clara Dewi",
+        "id_faskes": "F003",
+        "keluhan": "Sakit perut",
+        "no_sip": "123456789003",
+        "obat": [
+          {
+            "id_obat": "O006",
+            "jumlah_dalam_satuan": 10,
+            "kali_konsumsi_perhari": 2,
+            "satuan": "mg",
+            "takaran": 30
+          }
+        ],
+        "tanggal": "10/10/2024"
+      },
+      "id": "RM003",
+      "user_id": "1234567890124"
+    },
+    "RM004": {
+      "data": {
+        "diagnosa": "Angina Pektoris",
+        "dokter": "Dr. Dedi Supriyadi",
+        "id_faskes": "F004",
+        "keluhan": "Nyeri dada",
+        "no_sip": "123456789004",
+        "obat": [
+          {
+            "id_obat": "O035",
+            "jumlah_dalam_satuan": 30,
+            "kali_konsumsi_perhari": 1,
+            "satuan": "mg",
+            "takaran": 10
+          },
+          {
+            "id_obat": "O014",
+            "jumlah_dalam_satuan": 30,
+            "kali_konsumsi_perhari": 1,
+            "satuan": "mg",
+            "takaran": 75
+          }
+        ],
+        "tanggal": "12/10/2024"
+      },
+      "id": "RM004",
+      "user_id": "1234567890125"
+    },
+    "RM005": {
+      "data": {
+        "diagnosa": "Katarak",
+        "dokter": "Dr. Eka Putri",
+        "id_faskes": "F005",
+        "keluhan": "Penglihatan kabur",
+        "no_sip": "123456789005",
+        "obat": [
+          {
+            "id_obat": "O005",
+            "jumlah_dalam_satuan": 30,
+            "kali_konsumsi_perhari": 1,
+            "satuan": "mg",
+            "takaran": 5
+          }
+        ],
+        "tanggal": "14/10/2024"
+      },
+      "id": "RM005",
+      "user_id": "1234567890123457"
+    },
+    "RM006": {
+      "data": {
+        "diagnosa": "Osteoartritis",
+        "dokter": "Dr. Faisal Hakim",
+        "id_faskes": "F006",
+        "keluhan": "Nyeri sendi",
+        "no_sip": "123456789006",
+        "obat": [
+          {
+            "id_obat": "O003",
+            "jumlah_dalam_satuan": 15,
+            "kali_konsumsi_perhari": 3,
+            "satuan": "mg",
+            "takaran": 400
+          },
+          {
+            "id_obat": "O023",
+            "jumlah_dalam_satuan": 10,
+            "kali_konsumsi_perhari": 2,
+            "satuan": "mg",
+            "takaran": 50
+          }
+        ],
+        "tanggal": "16/10/2024"
+      },
+      "id": "RM006",
+      "user_id": "1234567890126"
+    },
+    "RM007": {
+      "data": {
+        "diagnosa": "Ligamen Robek",
+        "dokter": "Dr. Hendro Setiawan",
+        "id_faskes": "F008",
+        "keluhan": "Cedera lutut",
+        "no_sip": "123456789008",
+        "obat": [
+          {
+            "id_obat": "O042",
+            "jumlah_dalam_satuan": 20,
+            "kali_konsumsi_perhari": 2,
+            "satuan": "mg",
+            "takaran": 10
+          }
+        ],
+        "tanggal": "18/10/2024"
+      },
+      "id": "RM007",
+      "user_id": "1234567890123458"
+    },
+    "RM009": {
+      "data": {
+        "diagnosa": "Migrain",
+        "dokter": "Dr. Indah Sari",
+        "id_faskes": "F009",
+        "keluhan": "Sakit kepala",
+        "no_sip": "123456789009",
+        "obat": [
+          {
+            "id_obat": "O003",
+            "jumlah_dalam_satuan": 10,
+            "kali_konsumsi_perhari": 2,
+            "satuan": "mg",
+            "takaran": 400
+          }
+        ],
+        "tanggal": "22/10/2024"
+      },
+      "id": "RM009",
+      "user_id": "1234567890123459"
+    },
+    "RM011": {
+      "data": {
+        "diagnosa": "Asma",
+        "dokter": "Dr. Budi Santoso",
+        "id_faskes": "F002",
+        "keluhan": "Batuk kronis",
+        "no_sip": "123456789002",
+        "obat": [
+          {
+            "id_obat": "O008",
+            "jumlah_dalam_satuan": 1,
+            "kali_konsumsi_perhari": 3,
+            "satuan": "puff",
+            "takaran": 2
+          }
+        ],
+        "tanggal": "26/10/2024"
+      },
+      "id": "RM011",
+      "user_id": "1234567890129"
+    },
+    "RM012": {
+      "data": {
+        "diagnosa": "Herniated Disc",
+        "dokter": "Dr. Andi Wijaya",
+        "id_faskes": "F001",
+        "keluhan": "Nyeri punggung",
+        "no_sip": "123456789001",
+        "obat": [
+          {
+            "id_obat": "O023",
+            "jumlah_dalam_satuan": 20,
+            "kali_konsumsi_perhari": 2,
+            "satuan": "mg",
+            "takaran": 50
+          }
+        ],
+        "tanggal": "28/10/2024"
+      },
+      "id": "RM012",
+      "user_id": "1234567890123460"
+    },
+    "RM013": {
+      "data": {
+        "diagnosa": "Infeksi Bakteri",
+        "dokter": "Dr. Clara Dewi",
+        "id_faskes": "F003",
+        "keluhan": "Infeksi saluran kemih",
+        "no_sip": "123456789003",
+        "obat": [
+          {
+            "id_obat": "O027",
+            "jumlah_dalam_satuan": 14,
+            "kali_konsumsi_perhari": 2,
+            "satuan": "mg",
+            "takaran": 500
+          }
+        ],
+        "tanggal": "02/11/2024"
+      },
+      "id": "RM013",
+      "user_id": "1234567890123461"
+    },
+    "RM014": {
+      "data": {
+        "diagnosa": "Glaukoma",
+        "dokter": "Dr. Eka Putri",
+        "id_faskes": "F005",
+        "keluhan": "Gangguan penglihatan",
+        "no_sip": "123456789005",
+        "obat": [
+          {
+            "id_obat": "O005",
+            "jumlah_dalam_satuan": 30,
+            "kali_konsumsi_perhari": 1,
+            "satuan": "mg",
+            "takaran": 5
+          }
+        ],
+        "tanggal": "06/11/2024"
+      },
+      "id": "RM014",
+      "user_id": "1234567890123462"
+    },
+    "RM015": {
+      "data": {
+        "diagnosa": "Infeksi Gusi",
+        "dokter": "Dr. Gita Lestari",
+        "id_faskes": "F007",
+        "keluhan": "Sakit gigi",
+        "no_sip": "123456789007",
+        "obat": [
+          {
+            "id_obat": "O002",
+            "jumlah_dalam_satuan": 21,
+            "kali_konsumsi_perhari": 3,
+            "satuan": "mg",
+            "takaran": 500
+          }
+        ],
+        "tanggal": "10/11/2024"
+      },
+      "id": "RM015",
+      "user_id": "1234567890123463"
+    },
+    "RM016": {
+      "data": {
+        "diagnosa": "Campak",
+        "dokter": "Dr. Indah Sari",
+        "id_faskes": "F009",
+        "keluhan": "Demam dan ruam",
+        "no_sip": "123456789009",
+        "obat": [
+          {
+            "id_obat": "O001",
+            "jumlah_dalam_satuan": 15,
+            "kali_konsumsi_perhari": 3,
+            "satuan": "mg",
+            "takaran": 500
+          },
+          {
+            "id_obat": "O028",
+            "jumlah_dalam_satuan": 10,
+            "kali_konsumsi_perhari": 1,
+            "satuan": "mg",
+            "takaran": 500
+          }
+        ],
+        "tanggal": "12/11/2024"
+      },
+      "id": "RM016",
+      "user_id": "1234567890133"
+    }
+  },
+  "tasks": [
+    null,
+    {
+      "id_tasks": 1,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM001"
+      },
+      "id_tasks": 2,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM001",
+        "jumlah_obat": 15,
+        "sisa": 15
+      },
+      "id_tasks": 3,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O002",
+        "id_rekam_medis": "RM001",
+        "jumlah_obat": 15,
+        "sisa": 15
+      },
+      "id_tasks": 4,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM001",
+        "jumlah_obat": 15,
+        "sisa": 0
+      },
+      "id_tasks": 5,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 150,
+      "status": "selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O002",
+        "id_rekam_medis": "RM001",
+        "jumlah_obat": 15,
+        "sisa": 0
+      },
+      "id_tasks": 6,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 150,
+      "status": "selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "id_tasks": 7,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123"
+    },
+    {
+      "id_tasks": 8,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123456"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM002"
+      },
+      "id_tasks": 9,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123456"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM002",
+        "jumlah_obat": 20,
+        "sisa": 20
+      },
+      "id_tasks": 10,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123456"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM002",
+        "jumlah_obat": 20,
+        "sisa": 0
+      },
+      "id_tasks": 11,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 200,
+      "status": "selesai",
+      "user_id": "1234567890123456"
+    },
+    {
+      "id_tasks": 12,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123456"
+    },
+    {
+      "detail": {
+        "tanggal": "20/11/2024"
+      },
+      "id_tasks": 13,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123456"
+    },
+    {
+      "id_tasks": 14,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890124"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM003"
+      },
+      "id_tasks": 15,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890124"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O006",
+        "id_rekam_medis": "RM003",
+        "jumlah_obat": 10,
+        "sisa": 0
+      },
+      "id_tasks": 16,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890124"
+    },
+    {
+      "id_tasks": 17,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890124"
+    },
+    {
+      "id_tasks": 18,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM004"
+      },
+      "id_tasks": 19,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O035",
+        "id_rekam_medis": "RM004",
+        "jumlah_obat": 30,
+        "sisa": 30
+      },
+      "id_tasks": 20,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O035",
+        "id_rekam_medis": "RM004",
+        "jumlah_obat": 30,
+        "sisa": 0
+      },
+      "id_tasks": 21,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 300,
+      "status": "selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O014",
+        "id_rekam_medis": "RM004",
+        "jumlah_obat": 30,
+        "sisa": 30
+      },
+      "id_tasks": 22,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O014",
+        "id_rekam_medis": "RM004",
+        "jumlah_obat": 30,
+        "sisa": 0
+      },
+      "id_tasks": 23,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 300,
+      "status": "selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "id_tasks": 24,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "detail": {
+        "tanggal": "25/11/2024"
+      },
+      "id_tasks": 25,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890125"
+    },
+    {
+      "id_tasks": 26,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123457"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM005"
+      },
+      "id_tasks": 27,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123457"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O005",
+        "id_rekam_medis": "RM005",
+        "jumlah_obat": 30,
+        "sisa": 30
+      },
+      "id_tasks": 28,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123457"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O005",
+        "id_rekam_medis": "RM005",
+        "jumlah_obat": 30,
+        "sisa": 0
+      },
+      "id_tasks": 29,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 300,
+      "status": "selesai",
+      "user_id": "1234567890123457"
+    },
+    {
+      "id_tasks": 30,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123457"
+    },
+    {
+      "id_tasks": 31,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM006"
+      },
+      "id_tasks": 32,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O003",
+        "id_rekam_medis": "RM006",
+        "jumlah_obat": 15,
+        "sisa": 15
+      },
+      "id_tasks": 33,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O003",
+        "id_rekam_medis": "RM006",
+        "jumlah_obat": 15,
+        "sisa": 0
+      },
+      "id_tasks": 34,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 150,
+      "status": "selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O023",
+        "id_rekam_medis": "RM006",
+        "jumlah_obat": 10,
+        "sisa": 10
+      },
+      "id_tasks": 35,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O023",
+        "id_rekam_medis": "RM006",
+        "jumlah_obat": 10,
+        "sisa": 0
+      },
+      "id_tasks": 36,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "id_tasks": 37,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890126"
+    },
+    {
+      "id_tasks": 38,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123458"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM007"
+      },
+      "id_tasks": 39,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123458"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O042",
+        "id_rekam_medis": "RM007",
+        "jumlah_obat": 20,
+        "sisa": 20
+      },
+      "id_tasks": 40,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123458"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O042",
+        "id_rekam_medis": "RM007",
+        "jumlah_obat": 20,
+        "sisa": 0
+      },
+      "id_tasks": 41,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 200,
+      "status": "selesai",
+      "user_id": "1234567890123458"
+    },
+    {
+      "id_tasks": 42,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123458"
+    },
+    {
+      "id_tasks": 43,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890127"
+    },
+    {
+      "detail": {
+        "tanggal": "20/10/2024"
+      },
+      "id_tasks": 44,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890127"
+    },
+    {
+      "id_tasks": 45,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890127"
+    },
+    {
+      "id_tasks": 46,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123459"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM009"
+      },
+      "id_tasks": 47,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123459"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O003",
+        "id_rekam_medis": "RM009",
+        "jumlah_obat": 10,
+        "sisa": 10
+      },
+      "id_tasks": 48,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123459"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O003",
+        "id_rekam_medis": "RM009",
+        "jumlah_obat": 10,
+        "sisa": 0
+      },
+      "id_tasks": 49,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123459"
+    },
+    {
+      "id_tasks": 50,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123459"
+    },
+    {
+      "id_tasks": 51,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890128"
+    },
+    {
+      "detail": {
+        "tanggal": "24/10/2024"
+      },
+      "id_tasks": 52,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890128"
+    },
+    {
+      "id_tasks": 53,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890128"
+    },
+    {
+      "id_tasks": 54,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890129"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM011"
+      },
+      "id_tasks": 55,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890129"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O008",
+        "id_rekam_medis": "RM011",
+        "jumlah_obat": 1,
+        "sisa": 1
+      },
+      "id_tasks": 56,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890129"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O008",
+        "id_rekam_medis": "RM011",
+        "jumlah_obat": 1,
+        "sisa": 0
+      },
+      "id_tasks": 57,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 10,
+      "status": "selesai",
+      "user_id": "1234567890129"
+    },
+    {
+      "id_tasks": 58,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890129"
+    },
+    {
+      "id_tasks": 59,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM012"
+      },
+      "id_tasks": 60,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O023",
+        "id_rekam_medis": "RM012",
+        "jumlah_obat": 20,
+        "sisa": 20
+      },
+      "id_tasks": 61,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O023",
+        "id_rekam_medis": "RM012",
+        "jumlah_obat": 20,
+        "sisa": 0
+      },
+      "id_tasks": 62,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 200,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "id_tasks": 63,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "tanggal": "28/11/2024"
+      },
+      "id_tasks": 64,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O014",
+        "id_rekam_medis": "RM012",
+        "jumlah_obat": 20,
+        "sisa": 0
+      },
+      "id_tasks": 65,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 200,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O005",
+        "id_rekam_medis": "RM012",
+        "jumlah_obat": 17,
+        "sisa": 17
+      },
+      "id_tasks": 66,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O005",
+        "id_rekam_medis": "RM012",
+        "jumlah_obat": 17,
+        "sisa": 0
+      },
+      "id_tasks": 67,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 170,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "id_tasks": 68,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123460"
+    },
+    {
+      "id_tasks": 69,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890130"
+    },
+    {
+      "detail": {
+        "tanggal": "30/10/2024"
+      },
+      "id_tasks": 70,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890130"
+    },
+    {
+      "id_tasks": 71,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890130"
+    },
+    {
+      "id_tasks": 72,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123461"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM013"
+      },
+      "id_tasks": 73,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123461"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O027",
+        "id_rekam_medis": "RM013",
+        "jumlah_obat": 14,
+        "sisa": 14
+      },
+      "id_tasks": 74,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123461"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O027",
+        "id_rekam_medis": "RM013",
+        "jumlah_obat": 14,
+        "sisa": 0
+      },
+      "id_tasks": 75,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 140,
+      "status": "selesai",
+      "user_id": "1234567890123461"
+    },
+    {
+      "id_tasks": 76,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123461"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM013",
+        "jumlah_obat": 27,
+        "sisa": 0
+      },
+      "id_tasks": 77,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 270,
+      "status": "selesai",
+      "user_id": "1234567890123461"
+    },
+    {
+      "id_tasks": 78,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890131"
+    },
+    {
+      "detail": {
+        "tanggal": "04/11/2024"
+      },
+      "id_tasks": 79,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890131"
+    },
+    {
+      "id_tasks": 80,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890131"
+    },
+    {
+      "id_tasks": 81,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM014"
+      },
+      "id_tasks": 82,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O005",
+        "id_rekam_medis": "RM014",
+        "jumlah_obat": 30,
+        "sisa": 30
+      },
+      "id_tasks": 83,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O005",
+        "id_rekam_medis": "RM014",
+        "jumlah_obat": 30,
+        "sisa": 0
+      },
+      "id_tasks": 84,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 300,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "id_tasks": 85,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "detail": {
+        "tanggal": "06/12/2024"
+      },
+      "id_tasks": 86,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O012",
+        "id_rekam_medis": "RM014",
+        "jumlah_obat": 20,
+        "sisa": 0
+      },
+      "id_tasks": 87,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 200,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "id_tasks": 88,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM014",
+        "jumlah_obat": 31,
+        "sisa": 0
+      },
+      "id_tasks": 89,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 310,
+      "status": "selesai",
+      "user_id": "1234567890123462"
+    },
+    {
+      "id_tasks": 90,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890132"
+    },
+    {
+      "id_tasks": 91,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123463"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM015"
+      },
+      "id_tasks": 92,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890123463"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O002",
+        "id_rekam_medis": "RM015",
+        "jumlah_obat": 21,
+        "sisa": 21
+      },
+      "id_tasks": 93,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123463"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O002",
+        "id_rekam_medis": "RM015",
+        "jumlah_obat": 21,
+        "sisa": 0
+      },
+      "id_tasks": 94,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 210,
+      "status": "selesai",
+      "user_id": "1234567890123463"
+    },
+    {
+      "id_tasks": 95,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890123463"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O003",
+        "id_rekam_medis": "RM015",
+        "jumlah_obat": 10,
+        "sisa": 0
+      },
+      "id_tasks": 96,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123463"
+    },
+    {
+      "id_tasks": 97,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "detail": {
+        "id_rekam_medis": "RM016"
+      },
+      "id_tasks": 98,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 40,
+      "status": "selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM016",
+        "jumlah_obat": 15,
+        "sisa": 15
+      },
+      "id_tasks": 99,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM016",
+        "jumlah_obat": 15,
+        "sisa": 0
+      },
+      "id_tasks": 100,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 150,
+      "status": "selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O028",
+        "id_rekam_medis": "RM016",
+        "jumlah_obat": 10,
+        "sisa": 10
+      },
+      "id_tasks": 101,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O028",
+        "id_rekam_medis": "RM016",
+        "jumlah_obat": 10,
+        "sisa": 0
+      },
+      "id_tasks": 102,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "id_tasks": 103,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 50,
+      "status": "selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "detail": {
+        "dosis": 1,
+        "id_obat": "O001",
+        "id_rekam_medis": "RM016",
+        "jumlah_obat": 76,
+        "sisa": 0
+      },
+      "id_tasks": 104,
+      "kategori_task": "Meminum Obat",
+      "poin_diperoleh": 760,
+      "status": "selesai",
+      "user_id": "1234567890133"
+    },
+    {
+      "id_tasks": 105,
+      "kategori_task": "Melengkapi Biodata",
+      "poin_diperoleh": 100,
+      "status": "selesai",
+      "user_id": "1234567890123464"
+    },
+    {
+      "detail": {
+        "tanggal": "14/11/2024"
+      },
+      "id_tasks": 106,
+      "kategori_task": "Kunjungan Faskes",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123464"
+    },
+    {
+      "id_tasks": 107,
+      "kategori_task": "Skrining Kesehatan",
+      "poin_diperoleh": 0,
+      "status": "belum selesai",
+      "user_id": "1234567890123464"
+    }
+  ],
+  "users": {
+    "1234567890123": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Merdeka No. 1, Jakarta Pusat",
+        "jenis_kelamin": "Laki-laki",
+        "nama": "Agus Setiawan",
+        "tanggal_lahir": "01/01/1990",
+        "tempat_lahir": "Jakarta"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM001",
+          "tanggal": "01/10/2024"
+        },
+        {
+          "tanggal": "15/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 290,
+        "kategori_stats": "Silver",
+        "rank": 15
+      },
+      "task_user": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "user_data": {
+        "jenis_id": "jkn_id",
+        "no_id": "1234567890123",
+        "password": "password001"
+      }
+    },
+    "1234567890123456": {
+      "biodata": {
+        "Agama": "Kristen",
+        "alamat": "Jl. Pahlawan No. 2, Bandung",
+        "jenis_kelamin": "Laki-laki",
+        "nama": "Budi Santoso",
+        "tanggal_lahir": "05/02/1988",
+        "tempat_lahir": "Bandung"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM002",
+          "tanggal": "05/10/2024"
+        },
+        {
+          "tanggal": "20/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 550,
+        "kategori_stats": "Gold",
+        "rank": 10
+      },
+      "task_user": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "user_data": {
+        "jenis_id": "nik",
+        "no_id": "1234567890123456",
+        "password": "password002"
+      }
+    },
+    "1234567890123461": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Andalas No. 14, Padang",
+        "jenis_kelamin": "Perempuan",
+        "nama": "Nurul Aini",
+        "tanggal_lahir": "12/02/1993",
+        "tempat_lahir": "Padang"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM013",
+          "tanggal": "02/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 600,
+        "kategori_stats": "Silver",
+        "rank": 11
+      },
+      "task_user": [
+        56,
+        57,
+        58
+      ],
+      "user_data": {
+        "jenis_id": "nik",
+        "no_id": "1234567890123461",
+        "password": "password014"
+      }
+    },
+    "1234567890123462": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Sudirman No. 16, Pekanbaru",
+        "jenis_kelamin": "Perempuan",
+        "nama": "Putri Amelia",
+        "tanggal_lahir": "25/04/1994",
+        "tempat_lahir": "Pekanbaru"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM014",
+          "tanggal": "06/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 1050,
+        "kategori_stats": "Gold",
+        "rank": 5
+      },
+      "task_user": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "user_data": {
+        "jenis_id": "nik",
+        "no_id": "1234567890123462",
+        "password": "password016"
+      }
+    },
+    "1234567890123463": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Soekarno Hatta No. 18, Balikpapan",
+        "jenis_kelamin": "Perempuan",
+        "nama": "Rina Susanti",
+        "tanggal_lahir": "18/06/1990",
+        "tempat_lahir": "Balikpapan"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM015",
+          "tanggal": "10/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 500,
+        "kategori_stats": "Silver",
+        "rank": 14
+      },
+      "task_user": [
+        67,
+        68,
+        69
+      ],
+      "user_data": {
+        "jenis_id": "nik",
+        "no_id": "1234567890123463",
+        "password": "password018"
+      }
+    },
+    "1234567890123464": {
+      "biodata": {
+        "Agama": "Kristen",
+        "alamat": "Jl. Gatot Subroto No. 20, Medan",
+        "jenis_kelamin": "Laki-laki",
+        "nama": "Tommy Pranata",
+        "tanggal_lahir": "05/08/1987",
+        "tempat_lahir": "Medan"
+      },
+      "kunjungan": [
+        {
+          "tanggal": "14/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 100,
+        "kategori_stats": "Bronze",
+        "rank": 21
+      },
+      "task_user": [
+        74,
+        75
+      ],
+      "user_data": {
+        "jenis_id": "nik",
+        "no_id": "1234567890123464",
+        "password": "password020"
+      }
+    },
+    "1234567890124": {
+      "biodata": {
+        "Agama": "Hindu",
+        "alamat": "Jl. Mawar No. 3, Surabaya",
+        "jenis_kelamin": "Perempuan",
+        "nama": "Citra Lestari",
+        "tanggal_lahir": "12/03/1995",
+        "tempat_lahir": "Surabaya"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM003",
+          "tanggal": "10/10/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 700,
+        "kategori_stats": "Gold",
+        "rank": 7
+      },
+      "task_user": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "user_data": {
+        "jenis_id": "jkn_id",
+        "no_id": "1234567890124",
+        "password": "password003"
+      }
+    },
+    "1234567890130": {
+      "biodata": {
+        "Agama": "Kristen",
+        "alamat": "Jl. Sam Ratulangi No. 13, Manado",
+        "jenis_kelamin": "Perempuan",
+        "nama": "Maya Sari",
+        "tanggal_lahir": "05/01/1991",
+        "tempat_lahir": "Manado"
+      },
+      "kunjungan": [
+        {
+          "tanggal": "30/10/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 100,
+        "kategori_stats": "Bronze",
+        "rank": 19
+      },
+      "task_user": [
+        54,
+        55
+      ],
+      "user_data": {
+        "jenis_id": "jkn_id",
+        "no_id": "1234567890130",
+        "password": "password013"
+      }
+    },
+    "1234567890131": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Gajah Mada No. 15, Pontianak",
+        "jenis_kelamin": "Laki-laki",
+        "nama": "Oki Setiawan",
+        "tanggal_lahir": "18/03/1988",
+        "tempat_lahir": "Pontianak"
+      },
+      "kunjungan": [
+        {
+          "tanggal": "04/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 100,
+        "kategori_stats": "Bronze",
+        "rank": 18
+      },
+      "task_user": [
+        59,
+        60
+      ],
+      "user_data": {
+        "jenis_id": "jkn_id",
+        "no_id": "1234567890131",
+        "password": "password015"
+      }
+    },
+    "1234567890132": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Tjilik Riwut No. 17, Palangkaraya",
+        "jenis_kelamin": "Laki-laki",
+        "nama": "Qori Rahman",
+        "tanggal_lahir": "10/05/1989",
+        "tempat_lahir": "Palangkaraya"
+      },
+      "kunjungan": [
+        {
+          "tanggal": "08/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 100,
+        "kategori_stats": "Bronze",
+        "rank": 17
+      },
+      "task_user": [
+        65,
+        66
+      ],
+      "user_data": {
+        "jenis_id": "jkn_id",
+        "no_id": "1234567890132",
+        "password": "password017"
+      }
+    },
+    "1234567890133": {
+      "biodata": {
+        "Agama": "Islam",
+        "alamat": "Jl. Hasan Basri No. 19, Banjarmasin",
+        "jenis_kelamin": "Perempuan",
+        "nama": "Siti Aminah",
+        "tanggal_lahir": "25/07/1991",
+        "tempat_lahir": "Banjarmasin"
+      },
+      "kunjungan": [
+        {
+          "id_rekam_medis": "RM016",
+          "tanggal": "12/11/2024"
+        }
+      ],
+      "stats": {
+        "jumlah_poin": 1200,
+        "kategori_stats": "Gold",
+        "rank": 6
+      },
+      "task_user": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "user_data": {
+        "jenis_id": "jkn_id",
+        "no_id": "1234567890133",
+        "password": "password019"
+      }
+    }
+  },
+
+  "berita": [
+    {
+      "judul": "Transformasi Layanan Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Sebagai bagian dari upaya terus-menerus untuk meningkatkan akses layanan kesehatan di Indonesia, BPJS Kesehatan telah meluncurkan Aplikasi JKN Mobile yang menawarkan berbagai fitur canggih untuk kemudahan pengguna. Aplikasi ini dirancang untuk memudahkan pengguna dalam mengakses informasi terkait status kepesertaan, riwayat layanan kesehatan, dan juga melakukan pendaftaran konsultasi secara online. Dengan lebih dari 250 kata, artikel ini menggambarkan bagaimana Aplikasi JKN Mobile berperan penting dalam menyederhanakan proses administratif dan meningkatkan efisiensi layanan kesehatan. Melalui aplikasi ini, peserta bisa menghemat waktu dengan tidak perlu antre di fasilitas kesehatan untuk mendapatkan informasi yang mereka butuhkan. Selain itu, aplikasi ini juga menyediakan informasi penting seperti jadwal dokter, ketersediaan layanan di rumah sakit, dan tips kesehatan yang bermanfaat untuk masyarakat.",
+      "tanggal": "2024-10-01",
+      "dilihat": "1300"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile Meningkatkan Kualitas Pelayanan Kesehatan",
+      "isi": "Aplikasi JKN Mobile telah menjadi alat revolusioner dalam sistem layanan kesehatan di Indonesia, memberikan akses tak terbatas kepada pengguna untuk mengelola kebutuhan kesehatan mereka dengan lebih efektif. Dengan aplikasi ini, peserta BPJS Kesehatan dapat dengan mudah memeriksa status kepesertaan, mencari fasilitas kesehatan terdekat, dan mendapatkan rujukan tanpa harus mengunjungi fasilitas kesehatan secara fisik. Artikel ini, yang berisi lebih dari 250 kata, menjelaskan berbagai fitur aplikasi yang telah disesuaikan untuk memberikan kemudahan dan efisiensi bagi pengguna. Fitur-fitur tersebut antara lain mencakup pendaftaran online, pembaruan data kepesertaan, dan pengajuan klaim secara digital. Selain itu, Aplikasi JKN Mobile juga menawarkan edukasi kesehatan yang membantu pengguna dalam membuat keputusan informasi tentang kesehatan mereka, melalui artikel kesehatan, video edukatif, dan webinar yang diselenggarakan oleh tenaga kesehatan profesional.",
+      "tanggal": "2024-10-03",
+      "dilihat": "1500"
+    },
+    {
+      "judul": "Inovasi Layanan Kesehatan Digital: Manfaat Aplikasi JKN Mobile",
+      "isi": "Dengan perkembangan teknologi yang cepat, BPJS Kesehatan telah mengambil inisiatif penting dengan mengembangkan Aplikasi JKN Mobile yang kini menjadi bagian integral dari layanan kesehatan di Indonesia. Aplikasi ini menyediakan berbagai fitur yang mendukung kebutuhan pengguna seperti pengecekan status kepesertaan, informasi tentang fasilitas kesehatan, dan panduan kesehatan secara umum. Artikel ini, dengan panjang lebih dari 250 kata, mengeksplorasi bagaimana aplikasi ini telah membantu meningkatkan kualitas layanan kesehatan melalui digitalisasi proses yang sebelumnya membutuhkan banyak waktu dan sumber daya. Fitur penting lainnya dari Aplikasi JKN Mobile adalah kemampuan untuk berkomunikasi langsung dengan dokter atau penyedia layanan kesehatan, yang signifikan dalam mempercepat proses penanganan medis dan konsultasi. Ini adalah langkah maju dalam transformasi layanan kesehatan Indonesia menuju era digital, membuat informasi kesehatan lebih mudah diakses oleh masyarakat luas.",
+      "tanggal": "2024-10-05",
+      "dilihat": "1200"
+    },
+    {
+      "judul": "Transformasi Layanan Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Sebagai bagian dari upaya terus-menerus untuk meningkatkan akses layanan kesehatan di Indonesia, BPJS Kesehatan telah meluncurkan Aplikasi JKN Mobile yang menawarkan berbagai fitur canggih untuk kemudahan pengguna. Aplikasi ini dirancang untuk memudahkan pengguna dalam mengakses informasi terkait status kepesertaan, riwayat layanan kesehatan, dan juga melakukan pendaftaran konsultasi secara online. Dengan lebih dari 250 kata, artikel ini menggambarkan bagaimana Aplikasi JKN Mobile berperan penting dalam menyederhanakan proses administratif dan meningkatkan efisiensi layanan kesehatan. Melalui aplikasi ini, peserta bisa menghemat waktu dengan tidak perlu antre di fasilitas kesehatan untuk mendapatkan informasi yang mereka butuhkan. Selain itu, aplikasi ini juga menyediakan informasi penting seperti jadwal dokter, ketersediaan layanan di rumah sakit, dan tips kesehatan yang bermanfaat untuk masyarakat.",
+      "tanggal": "2024-10-01",
+      "dilihat": "1300"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile Meningkatkan Kualitas Pelayanan Kesehatan",
+      "isi": "Aplikasi JKN Mobile telah menjadi alat revolusioner dalam sistem layanan kesehatan di Indonesia, memberikan akses tak terbatas kepada pengguna untuk mengelola kebutuhan kesehatan mereka dengan lebih efektif. Dengan aplikasi ini, peserta BPJS Kesehatan dapat dengan mudah memeriksa status kepesertaan, mencari fasilitas kesehatan terdekat, dan mendapatkan rujukan tanpa harus mengunjungi fasilitas kesehatan secara fisik. Artikel ini, yang berisi lebih dari 250 kata, menjelaskan berbagai fitur aplikasi yang telah disesuaikan untuk memberikan kemudahan dan efisiensi bagi pengguna. Fitur-fitur tersebut antara lain mencakup pendaftaran online, pembaruan data kepesertaan, dan pengajuan klaim secara digital. Selain itu, Aplikasi JKN Mobile juga menawarkan edukasi kesehatan yang membantu pengguna dalam membuat keputusan informasi tentang kesehatan mereka, melalui artikel kesehatan, video edukatif, dan webinar yang diselenggarakan oleh tenaga kesehatan profesional.",
+      "tanggal": "2024-10-03",
+      "dilihat": "1500"
+    },
+    {
+      "judul": "Inovasi Layanan Kesehatan Digital: Manfaat Aplikasi JKN Mobile",
+      "isi": "Dengan perkembangan teknologi yang cepat, BPJS Kesehatan telah mengambil inisiatif penting dengan mengembangkan Aplikasi JKN Mobile yang kini menjadi bagian integral dari layanan kesehatan di Indonesia. Aplikasi ini menyediakan berbagai fitur yang mendukung kebutuhan pengguna seperti pengecekan status kepesertaan, informasi tentang fasilitas kesehatan, dan panduan kesehatan secara umum. Artikel ini, dengan panjang lebih dari 250 kata, mengeksplorasi bagaimana aplikasi ini telah membantu meningkatkan kualitas layanan kesehatan melalui digitalisasi proses yang sebelumnya membutuhkan banyak waktu dan sumber daya. Fitur penting lainnya dari Aplikasi JKN Mobile adalah kemampuan untuk berkomunikasi langsung dengan dokter atau penyedia layanan kesehatan, yang signifikan dalam mempercepat proses penanganan medis dan konsultasi. Ini adalah langkah maju dalam transformasi layanan kesehatan Indonesia menuju era digital, membuat informasi kesehatan lebih mudah diakses oleh masyarakat luas.",
+      "tanggal": "2024-10-05",
+      "dilihat": "1200"
+    },
+    {
+      "judul": "Memudahkan Akses Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Aplikasi JKN Mobile dari BPJS Kesehatan terus berinovasi untuk memberikan layanan kesehatan yang lebih baik kepada masyarakat Indonesia. Dengan fitur-fitur yang dirancang untuk memudahkan pengguna, aplikasi ini memungkinkan peserta untuk melakukan berbagai transaksi layanan kesehatan dengan cepat dan mudah, dari pendaftaran ulang, pengecekan status kepesertaan, hingga pengambilan obat. Artikel ini mendetailkan bagaimana aplikasi telah mengubah cara masyarakat mengakses layanan kesehatan, membuat prosesnya lebih efisien dan mudah dijangkau.",
+      "tanggal": "2024-10-07",
+      "dilihat": "950"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile dan Dampaknya pada Pelayanan Kesehatan Primer",
+      "isi": "Sebagai inisiatif untuk memperkuat sistem kesehatan di Indonesia, BPJS Kesehatan telah mengembangkan Aplikasi JKN Mobile, yang telah memainkan peran kunci dalam reformasi layanan kesehatan primer. Dengan memanfaatkan teknologi digital, aplikasi ini membantu meningkatkan kualitas pelayanan di pusat kesehatan masyarakat dan klinik, memungkinkan peserta untuk mendapatkan akses yang lebih cepat dan informasi yang lebih akurat. Artikel ini mengulas detail fitur aplikasi yang membantu pengguna dalam menjalani perawatan kesehatan sehari-hari, seperti pengaturan jadwal kunjungan, pemberitahuan jadwal dokter, dan akses ke hasil lab.",
+      "tanggal": "2024-10-09",
+      "dilihat": "1080"
+    },
+    {
+      "judul": "Peningkatan Layanan dengan Aplikasi JKN Mobile",
+      "isi": "BPJS Kesehatan terus berinovasi dengan Aplikasi JKN Mobile, yang telah menjadi alat penting dalam meningkatkan akses dan kualitas layanan kesehatan di Indonesia. Aplikasi ini memungkinkan peserta untuk mengakses layanan kesehatan dengan lebih mudah dan efisien, termasuk pendaftaran online, konsultasi virtual, dan pemantauan kesehatan secara real-time. Dengan lebih dari 250 kata, artikel ini menjelaskan bagaimana aplikasi telah berkontribusi pada peningkatan kepuasan pengguna dan efisiensi operasional layanan kesehatan.",
+      "tanggal": "2024-10-11",
+      "dilihat": "1020"
+    },
+    {
+      "judul": "Revolusi Layanan Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Aplikasi JKN Mobile terus mengubah wajah layanan kesehatan di Indonesia dengan menyediakan solusi digital yang inovatif. Aplikasi ini menawarkan berbagai fitur seperti pembayaran premi, pembaruan data kepesertaan, dan akses informasi layanan kesehatan. Artikel ini mendiskusikan bagaimana aplikasi telah memudahkan proses administrasi dan peningkatan kualitas pelayanan untuk jutaan penggunanya, dengan detil lebih dari 250 kata tentang fitur-fitur utamanya dan manfaat yang ditawarkan kepada peserta.",
+      "tanggal": "2024-10-13",
+      "dilihat": "900"
+    },
+    {
+      "judul": "Kemudahan Akses Informasi Kesehatan Melalui Aplikasi JKN Mobile",
+      "isi": "Aplikasi JKN Mobile membawa revolusi dalam akses informasi kesehatan dengan menyediakan platform yang mudah digunakan untuk peserta BPJS Kesehatan. Aplikasi ini memungkinkan pengguna untuk mengakses informasi penting seperti status kepesertaan, riwayat medis, dan lokasi fasilitas kesehatan terdekat. Artikel ini mengeksplorasi berbagai aspek aplikasi yang membantu pengguna mendapatkan layanan kesehatan yang mereka butuhkan dengan cepat dan efisien.",
+      "tanggal": "2024-10-15",
+      "dilihat": "1150"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile: Inovasi untuk Kesehatan yang Lebih Baik",
+      "isi": "Inovasi dalam layanan kesehatan terus berkembang dengan Aplikasi JKN Mobile dari BPJS Kesehatan. Aplikasi ini tidak hanya memudahkan pengguna dalam mengelola kepesertaan dan akses layanan, tapi juga menawarkan modul edukasi kesehatan yang membantu meningkatkan kesadaran dan pengetahuan kesehatan. Dengan lebih dari 250 kata, artikel ini menggambarkan fitur-fitur aplikasi yang mendukung gaya hidup sehat dan pencegahan penyakit bagi pengguna.",
+      "tanggal": "2024-10-17",
+      "dilihat": "875"
+    },
+    {
+      "judul": "Transformasi Digital Layanan Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "BPJS Kesehatan memperkenalkan Aplikasi JKN Mobile sebagai bagian dari inisiatif transformasi digital layanan kesehatan di Indonesia. Aplikasi ini menyediakan akses mudah ke berbagai layanan kesehatan, dari pengecekan status kepesertaan hingga pendaftaran online untuk berbagai layanan medis. Artikel ini menjelaskan bagaimana aplikasi ini memfasilitasi interaksi yang lebih cepat dan efisien antara peserta dan penyedia layanan kesehatan, serta bagaimana ia berkontribusi pada peningkatan sistem kesehatan nasional.",
+      "tanggal": "2024-10-19",
+      "dilihat": "980"
+    },
+    {
+      "judul": "Efisiensi Layanan Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Aplikasi JKN Mobile dari BPJS Kesehatan telah membuktikan efisiensinya dalam mempercepat dan mempermudah layanan kesehatan bagi peserta. Dengan aplikasi ini, pengguna dapat dengan mudah melakukan klaim, mencari informasi tentang fasilitas kesehatan, dan melakukan konsultasi online. Artikel ini, yang berisi lebih dari 250 kata, mendetailkan berbagai cara aplikasi ini membantu memperbaiki dan mempercepat layanan kesehatan di Indonesia, mengurangi waktu tunggu dan meningkatkan kepuasan pengguna.",
+      "tanggal": "2024-10-21",
+      "dilihat": "1050"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile: Memperkuat Sistem Kesehatan Indonesia",
+      "isi": "BPJS Kesehatan terus memperkuat sistem kesehatan Indonesia dengan Aplikasi JKN Mobile, yang memungkinkan peserta untuk mengakses layanan kesehatan dengan lebih efisien dan efektif. Artikel ini, yang berisi lebih dari 250 kata, menjelaskan bagaimana aplikasi ini membantu mengintegrasikan layanan kesehatan di seluruh negeri, menyediakan alat bagi peserta untuk mengelola kesehatan mereka, dan mendukung inisiatif pemerintah untuk menyediakan layanan kesehatan yang lebih baik untuk semua warga.",
+      "tanggal": "2024-10-23",
+      "dilihat": "1120"
+    },
+    {
+      "judul": "Akses Cepat dan Mudah Layanan Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Mempercepat akses layanan kesehatan melalui teknologi menjadi fokus BPJS Kesehatan dengan pengembangan Aplikasi JKN Mobile. Aplikasi ini dirancang untuk memberikan kemudahan bagi peserta dalam mendapatkan informasi layanan kesehatan, pendaftaran klinik, dan cek status kepesertaan hanya dengan beberapa klik. Dengan aplikasi ini, masyarakat dapat mengurangi kunjungan fisik ke fasilitas kesehatan, yang sangat membantu terutama di masa pandemi. Fitur penting lainnya termasuk integrasi dengan sistem rumah sakit untuk memudahkan booking dan konsultasi online, serta akses ke database obat-obatan. Artikel ini menjelaskan secara mendalam bagaimana Aplikasi JKN Mobile memudahkan pengguna dalam menjalani proses kesehatan harian mereka, mendukung kebijakan kesehatan preventif, dan memberikan tips kesehatan yang bermanfaat.",
+      "tanggal": "2024-10-25",
+      "dilihat": "940"
+    },
+    {
+      "judul": "Manfaat Aplikasi JKN Mobile dalam Meningkatkan Layanan Kesehatan Masyarakat",
+      "isi": "Aplikasi JKN Mobile telah bertransformasi menjadi alat penting dalam meningkatkan layanan kesehatan masyarakat di Indonesia. Dengan berbagai fitur yang dirancang untuk memudahkan pengelolaan kesehatan, aplikasi ini memberikan manfaat signifikan terutama dalam mempercepat proses administrasi medis dan memperluas jangkauan layanan kesehatan. Aplikasi ini juga termasuk fitur edukasi kesehatan yang menyediakan artikel dan video tentang cara menjaga kesehatan, pencegahan penyakit, dan nutrisi. Artikel ini menjelaskan detil implementasi dan penggunaan aplikasi dalam kehidupan sehari-hari, bagaimana aplikasi ini membantu memperkuat infrastruktur kesehatan, dan rencana pengembangan fitur baru yang akan semakin memperkaya pengalaman pengguna.",
+      "tanggal": "2024-10-27",
+      "dilihat": "1080"
+    },
+    {
+      "judul": "Mengoptimalkan Manfaat Teknologi untuk Kesehatan dengan Aplikasi JKN Mobile",
+      "isi": "Aplikasi JKN Mobile dari BPJS Kesehatan merupakan langkah maju dalam mengoptimalkan manfaat teknologi untuk kesehatan masyarakat. Aplikasi ini dirancang untuk menyederhanakan proses medis dan administratif, mempercepat akses ke informasi kesehatan, dan mendukung upaya kesehatan preventif. Dengan fitur yang mudah digunakan, aplikasi ini telah menjadi andalan banyak peserta BPJS Kesehatan dalam mengelola kesehatan mereka. Artikel ini mendalam menguraikan fitur-fitur aplikasi, seperti akses instan ke informasi medis, kemampuan untuk berkomunikasi dengan dokter, dan bagaimana aplikasi ini membantu mengatasi tantangan kesehatan saat ini di Indonesia, serta pandangan ke depan tentang inovasi yang akan diintegrasikan dalam versi masa depan aplikasi.",
+      "tanggal": "2024-10-29",
+      "dilihat": "1025"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile Mempermudah Akses Layanan Kesehatan Mental",
+      "isi": "Dalam upaya mendukung kesehatan mental masyarakat, Aplikasi JKN Mobile telah memperkenalkan fitur baru yang mempermudah akses ke layanan kesehatan mental. Fitur ini dirancang untuk memberikan dukungan psikologis dan konseling dari para ahli melalui platform digital. Aplikasi ini memungkinkan pengguna untuk secara anonim berkonsultasi dengan psikolog dan psikiater, membantu mereka mendapatkan bantuan yang diperlukan tanpa stigma. Artikel ini menjelaskan lebih dari 250 kata mengenai manfaat fitur baru ini, bagaimana itu mengubah pendekatan kesehatan mental di Indonesia, dan dampak positifnya terhadap pengguna aplikasi.",
+      "tanggal": "2024-11-01",
+      "dilihat": "950"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile: Katalis Perubahan dalam Layanan Kesehatan Primer",
+      "isi": "Sebagai katalis perubahan dalam layanan kesehatan primer, Aplikasi JKN Mobile telah memperkenalkan serangkaian inovasi yang bertujuan untuk meningkatkan efisiensi dan kualitas layanan kesehatan di Indonesia. Aplikasi ini menyediakan fasilitas pendaftaran online, pengingat jadwal kunjungan, dan akses cepat ke hasil laboratorium, yang semuanya dapat diakses dengan mudah dari smartphone. Artikel ini mendiskusikan bagaimana Aplikasi JKN Mobile telah mempengaruhi pelayanan kesehatan di tingkat dasar, termasuk peningkatan keterjangkauan dan kemudahan akses untuk populasi di daerah terpencil.",
+      "tanggal": "2024-11-03",
+      "dilihat": "1220"
+    },
+    {
+      "judul": "Integrasi Aplikasi JKN Mobile dengan Layanan Darurat untuk Respons yang Lebih Cepat",
+      "isi": "Aplikasi JKN Mobile kini terintegrasi dengan layanan darurat, memungkinkan respons yang lebih cepat dan efisien dalam situasi kedaruratan medis. Fitur ini menghubungkan pengguna dengan layanan ambulans dan rumah sakit terdekat, memastikan bahwa bantuan medis dapat diterima dalam waktu singkat. Artikel ini menjelaskan implementasi dan manfaat dari integrasi ini, bagaimana itu membantu meningkatkan tingkat kelangsungan hidup dan efisiensi dalam penanganan keadaan darurat medis.",
+      "tanggal": "2024-11-05",
+      "dilihat": "1350"
+    },
+    {
+      "judul": "Peningkatan Layanan Telemedisin Melalui Aplikasi JKN Mobile",
+      "isi": "Aplikasi JKN Mobile telah mengambil langkah besar dalam peningkatan layanan telemedisin. Melalui aplikasi ini, pengguna dapat melakukan konsultasi virtual dengan dokter dan ahli kesehatan tanpa perlu keluar rumah. Fitur ini sangat bermanfaat bagi penduduk di daerah yang kekurangan fasilitas kesehatan. Artikel ini mengeksplorasi fitur telemedisin dalam aplikasi, manfaatnya bagi pengguna, dan bagaimana ini mendukung tujuan pemerintah untuk meningkatkan akses layanan kesehatan.",
+      "tanggal": "2024-11-07",
+      "dilihat": "1015"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile Meningkatkan Akses Informasi Vaksinasi",
+      "isi": "Di tengah upaya nasional untuk meningkatkan cakupan vaksinasi, Aplikasi JKN Mobile telah menjadi alat penting dalam menyediakan informasi dan pendaftaran vaksinasi. Aplikasi ini menyediakan jadwal vaksinasi, lokasi pusat vaksinasi, dan mengelola pencatatan hasil vaksinasi. Artikel ini membahas secara detail bagaimana aplikasi ini membantu masyarakat mendapatkan akses informasi vaksinasi yang tepat dan terpercaya, serta mendukung kebijakan kesehatan publik.",
+      "tanggal": "2024-11-09",
+      "dilihat": "1180"
+    },
+    {
+      "judul": "Fitur Baru di Aplikasi JKN Mobile Memudahkan Pemantauan Kondisi Kronis",
+      "isi": "Aplikasi JKN Mobile terus berinovasi dengan memperkenalkan fitur baru yang memudahkan pemantauan kondisi kesehatan kronis. Fitur ini memungkinkan pengguna untuk secara rutin memeriksa dan mencatat parameter kesehatan seperti tekanan darah, gula darah, dan lainnya. Artikel ini menjelaskan fitur ini dalam detail, bagaimana pengguna bisa menggunakannya untuk memantau kondisi kesehatan mereka, dan implikasi positifnya terhadap manajemen penyakit kronis di Indonesia.",
+      "tanggal": "2024-11-11",
+      "dilihat": "1100"
+    },
+    {
+      "judul": "Kemudahan Penggunaan Aplikasi JKN Mobile Dorong Peningkatan Literasi Kesehatan",
+      "isi": "Aplikasi JKN Mobile tidak hanya memudahkan akses layanan kesehatan, tetapi juga mendukung peningkatan literasi kesehatan di kalangan masyarakat. Dengan antarmuka yang ramah pengguna, aplikasi ini menyediakan informasi kesehatan yang mudah dipahami dan dapat diakses oleh semua lapisan masyarakat. Artikel ini menguraikan fitur edukatif aplikasi, bagaimana ini membantu masyarakat memahami lebih baik tentang kesehatan dan penyakit, serta dampaknya terhadap perilaku kesehatan masyarakat.",
+      "tanggal": "2024-11-13",
+      "dilihat": "950"
+    },
+    {
+      "judul": "Aplikasi JKN Mobile sebagai Alat Bantu Pengelolaan Apotek dan Resep Elektronik",
+      "isi": "Aplikasi JKN Mobile telah memperkenalkan fitur yang memudahkan pengelolaan apotek dan resep elektronik, memungkinkan peserta untuk mendapatkan obat dengan lebih cepat dan mudah. Fitur ini mengintegrasikan sistem resep elektronik dengan apotek terdaftar, memudahkan proses pengambilan obat dan mengurangi kesalahan medis. Artikel ini mengeksplorasi bagaimana aplikasi telah mengubah cara peserta mengakses obat-obatan dan meningkatkan kepuasan mereka terhadap layanan BPJS Kesehatan.",
+      "tanggal": "2024-11-15",
+      "dilihat": "1020"
+    },
+    {
+      "judul": "Integrasi Data Kesehatan Pasien Melalui Aplikasi JKN Mobile Tingkatkan Efisiensi Layanan",
+      "isi": "Integrasi data kesehatan pasien melalui Aplikasi JKN Mobile telah meningkatkan efisiensi layanan kesehatan di banyak fasilitas. Dengan menyediakan akses mudah ke riwayat medis pasien, aplikasi ini memungkinkan penyedia layanan kesehatan untuk membuat keputusan medis yang lebih informasi dan tepat waktu. Artikel ini menjelaskan teknologi di balik integrasi data ini, manfaatnya bagi pasien dan penyedia layanan, serta bagaimana ini berkontribusi pada penyederhanaan administrasi medis di seluruh sistem kesehatan.",
+      "tanggal": "2024-11-17",
+      "dilihat": "1230"
+    }
+  ]
 }

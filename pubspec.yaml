@@ -40,6 +40,7 @@ dependencies:
   fluttertoast: ^8.2.8
   shared_preferences: ^2.3.2
   blur: ^4.0.0
+  persistent_bottom_nav_bar: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -63,8 +64,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-     - assets/new_mjkn_2022_white.png
-     - assets/mjkn_splash_colorful.png
+     - assets/
+     - assets/berita/
 
 
   # To add assets to your application, add an assets section, like this:

@@ -3,6 +3,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:jkn_gamification/home_page.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:jkn_gamification/menu.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 const List<String> list = <String>['Nomor Induk Kependudukan (NIK)', 'Nomor Kartu JKN'];
@@ -35,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
       // Jika password benar, navigasikan ke HomePage
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => Menu()),
       );
     } else {
       // Jika data tidak ada atau password salah, tampilkan toast

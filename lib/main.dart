@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:jkn_gamification/home_page.dart';
+import 'package:jkn_gamification/menu.dart';
 import 'firebase_options.dart';
 import 'login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: isLoggedIn ? HomePage() : LoginPage(),
+      home: isLoggedIn ? Menu() : LoginPage(),
     );
   }
 }
