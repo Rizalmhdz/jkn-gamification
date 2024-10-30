@@ -42,6 +42,7 @@ dependencies:
   blur: ^4.0.0
   persistent_bottom_nav_bar: ^6.2.1
   provider: ^6.1.2
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +68,7 @@ flutter:
   assets:
      - assets/
      - assets/berita/
+     - assets/icons/
 
 
   # To add assets to your application, add an assets section, like this:

@@ -78,6 +78,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
+    bool readOnlySearchBar = true;
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
@@ -86,6 +87,17 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               height: 40, // Tinggi dari SearchBar
               child: TextField(
+                onTap: (){
+                  setState(() {
+                    readOnlySearchBar = !readOnlySearchBar;
+                  });
+                },
+                onEditingComplete: (){
+                  setState(() {
+                    readOnlySearchBar = true;
+                  });
+                },
+                readOnly: readOnlySearchBar,
                 onChanged: (value) {
                   setState(() {
                     _searchText = value; // Menyimpan teks pencarian

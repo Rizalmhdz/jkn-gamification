@@ -17,19 +17,28 @@ class _HomePageState extends State<HomePage> {
 
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mobile JKN'),
-        backgroundColor: Colors.transparent, // Membuat latar belakang transparan
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFF3366FF), Color(0xFF00CCFF)], // Contoh warna gradasi
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(90.0),
+        child: Stack(
+          children: [
+            // Background image
+            Positioned.fill(
+              child: Image.asset(
+                "assets/mjkn_header_colorful.png",
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
+            // AppBar content
+            Container(
+              margin: EdgeInsets.only(top: 30, bottom: 20, left: 20),
+              child : Image.asset(
+                'assets/new_mjkn_2022_white.png',
+                height: 80,
+                width: 80,
+              ),
+            ),
+          ],
         ),
-        elevation: 0, // Menghilangkan bayangan di bawah AppBar
       ),
 
       body: Column(

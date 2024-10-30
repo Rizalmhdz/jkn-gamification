@@ -54,7 +54,7 @@ class _MenuState extends State<Menu> {
           icon: Icon(Icons.credit_card_rounded, color: Colors.white),
           activeColorPrimary: isNavBarVisible ? Colors.blue : Colors.transparent, // Set active color
           inactiveColorPrimary: Colors.grey,
-          title: ("Kartu")
+          title: ("Kartu"),
       ),
       PersistentBottomNavBarItem(
           icon: Icon(Icons.forum),
@@ -75,6 +75,7 @@ class _MenuState extends State<Menu> {
   Widget build(BuildContext context) {
     isNavBarVisible = Provider.of<NavBarVisibilityProvider>(context).isVisible;
     return PersistentTabView(
+      margin: EdgeInsets.symmetric(vertical: 10),
       context,
       controller: _controller,
       screens: _buildScreens(),
