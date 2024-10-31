@@ -1,7 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -12,10 +14,42 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+  bool _isLoggedIn = true;
+  String _userId =  "";
+  String _userNickName = "";
+
+  @override
+  void initState() {
+    super.initState();
+    getData();
+  }
+
+  Future<void> getData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _isLoggedIn = prefs.getBool('isLoggedIn')!;
+      _userId = prefs.getString('user_id')!;
+    });
+
+    final ref = FirebaseDatabase.instance.ref();
+    final snapshot = await ref.child('users/$_userId/biodata').get();
+    if (snapshot.exists) {
+      setState(() {
+        Map<dynamic, dynamic> dataList = snapshot.value as Map<dynamic, dynamic>;
+        _userNickName = dataList["nama"];
+        print('User Nickname: $_userNickName');
+      });
+    } else {
+      print('User ID tidak ditemukan');
+    }
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
     PersistentTabController _controller = PersistentTabController(initialIndex: 0);
-
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -53,7 +87,16 @@ class _HomePageState extends State<HomePage> {
               children: <Widget>[
                 TextButton(
                   onPressed: () {},
-                  child: Row(
+                  child: _isLoggedIn?
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,  // Aligns text to the left
+                        children: [
+                          Text('Hi, $_userNickName', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+                          Text('Semua Keluarga Anda Terlindungi (Aktif)', style: TextStyle(color: Colors.black, fontSize: 10)),
+                        ],
+                      )
+
+                      : Row(
                     children: [
                       Icon(Icons.login, color: Colors.black),
                       Container( width: 4,),
@@ -103,6 +146,23 @@ class _HomePageState extends State<HomePage> {
 
         ],
       ),
+      floatingActionButton:Stack(
+        children: [
+          Positioned(
+            right: 20,  // Atur jarak dari kiri
+            bottom: 20,   // Atur jarak dari atas
+            child: FloatingActionButton(
+              backgroundColor: Color(0xFFC5FFE6),
+              child: Icon(Icons.gamepad, size: 40, color: Color(0xFF096891),),  // Menambahkan ikon game controller
+              onPressed: () {
+
+              },
+              shape: CircleBorder(), // Membuat button menjadi bentuk lingkaran sempurna
+            ),
+          ),
+        ],
+      )
+
     );
   }
 }

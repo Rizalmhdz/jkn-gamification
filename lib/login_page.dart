@@ -1,7 +1,6 @@
 import 'package:blur/blur.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:jkn_gamification/home_page.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:jkn_gamification/menu.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,9 +28,9 @@ class _LoginPageState extends State<LoginPage> {
     final ref = FirebaseDatabase.instance.ref();
     final snapshot = await ref.child('users/$no_id/user_data').get();
     if (snapshot.exists && snapshot.child("password").value == password) {
-      // Menyimpan status login
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setBool('isLoggedIn', true);
+      await prefs.setString('user_id', no_id);
 
       // Jika password benar, navigasikan ke HomePage
       Navigator.pushReplacement(

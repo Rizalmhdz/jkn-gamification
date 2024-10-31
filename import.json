@@ -118,7 +118,6 @@
     }
   },
   "kategori_task": [
-    null,
     {
       "id": "1",
       "nama_kategori": "Meminum Obat",
@@ -136,8 +135,8 @@
     },
     {
       "id": "4",
-      "nama_kategori": "Melengkapi Biodata",
-      "poin": 100
+      "nama_kategori": "Membaca Berita",
+      "poin": 15
     }
   ],
   "leaderboard": {
@@ -733,16 +732,16 @@
       "user_id": "1234567890133"
     }
   },
-  "tasks": [
-    null,
-    {
+  "tasks": {
+    "1": {
       "id_tasks": 1,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:00:00"
     },
-    {
+    "2": {
       "detail": {
         "id_rekam_medis": "RM001"
       },
@@ -750,9 +749,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:05:00"
     },
-    {
+    "3": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -764,9 +764,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:10:00"
     },
-    {
+    "4": {
       "detail": {
         "dosis": 1,
         "id_obat": "O002",
@@ -778,9 +779,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:15:00"
     },
-    {
+    "5": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -792,9 +794,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 150,
       "status": "selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:20:00"
     },
-    {
+    "6": {
       "detail": {
         "dosis": 1,
         "id_obat": "O002",
@@ -806,23 +809,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 150,
       "status": "selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:25:00"
     },
-    {
+    "7": {
       "id_tasks": 7,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123"
+      "user_id": "1234567890123",
+      "timestamp": "30/10/2024 10:30:00"
     },
-    {
+    "8": {
       "id_tasks": 8,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123456"
+      "user_id": "1234567890123456",
+      "timestamp": "30/10/2024 10:35:00"
     },
-    {
+    "9": {
       "detail": {
         "id_rekam_medis": "RM002"
       },
@@ -830,9 +836,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123456"
+      "user_id": "1234567890123456",
+      "timestamp": "30/10/2024 10:40:00"
     },
-    {
+    "10": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -844,9 +851,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123456"
+      "user_id": "1234567890123456",
+      "timestamp": "30/10/2024 10:45:00"
     },
-    {
+    "11": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -858,16 +866,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 200,
       "status": "selesai",
-      "user_id": "1234567890123456"
+      "user_id": "1234567890123456",
+      "timestamp": "30/10/2024 10:50:00"
     },
-    {
+    "12": {
       "id_tasks": 12,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123456"
+      "user_id": "1234567890123456",
+      "timestamp": "30/10/2024 10:55:00"
     },
-    {
+    "13": {
       "detail": {
         "tanggal": "20/11/2024"
       },
@@ -875,16 +885,18 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123456"
+      "user_id": "1234567890123456",
+      "timestamp": "30/10/2024 11:00:00"
     },
-    {
+    "14": {
       "id_tasks": 14,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890124"
+      "user_id": "1234567890124",
+      "timestamp": "30/10/2024 11:05:00"
     },
-    {
+    "15": {
       "detail": {
         "id_rekam_medis": "RM003"
       },
@@ -892,9 +904,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890124"
+      "user_id": "1234567890124",
+      "timestamp": "30/10/2024 11:10:00"
     },
-    {
+    "16": {
       "detail": {
         "dosis": 1,
         "id_obat": "O006",
@@ -906,23 +919,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890124"
+      "user_id": "1234567890124",
+      "timestamp": "30/10/2024 11:15:00"
     },
-    {
+    "17": {
       "id_tasks": 17,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890124"
+      "user_id": "1234567890124",
+      "timestamp": "30/10/2024 11:20:00"
     },
-    {
+    "18": {
       "id_tasks": 18,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:25:00"
     },
-    {
+    "19": {
       "detail": {
         "id_rekam_medis": "RM004"
       },
@@ -930,9 +946,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:30:00"
     },
-    {
+    "20": {
       "detail": {
         "dosis": 1,
         "id_obat": "O035",
@@ -944,9 +961,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:35:00"
     },
-    {
+    "21": {
       "detail": {
         "dosis": 1,
         "id_obat": "O035",
@@ -958,9 +976,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 300,
       "status": "selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:40:00"
     },
-    {
+    "22": {
       "detail": {
         "dosis": 1,
         "id_obat": "O014",
@@ -972,9 +991,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:45:00"
     },
-    {
+    "23": {
       "detail": {
         "dosis": 1,
         "id_obat": "O014",
@@ -986,16 +1006,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 300,
       "status": "selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:50:00"
     },
-    {
+    "24": {
       "id_tasks": 24,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 11:55:00"
     },
-    {
+    "25": {
       "detail": {
         "tanggal": "25/11/2024"
       },
@@ -1003,16 +1025,18 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890125"
+      "user_id": "1234567890125",
+      "timestamp": "30/10/2024 12:00:00"
     },
-    {
+    "26": {
       "id_tasks": 26,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123457"
+      "user_id": "1234567890123457",
+      "timestamp": "30/10/2024 12:05:00"
     },
-    {
+    "27": {
       "detail": {
         "id_rekam_medis": "RM005"
       },
@@ -1020,9 +1044,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123457"
+      "user_id": "1234567890123457",
+      "timestamp": "30/10/2024 12:10:00"
     },
-    {
+    "28": {
       "detail": {
         "dosis": 1,
         "id_obat": "O005",
@@ -1034,9 +1059,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123457"
+      "user_id": "1234567890123457",
+      "timestamp": "30/10/2024 12:15:00"
     },
-    {
+    "29": {
       "detail": {
         "dosis": 1,
         "id_obat": "O005",
@@ -1048,23 +1074,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 300,
       "status": "selesai",
-      "user_id": "1234567890123457"
+      "user_id": "1234567890123457",
+      "timestamp": "30/10/2024 12:20:00"
     },
-    {
+    "30": {
       "id_tasks": 30,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123457"
+      "user_id": "1234567890123457",
+      "timestamp": "30/10/2024 12:25:00"
     },
-    {
+    "31": {
       "id_tasks": 31,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 12:30:00"
     },
-    {
+    "32": {
       "detail": {
         "id_rekam_medis": "RM006"
       },
@@ -1072,9 +1101,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 12:35:00"
     },
-    {
+    "33": {
       "detail": {
         "dosis": 1,
         "id_obat": "O003",
@@ -1086,9 +1116,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 12:40:00"
     },
-    {
+    "34": {
       "detail": {
         "dosis": 1,
         "id_obat": "O003",
@@ -1100,9 +1131,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 150,
       "status": "selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 12:45:00"
     },
-    {
+    "35": {
       "detail": {
         "dosis": 1,
         "id_obat": "O023",
@@ -1114,9 +1146,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 12:50:00"
     },
-    {
+    "36": {
       "detail": {
         "dosis": 1,
         "id_obat": "O023",
@@ -1128,23 +1161,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 12:55:00"
     },
-    {
+    "37": {
       "id_tasks": 37,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890126"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 13:00:00"
     },
-    {
+    "38": {
       "id_tasks": 38,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123458"
+      "user_id": "1234567890123458",
+      "timestamp": "30/10/2024 13:05:00"
     },
-    {
+    "39": {
       "detail": {
         "id_rekam_medis": "RM007"
       },
@@ -1152,9 +1188,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123458"
+      "user_id": "1234567890123458",
+      "timestamp": "30/10/2024 13:10:00"
     },
-    {
+    "40": {
       "detail": {
         "dosis": 1,
         "id_obat": "O042",
@@ -1166,9 +1203,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123458"
+      "user_id": "1234567890123458",
+      "timestamp": "30/10/2024 13:15:00"
     },
-    {
+    "41": {
       "detail": {
         "dosis": 1,
         "id_obat": "O042",
@@ -1180,23 +1218,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 200,
       "status": "selesai",
-      "user_id": "1234567890123458"
+      "user_id": "1234567890123458",
+      "timestamp": "30/10/2024 13:20:00"
     },
-    {
+    "42": {
       "id_tasks": 42,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123458"
+      "user_id": "1234567890123458",
+      "timestamp": "30/10/2024 13:25:00"
     },
-    {
+    "43": {
       "id_tasks": 43,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890127"
+      "user_id": "123456789012747",
+      "timestamp": "30/10/2024 13:30:00"
     },
-    {
+    "44": {
       "detail": {
         "tanggal": "20/10/2024"
       },
@@ -1204,23 +1245,26 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890127"
+      "user_id": "123456789012747",
+      "timestamp": "30/10/2024 13:35:00"
     },
-    {
+    "45": {
       "id_tasks": 45,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890127"
+      "user_id": "123456789012747",
+      "timestamp": "30/10/2024 13:40:00"
     },
-    {
+    "46": {
       "id_tasks": 46,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123459"
+      "user_id": "1234567890123459",
+      "timestamp": "30/10/2024 13:45:00"
     },
-    {
+    "47": {
       "detail": {
         "id_rekam_medis": "RM009"
       },
@@ -1228,9 +1272,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123459"
+      "user_id": "1234567890123459",
+      "timestamp": "30/10/2024 13:50:00"
     },
-    {
+    "48": {
       "detail": {
         "dosis": 1,
         "id_obat": "O003",
@@ -1242,9 +1287,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123459"
+      "user_id": "1234567890123459",
+      "timestamp": "30/10/2024 13:55:00"
     },
-    {
+    "49": {
       "detail": {
         "dosis": 1,
         "id_obat": "O003",
@@ -1256,23 +1302,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123459"
+      "user_id": "1234567890123459",
+      "timestamp": "30/10/2024 14:00:00"
     },
-    {
+    "50": {
       "id_tasks": 50,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123459"
+      "user_id": "1234567890123459",
+      "timestamp": "30/10/2024 14:05:00"
     },
-    {
+    "51": {
       "id_tasks": 51,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890128"
+      "user_id": "1234567890128",
+      "timestamp": "30/10/2024 14:10:00"
     },
-    {
+    "52": {
       "detail": {
         "tanggal": "24/10/2024"
       },
@@ -1280,23 +1329,26 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890128"
+      "user_id": "1234567890128",
+      "timestamp": "30/10/2024 14:15:00"
     },
-    {
+    "53": {
       "id_tasks": 53,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890128"
+      "user_id": "1234567890128",
+      "timestamp": "30/10/2024 14:20:00"
     },
-    {
+    "54": {
       "id_tasks": 54,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890129"
+      "user_id": "1234567890129",
+      "timestamp": "30/10/2024 14:25:00"
     },
-    {
+    "55": {
       "detail": {
         "id_rekam_medis": "RM011"
       },
@@ -1304,9 +1356,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890129"
+      "user_id": "1234567890129",
+      "timestamp": "30/10/2024 14:30:00"
     },
-    {
+    "56": {
       "detail": {
         "dosis": 1,
         "id_obat": "O008",
@@ -1318,9 +1371,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890129"
+      "user_id": "1234567890129",
+      "timestamp": "30/10/2024 14:35:00"
     },
-    {
+    "57": {
       "detail": {
         "dosis": 1,
         "id_obat": "O008",
@@ -1332,23 +1386,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 10,
       "status": "selesai",
-      "user_id": "1234567890129"
+      "user_id": "1234567890129",
+      "timestamp": "30/10/2024 14:40:00"
     },
-    {
+    "58": {
       "id_tasks": 58,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890129"
+      "user_id": "1234567890129",
+      "timestamp": "30/10/2024 14:45:00"
     },
-    {
+    "59": {
       "id_tasks": 59,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 14:50:00"
     },
-    {
+    "60": {
       "detail": {
         "id_rekam_medis": "RM012"
       },
@@ -1356,9 +1413,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 14:55:00"
     },
-    {
+    "61": {
       "detail": {
         "dosis": 1,
         "id_obat": "O023",
@@ -1370,9 +1428,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:00:00"
     },
-    {
+    "62": {
       "detail": {
         "dosis": 1,
         "id_obat": "O023",
@@ -1384,16 +1443,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 200,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:05:00"
     },
-    {
+    "63": {
       "id_tasks": 63,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:10:00"
     },
-    {
+    "64": {
       "detail": {
         "tanggal": "28/11/2024"
       },
@@ -1401,9 +1462,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:15:00"
     },
-    {
+    "65": {
       "detail": {
         "dosis": 1,
         "id_obat": "O014",
@@ -1415,9 +1477,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 200,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:20:00"
     },
-    {
+    "66": {
       "detail": {
         "dosis": 1,
         "id_obat": "O005",
@@ -1429,9 +1492,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:25:00"
     },
-    {
+    "67": {
       "detail": {
         "dosis": 1,
         "id_obat": "O005",
@@ -1443,23 +1507,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 170,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:30:00"
     },
-    {
+    "68": {
       "id_tasks": 68,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123460"
+      "user_id": "1234567890123460",
+      "timestamp": "30/10/2024 15:35:00"
     },
-    {
+    "69": {
       "id_tasks": 69,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890130"
+      "user_id": "1234567890130",
+      "timestamp": "30/10/2024 15:40:00"
     },
-    {
+    "70": {
       "detail": {
         "tanggal": "30/10/2024"
       },
@@ -1467,23 +1534,26 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890130"
+      "user_id": "1234567890130",
+      "timestamp": "30/10/2024 15:45:00"
     },
-    {
+    "71": {
       "id_tasks": 71,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890130"
+      "user_id": "1234567890130",
+      "timestamp": "30/10/2024 15:50:00"
     },
-    {
+    "72": {
       "id_tasks": 72,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123461"
+      "user_id": "1234567890123461",
+      "timestamp": "30/10/2024 15:55:00"
     },
-    {
+    "73": {
       "detail": {
         "id_rekam_medis": "RM013"
       },
@@ -1491,9 +1561,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123461"
+      "user_id": "1234567890123461",
+      "timestamp": "30/10/2024 16:00:00"
     },
-    {
+    "74": {
       "detail": {
         "dosis": 1,
         "id_obat": "O027",
@@ -1505,9 +1576,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123461"
+      "user_id": "1234567890123461",
+      "timestamp": "30/10/2024 16:05:00"
     },
-    {
+    "75": {
       "detail": {
         "dosis": 1,
         "id_obat": "O027",
@@ -1519,16 +1591,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 140,
       "status": "selesai",
-      "user_id": "1234567890123461"
+      "user_id": "1234567890123461",
+      "timestamp": "30/10/2024 16:10:00"
     },
-    {
+    "76": {
       "id_tasks": 76,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123461"
+      "user_id": "1234567890123461",
+      "timestamp": "30/10/2024 16:15:00"
     },
-    {
+    "77": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -1540,16 +1614,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 270,
       "status": "selesai",
-      "user_id": "1234567890123461"
+      "user_id": "1234567890123461",
+      "timestamp": "30/10/2024 16:20:00"
     },
-    {
+    "78": {
       "id_tasks": 78,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890131"
+      "user_id": "1234567890131",
+      "timestamp": "30/10/2024 16:25:00"
     },
-    {
+    "79": {
       "detail": {
         "tanggal": "04/11/2024"
       },
@@ -1557,23 +1633,26 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890131"
+      "user_id": "1234567890131",
+      "timestamp": "30/10/2024 16:30:00"
     },
-    {
+    "80": {
       "id_tasks": 80,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890131"
+      "user_id": "1234567890131",
+      "timestamp": "30/10/2024 16:35:00"
     },
-    {
+    "81": {
       "id_tasks": 81,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 16:40:00"
     },
-    {
+    "82": {
       "detail": {
         "id_rekam_medis": "RM014"
       },
@@ -1581,9 +1660,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 16:45:00"
     },
-    {
+    "83": {
       "detail": {
         "dosis": 1,
         "id_obat": "O005",
@@ -1595,9 +1675,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 16:50:00"
     },
-    {
+    "84": {
       "detail": {
         "dosis": 1,
         "id_obat": "O005",
@@ -1609,16 +1690,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 300,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 16:55:00"
     },
-    {
+    "85": {
       "id_tasks": 85,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 17:00:00"
     },
-    {
+    "86": {
       "detail": {
         "tanggal": "06/12/2024"
       },
@@ -1626,9 +1709,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 17:05:00"
     },
-    {
+    "87": {
       "detail": {
         "dosis": 1,
         "id_obat": "O012",
@@ -1640,16 +1724,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 200,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 17:10:00"
     },
-    {
+    "88": {
       "id_tasks": 88,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 17:15:00"
     },
-    {
+    "89": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -1661,23 +1747,26 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 310,
       "status": "selesai",
-      "user_id": "1234567890123462"
+      "user_id": "1234567890123462",
+      "timestamp": "30/10/2024 17:20:00"
     },
-    {
+    "90": {
       "id_tasks": 90,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890132"
+      "user_id": "1234567890132",
+      "timestamp": "30/10/2024 17:25:00"
     },
-    {
+    "91": {
       "id_tasks": 91,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123463"
+      "user_id": "1234567890123463",
+      "timestamp": "30/10/2024 17:30:00"
     },
-    {
+    "92": {
       "detail": {
         "id_rekam_medis": "RM015"
       },
@@ -1685,9 +1774,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890123463"
+      "user_id": "1234567890123463",
+      "timestamp": "30/10/2024 17:35:00"
     },
-    {
+    "93": {
       "detail": {
         "dosis": 1,
         "id_obat": "O002",
@@ -1699,9 +1789,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123463"
+      "user_id": "1234567890123463",
+      "timestamp": "30/10/2024 17:40:00"
     },
-    {
+    "94": {
       "detail": {
         "dosis": 1,
         "id_obat": "O002",
@@ -1713,16 +1804,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 210,
       "status": "selesai",
-      "user_id": "1234567890123463"
+      "user_id": "1234567890123463",
+      "timestamp": "30/10/2024 17:45:00"
     },
-    {
+    "95": {
       "id_tasks": 95,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890123463"
+      "user_id": "1234567890123463",
+      "timestamp": "30/10/2024 17:50:00"
     },
-    {
+    "96": {
       "detail": {
         "dosis": 1,
         "id_obat": "O003",
@@ -1734,16 +1827,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123463"
+      "user_id": "1234567890123463",
+      "timestamp": "30/10/2024 17:55:00"
     },
-    {
+    "97": {
       "id_tasks": 97,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:00:00"
     },
-    {
+    "98": {
       "detail": {
         "id_rekam_medis": "RM016"
       },
@@ -1751,9 +1846,10 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 40,
       "status": "selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:05:00"
     },
-    {
+    "99": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -1765,9 +1861,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:10:00"
     },
-    {
+    "100": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -1779,9 +1876,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 150,
       "status": "selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:15:00"
     },
-    {
+    "101": {
       "detail": {
         "dosis": 1,
         "id_obat": "O028",
@@ -1793,9 +1891,10 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:20:00"
     },
-    {
+    "102": {
       "detail": {
         "dosis": 1,
         "id_obat": "O028",
@@ -1807,16 +1906,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:25:00"
     },
-    {
+    "103": {
       "id_tasks": 103,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 50,
       "status": "selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:30:00"
     },
-    {
+    "104": {
       "detail": {
         "dosis": 1,
         "id_obat": "O001",
@@ -1828,16 +1929,18 @@
       "kategori_task": "Meminum Obat",
       "poin_diperoleh": 760,
       "status": "selesai",
-      "user_id": "1234567890133"
+      "user_id": "1234567890133",
+      "timestamp": "30/10/2024 18:35:00"
     },
-    {
+    "105": {
       "id_tasks": 105,
       "kategori_task": "Melengkapi Biodata",
       "poin_diperoleh": 100,
       "status": "selesai",
-      "user_id": "1234567890123464"
+      "user_id": "1234567890123464",
+      "timestamp": "30/10/2024 18:40:00"
     },
-    {
+    "106": {
       "detail": {
         "tanggal": "14/11/2024"
       },
@@ -1845,17 +1948,20 @@
       "kategori_task": "Kunjungan Faskes",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123464"
+      "user_id": "1234567890123464",
+      "timestamp": "30/10/2024 18:45:00"
     },
-    {
+    "107": {
       "id_tasks": 107,
       "kategori_task": "Skrining Kesehatan",
       "poin_diperoleh": 0,
       "status": "belum selesai",
-      "user_id": "1234567890123464"
+      "user_id": "1234567890123464",
+      "timestamp": "30/10/2024 18:50:00"
     }
-  ],
-  "users": {
+  },
+
+"users": {
     "1234567890123": {
       "biodata": {
         "Agama": "Islam",
@@ -1865,29 +1971,18 @@
         "tanggal_lahir": "01/01/1990",
         "tempat_lahir": "Jakarta"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM001",
-          "tanggal": "01/10/2024"
-        },
-        {
-          "tanggal": "15/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "01/10/2024": "RM001",
+        "15/11/2024": null
+      },
       "stats": {
         "jumlah_poin": 290,
         "kategori_stats": "Silver",
+        "avatarname": "Agus",
+        "avatar": "1",
         "rank": 15
       },
-      "task_user": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
+      "task_user": "1, 2, 3, 4, 5, 6, 7",
       "user_data": {
         "jenis_id": "jkn_id",
         "no_id": "1234567890123",
@@ -1903,28 +1998,18 @@
         "tanggal_lahir": "05/02/1988",
         "tempat_lahir": "Bandung"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM002",
-          "tanggal": "05/10/2024"
-        },
-        {
-          "tanggal": "20/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "05/10/2024": "RM002",
+        "20/11/2024": null
+      },
       "stats": {
         "jumlah_poin": 550,
         "kategori_stats": "Gold",
+        "avatarname": "Budi",
+        "avatar": "2",
         "rank": 10
       },
-      "task_user": [
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
-      ],
+      "task_user": "8, 9, 10, 11, 12, 13",
       "user_data": {
         "jenis_id": "nik",
         "no_id": "1234567890123456",
@@ -1940,22 +2025,17 @@
         "tanggal_lahir": "12/02/1993",
         "tempat_lahir": "Padang"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM013",
-          "tanggal": "02/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "02/11/2024": "RM013"
+      },
       "stats": {
         "jumlah_poin": 600,
         "kategori_stats": "Silver",
+        "avatarname": "Nurul",
+        "avatar": "3",
         "rank": 11
       },
-      "task_user": [
-        56,
-        57,
-        58
-      ],
+      "task_user": "56, 57, 58",
       "user_data": {
         "jenis_id": "nik",
         "no_id": "1234567890123461",
@@ -1971,23 +2051,17 @@
         "tanggal_lahir": "25/04/1994",
         "tempat_lahir": "Pekanbaru"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM014",
-          "tanggal": "06/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "06/11/2024": "RM014"
+      },
       "stats": {
         "jumlah_poin": 1050,
         "kategori_stats": "Gold",
+        "avatarname": "Putri",
+        "avatar": "4",
         "rank": 5
       },
-      "task_user": [
-        61,
-        62,
-        63,
-        64
-      ],
+      "task_user": "61, 62, 63, 64",
       "user_data": {
         "jenis_id": "nik",
         "no_id": "1234567890123462",
@@ -2003,22 +2077,17 @@
         "tanggal_lahir": "18/06/1990",
         "tempat_lahir": "Balikpapan"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM015",
-          "tanggal": "10/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "10/11/2024": "RM015"
+      },
       "stats": {
         "jumlah_poin": 500,
         "kategori_stats": "Silver",
+        "avatarname": "Rina",
+        "avatar": "5",
         "rank": 14
       },
-      "task_user": [
-        67,
-        68,
-        69
-      ],
+      "task_user": "67, 68, 69",
       "user_data": {
         "jenis_id": "nik",
         "no_id": "1234567890123463",
@@ -2034,20 +2103,17 @@
         "tanggal_lahir": "05/08/1987",
         "tempat_lahir": "Medan"
       },
-      "kunjungan": [
-        {
-          "tanggal": "14/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "14/11/2024": null
+      },
       "stats": {
         "jumlah_poin": 100,
         "kategori_stats": "Bronze",
+        "avatarname": "Tommy",
+        "avatar": "6",
         "rank": 21
       },
-      "task_user": [
-        74,
-        75
-      ],
+      "task_user": "74, 75",
       "user_data": {
         "jenis_id": "nik",
         "no_id": "1234567890123464",
@@ -2063,23 +2129,17 @@
         "tanggal_lahir": "12/03/1995",
         "tempat_lahir": "Surabaya"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM003",
-          "tanggal": "10/10/2024"
-        }
-      ],
+      "kunjungan": {
+        "10/10/2024": "RM003"
+      },
       "stats": {
         "jumlah_poin": 700,
         "kategori_stats": "Gold",
+        "avatarname": "Citra",
+        "avatar": "7",
         "rank": 7
       },
-      "task_user": [
-        14,
-        15,
-        16,
-        17
-      ],
+      "task_user": "14, 15, 16, 17",
       "user_data": {
         "jenis_id": "jkn_id",
         "no_id": "1234567890124",
@@ -2095,20 +2155,17 @@
         "tanggal_lahir": "05/01/1991",
         "tempat_lahir": "Manado"
       },
-      "kunjungan": [
-        {
-          "tanggal": "30/10/2024"
-        }
-      ],
+      "kunjungan": {
+        "30/10/2024": null
+      },
       "stats": {
         "jumlah_poin": 100,
         "kategori_stats": "Bronze",
+        "avatarname": "Maya",
+        "avatar": "8",
         "rank": 19
       },
-      "task_user": [
-        54,
-        55
-      ],
+      "task_user": "54, 55",
       "user_data": {
         "jenis_id": "jkn_id",
         "no_id": "1234567890130",
@@ -2124,20 +2181,17 @@
         "tanggal_lahir": "18/03/1988",
         "tempat_lahir": "Pontianak"
       },
-      "kunjungan": [
-        {
-          "tanggal": "04/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "04/11/2024": null
+      },
       "stats": {
         "jumlah_poin": 100,
         "kategori_stats": "Bronze",
+        "avatarname": "Oki",
+        "avatar": "9",
         "rank": 18
       },
-      "task_user": [
-        59,
-        60
-      ],
+      "task_user": "59, 60",
       "user_data": {
         "jenis_id": "jkn_id",
         "no_id": "1234567890131",
@@ -2153,20 +2207,17 @@
         "tanggal_lahir": "10/05/1989",
         "tempat_lahir": "Palangkaraya"
       },
-      "kunjungan": [
-        {
-          "tanggal": "08/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "08/11/2024": null
+      },
       "stats": {
         "jumlah_poin": 100,
         "kategori_stats": "Bronze",
+        "avatarname": "Qori",
+        "avatar": "10",
         "rank": 17
       },
-      "task_user": [
-        65,
-        66
-      ],
+      "task_user": "65, 66",
       "user_data": {
         "jenis_id": "jkn_id",
         "no_id": "1234567890132",
@@ -2182,23 +2233,17 @@
         "tanggal_lahir": "25/07/1991",
         "tempat_lahir": "Banjarmasin"
       },
-      "kunjungan": [
-        {
-          "id_rekam_medis": "RM016",
-          "tanggal": "12/11/2024"
-        }
-      ],
+      "kunjungan": {
+        "12/11/2024": "RM016"
+      },
       "stats": {
         "jumlah_poin": 1200,
         "kategori_stats": "Gold",
+        "avatarname": "Siti",
+        "avatar": "11",
         "rank": 6
       },
-      "task_user": [
-        70,
-        71,
-        72,
-        73
-      ],
+      "task_user": "70, 71, 72, 73",
       "user_data": {
         "jenis_id": "jkn_id",
         "no_id": "1234567890133",
@@ -2206,169 +2251,150 @@
       }
     }
   },
-
-  "berita": [
-    {
+  "berita": {
+    "1": {
       "judul": "Transformasi Layanan Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "Sebagai bagian dari upaya terus-menerus untuk meningkatkan akses layanan kesehatan di Indonesia, BPJS Kesehatan telah meluncurkan Aplikasi JKN Mobile yang menawarkan berbagai fitur canggih untuk kemudahan pengguna. Aplikasi ini dirancang untuk memudahkan pengguna dalam mengakses informasi terkait status kepesertaan, riwayat layanan kesehatan, dan juga melakukan pendaftaran konsultasi secara online. Dengan lebih dari 250 kata, artikel ini menggambarkan bagaimana Aplikasi JKN Mobile berperan penting dalam menyederhanakan proses administratif dan meningkatkan efisiensi layanan kesehatan. Melalui aplikasi ini, peserta bisa menghemat waktu dengan tidak perlu antre di fasilitas kesehatan untuk mendapatkan informasi yang mereka butuhkan. Selain itu, aplikasi ini juga menyediakan informasi penting seperti jadwal dokter, ketersediaan layanan di rumah sakit, dan tips kesehatan yang bermanfaat untuk masyarakat.",
-      "tanggal": "2024-10-01",
+      "tanggal": "01/10/2024",
       "dilihat": "1300"
     },
-    {
+    "2": {
       "judul": "Aplikasi JKN Mobile Meningkatkan Kualitas Pelayanan Kesehatan",
       "isi": "Aplikasi JKN Mobile telah menjadi alat revolusioner dalam sistem layanan kesehatan di Indonesia, memberikan akses tak terbatas kepada pengguna untuk mengelola kebutuhan kesehatan mereka dengan lebih efektif. Dengan aplikasi ini, peserta BPJS Kesehatan dapat dengan mudah memeriksa status kepesertaan, mencari fasilitas kesehatan terdekat, dan mendapatkan rujukan tanpa harus mengunjungi fasilitas kesehatan secara fisik. Artikel ini, yang berisi lebih dari 250 kata, menjelaskan berbagai fitur aplikasi yang telah disesuaikan untuk memberikan kemudahan dan efisiensi bagi pengguna. Fitur-fitur tersebut antara lain mencakup pendaftaran online, pembaruan data kepesertaan, dan pengajuan klaim secara digital. Selain itu, Aplikasi JKN Mobile juga menawarkan edukasi kesehatan yang membantu pengguna dalam membuat keputusan informasi tentang kesehatan mereka, melalui artikel kesehatan, video edukatif, dan webinar yang diselenggarakan oleh tenaga kesehatan profesional.",
-      "tanggal": "2024-10-03",
+      "tanggal": "03/10/2024",
       "dilihat": "1500"
     },
-    {
+    "3": {
       "judul": "Inovasi Layanan Kesehatan Digital: Manfaat Aplikasi JKN Mobile",
       "isi": "Dengan perkembangan teknologi yang cepat, BPJS Kesehatan telah mengambil inisiatif penting dengan mengembangkan Aplikasi JKN Mobile yang kini menjadi bagian integral dari layanan kesehatan di Indonesia. Aplikasi ini menyediakan berbagai fitur yang mendukung kebutuhan pengguna seperti pengecekan status kepesertaan, informasi tentang fasilitas kesehatan, dan panduan kesehatan secara umum. Artikel ini, dengan panjang lebih dari 250 kata, mengeksplorasi bagaimana aplikasi ini telah membantu meningkatkan kualitas layanan kesehatan melalui digitalisasi proses yang sebelumnya membutuhkan banyak waktu dan sumber daya. Fitur penting lainnya dari Aplikasi JKN Mobile adalah kemampuan untuk berkomunikasi langsung dengan dokter atau penyedia layanan kesehatan, yang signifikan dalam mempercepat proses penanganan medis dan konsultasi. Ini adalah langkah maju dalam transformasi layanan kesehatan Indonesia menuju era digital, membuat informasi kesehatan lebih mudah diakses oleh masyarakat luas.",
-      "tanggal": "2024-10-05",
+      "tanggal": "05/10/2024",
       "dilihat": "1200"
     },
-    {
-      "judul": "Transformasi Layanan Kesehatan dengan Aplikasi JKN Mobile",
-      "isi": "Sebagai bagian dari upaya terus-menerus untuk meningkatkan akses layanan kesehatan di Indonesia, BPJS Kesehatan telah meluncurkan Aplikasi JKN Mobile yang menawarkan berbagai fitur canggih untuk kemudahan pengguna. Aplikasi ini dirancang untuk memudahkan pengguna dalam mengakses informasi terkait status kepesertaan, riwayat layanan kesehatan, dan juga melakukan pendaftaran konsultasi secara online. Dengan lebih dari 250 kata, artikel ini menggambarkan bagaimana Aplikasi JKN Mobile berperan penting dalam menyederhanakan proses administratif dan meningkatkan efisiensi layanan kesehatan. Melalui aplikasi ini, peserta bisa menghemat waktu dengan tidak perlu antre di fasilitas kesehatan untuk mendapatkan informasi yang mereka butuhkan. Selain itu, aplikasi ini juga menyediakan informasi penting seperti jadwal dokter, ketersediaan layanan di rumah sakit, dan tips kesehatan yang bermanfaat untuk masyarakat.",
-      "tanggal": "2024-10-01",
-      "dilihat": "1300"
-    },
-    {
-      "judul": "Aplikasi JKN Mobile Meningkatkan Kualitas Pelayanan Kesehatan",
-      "isi": "Aplikasi JKN Mobile telah menjadi alat revolusioner dalam sistem layanan kesehatan di Indonesia, memberikan akses tak terbatas kepada pengguna untuk mengelola kebutuhan kesehatan mereka dengan lebih efektif. Dengan aplikasi ini, peserta BPJS Kesehatan dapat dengan mudah memeriksa status kepesertaan, mencari fasilitas kesehatan terdekat, dan mendapatkan rujukan tanpa harus mengunjungi fasilitas kesehatan secara fisik. Artikel ini, yang berisi lebih dari 250 kata, menjelaskan berbagai fitur aplikasi yang telah disesuaikan untuk memberikan kemudahan dan efisiensi bagi pengguna. Fitur-fitur tersebut antara lain mencakup pendaftaran online, pembaruan data kepesertaan, dan pengajuan klaim secara digital. Selain itu, Aplikasi JKN Mobile juga menawarkan edukasi kesehatan yang membantu pengguna dalam membuat keputusan informasi tentang kesehatan mereka, melalui artikel kesehatan, video edukatif, dan webinar yang diselenggarakan oleh tenaga kesehatan profesional.",
-      "tanggal": "2024-10-03",
-      "dilihat": "1500"
-    },
-    {
-      "judul": "Inovasi Layanan Kesehatan Digital: Manfaat Aplikasi JKN Mobile",
-      "isi": "Dengan perkembangan teknologi yang cepat, BPJS Kesehatan telah mengambil inisiatif penting dengan mengembangkan Aplikasi JKN Mobile yang kini menjadi bagian integral dari layanan kesehatan di Indonesia. Aplikasi ini menyediakan berbagai fitur yang mendukung kebutuhan pengguna seperti pengecekan status kepesertaan, informasi tentang fasilitas kesehatan, dan panduan kesehatan secara umum. Artikel ini, dengan panjang lebih dari 250 kata, mengeksplorasi bagaimana aplikasi ini telah membantu meningkatkan kualitas layanan kesehatan melalui digitalisasi proses yang sebelumnya membutuhkan banyak waktu dan sumber daya. Fitur penting lainnya dari Aplikasi JKN Mobile adalah kemampuan untuk berkomunikasi langsung dengan dokter atau penyedia layanan kesehatan, yang signifikan dalam mempercepat proses penanganan medis dan konsultasi. Ini adalah langkah maju dalam transformasi layanan kesehatan Indonesia menuju era digital, membuat informasi kesehatan lebih mudah diakses oleh masyarakat luas.",
-      "tanggal": "2024-10-05",
-      "dilihat": "1200"
-    },
-    {
+    "4": {
       "judul": "Memudahkan Akses Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "Aplikasi JKN Mobile dari BPJS Kesehatan terus berinovasi untuk memberikan layanan kesehatan yang lebih baik kepada masyarakat Indonesia. Dengan fitur-fitur yang dirancang untuk memudahkan pengguna, aplikasi ini memungkinkan peserta untuk melakukan berbagai transaksi layanan kesehatan dengan cepat dan mudah, dari pendaftaran ulang, pengecekan status kepesertaan, hingga pengambilan obat. Artikel ini mendetailkan bagaimana aplikasi telah mengubah cara masyarakat mengakses layanan kesehatan, membuat prosesnya lebih efisien dan mudah dijangkau.",
-      "tanggal": "2024-10-07",
+      "tanggal": "07/10/2024",
       "dilihat": "950"
     },
-    {
+    "5": {
       "judul": "Aplikasi JKN Mobile dan Dampaknya pada Pelayanan Kesehatan Primer",
       "isi": "Sebagai inisiatif untuk memperkuat sistem kesehatan di Indonesia, BPJS Kesehatan telah mengembangkan Aplikasi JKN Mobile, yang telah memainkan peran kunci dalam reformasi layanan kesehatan primer. Dengan memanfaatkan teknologi digital, aplikasi ini membantu meningkatkan kualitas pelayanan di pusat kesehatan masyarakat dan klinik, memungkinkan peserta untuk mendapatkan akses yang lebih cepat dan informasi yang lebih akurat. Artikel ini mengulas detail fitur aplikasi yang membantu pengguna dalam menjalani perawatan kesehatan sehari-hari, seperti pengaturan jadwal kunjungan, pemberitahuan jadwal dokter, dan akses ke hasil lab.",
-      "tanggal": "2024-10-09",
+      "tanggal": "09/10/2024",
       "dilihat": "1080"
     },
-    {
+    "6": {
       "judul": "Peningkatan Layanan dengan Aplikasi JKN Mobile",
       "isi": "BPJS Kesehatan terus berinovasi dengan Aplikasi JKN Mobile, yang telah menjadi alat penting dalam meningkatkan akses dan kualitas layanan kesehatan di Indonesia. Aplikasi ini memungkinkan peserta untuk mengakses layanan kesehatan dengan lebih mudah dan efisien, termasuk pendaftaran online, konsultasi virtual, dan pemantauan kesehatan secara real-time. Dengan lebih dari 250 kata, artikel ini menjelaskan bagaimana aplikasi telah berkontribusi pada peningkatan kepuasan pengguna dan efisiensi operasional layanan kesehatan.",
-      "tanggal": "2024-10-11",
+      "tanggal": "11/10/2024",
       "dilihat": "1020"
     },
-    {
+    "7": {
       "judul": "Revolusi Layanan Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "Aplikasi JKN Mobile terus mengubah wajah layanan kesehatan di Indonesia dengan menyediakan solusi digital yang inovatif. Aplikasi ini menawarkan berbagai fitur seperti pembayaran premi, pembaruan data kepesertaan, dan akses informasi layanan kesehatan. Artikel ini mendiskusikan bagaimana aplikasi telah memudahkan proses administrasi dan peningkatan kualitas pelayanan untuk jutaan penggunanya, dengan detil lebih dari 250 kata tentang fitur-fitur utamanya dan manfaat yang ditawarkan kepada peserta.",
-      "tanggal": "2024-10-13",
+      "tanggal": "13/10/2024",
       "dilihat": "900"
     },
-    {
+    "8": {
       "judul": "Kemudahan Akses Informasi Kesehatan Melalui Aplikasi JKN Mobile",
       "isi": "Aplikasi JKN Mobile membawa revolusi dalam akses informasi kesehatan dengan menyediakan platform yang mudah digunakan untuk peserta BPJS Kesehatan. Aplikasi ini memungkinkan pengguna untuk mengakses informasi penting seperti status kepesertaan, riwayat medis, dan lokasi fasilitas kesehatan terdekat. Artikel ini mengeksplorasi berbagai aspek aplikasi yang membantu pengguna mendapatkan layanan kesehatan yang mereka butuhkan dengan cepat dan efisien.",
-      "tanggal": "2024-10-15",
+      "tanggal": "15/10/2024",
       "dilihat": "1150"
     },
-    {
+    "9": {
       "judul": "Aplikasi JKN Mobile: Inovasi untuk Kesehatan yang Lebih Baik",
       "isi": "Inovasi dalam layanan kesehatan terus berkembang dengan Aplikasi JKN Mobile dari BPJS Kesehatan. Aplikasi ini tidak hanya memudahkan pengguna dalam mengelola kepesertaan dan akses layanan, tapi juga menawarkan modul edukasi kesehatan yang membantu meningkatkan kesadaran dan pengetahuan kesehatan. Dengan lebih dari 250 kata, artikel ini menggambarkan fitur-fitur aplikasi yang mendukung gaya hidup sehat dan pencegahan penyakit bagi pengguna.",
-      "tanggal": "2024-10-17",
+      "tanggal": "17/10/2024",
       "dilihat": "875"
     },
-    {
+    "10": {
       "judul": "Transformasi Digital Layanan Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "BPJS Kesehatan memperkenalkan Aplikasi JKN Mobile sebagai bagian dari inisiatif transformasi digital layanan kesehatan di Indonesia. Aplikasi ini menyediakan akses mudah ke berbagai layanan kesehatan, dari pengecekan status kepesertaan hingga pendaftaran online untuk berbagai layanan medis. Artikel ini menjelaskan bagaimana aplikasi ini memfasilitasi interaksi yang lebih cepat dan efisien antara peserta dan penyedia layanan kesehatan, serta bagaimana ia berkontribusi pada peningkatan sistem kesehatan nasional.",
-      "tanggal": "2024-10-19",
+      "tanggal": "19/10/2024",
       "dilihat": "980"
     },
-    {
+    "11": {
       "judul": "Efisiensi Layanan Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "Aplikasi JKN Mobile dari BPJS Kesehatan telah membuktikan efisiensinya dalam mempercepat dan mempermudah layanan kesehatan bagi peserta. Dengan aplikasi ini, pengguna dapat dengan mudah melakukan klaim, mencari informasi tentang fasilitas kesehatan, dan melakukan konsultasi online. Artikel ini, yang berisi lebih dari 250 kata, mendetailkan berbagai cara aplikasi ini membantu memperbaiki dan mempercepat layanan kesehatan di Indonesia, mengurangi waktu tunggu dan meningkatkan kepuasan pengguna.",
-      "tanggal": "2024-10-21",
+      "tanggal": "21/10/2024",
       "dilihat": "1050"
     },
-    {
+    "12": {
       "judul": "Aplikasi JKN Mobile: Memperkuat Sistem Kesehatan Indonesia",
       "isi": "BPJS Kesehatan terus memperkuat sistem kesehatan Indonesia dengan Aplikasi JKN Mobile, yang memungkinkan peserta untuk mengakses layanan kesehatan dengan lebih efisien dan efektif. Artikel ini, yang berisi lebih dari 250 kata, menjelaskan bagaimana aplikasi ini membantu mengintegrasikan layanan kesehatan di seluruh negeri, menyediakan alat bagi peserta untuk mengelola kesehatan mereka, dan mendukung inisiatif pemerintah untuk menyediakan layanan kesehatan yang lebih baik untuk semua warga.",
-      "tanggal": "2024-10-23",
+      "tanggal": "23/10/2024",
       "dilihat": "1120"
     },
-    {
+    "13": {
       "judul": "Akses Cepat dan Mudah Layanan Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "Mempercepat akses layanan kesehatan melalui teknologi menjadi fokus BPJS Kesehatan dengan pengembangan Aplikasi JKN Mobile. Aplikasi ini dirancang untuk memberikan kemudahan bagi peserta dalam mendapatkan informasi layanan kesehatan, pendaftaran klinik, dan cek status kepesertaan hanya dengan beberapa klik. Dengan aplikasi ini, masyarakat dapat mengurangi kunjungan fisik ke fasilitas kesehatan, yang sangat membantu terutama di masa pandemi. Fitur penting lainnya termasuk integrasi dengan sistem rumah sakit untuk memudahkan booking dan konsultasi online, serta akses ke database obat-obatan. Artikel ini menjelaskan secara mendalam bagaimana Aplikasi JKN Mobile memudahkan pengguna dalam menjalani proses kesehatan harian mereka, mendukung kebijakan kesehatan preventif, dan memberikan tips kesehatan yang bermanfaat.",
-      "tanggal": "2024-10-25",
+      "tanggal": "25/10/2024",
       "dilihat": "940"
     },
-    {
+    "14": {
       "judul": "Manfaat Aplikasi JKN Mobile dalam Meningkatkan Layanan Kesehatan Masyarakat",
       "isi": "Aplikasi JKN Mobile telah bertransformasi menjadi alat penting dalam meningkatkan layanan kesehatan masyarakat di Indonesia. Dengan berbagai fitur yang dirancang untuk memudahkan pengelolaan kesehatan, aplikasi ini memberikan manfaat signifikan terutama dalam mempercepat proses administrasi medis dan memperluas jangkauan layanan kesehatan. Aplikasi ini juga termasuk fitur edukasi kesehatan yang menyediakan artikel dan video tentang cara menjaga kesehatan, pencegahan penyakit, dan nutrisi. Artikel ini menjelaskan detil implementasi dan penggunaan aplikasi dalam kehidupan sehari-hari, bagaimana aplikasi ini membantu memperkuat infrastruktur kesehatan, dan rencana pengembangan fitur baru yang akan semakin memperkaya pengalaman pengguna.",
-      "tanggal": "2024-10-27",
+      "tanggal": "27/10/2024",
       "dilihat": "1080"
     },
-    {
+    "15": {
       "judul": "Mengoptimalkan Manfaat Teknologi untuk Kesehatan dengan Aplikasi JKN Mobile",
       "isi": "Aplikasi JKN Mobile dari BPJS Kesehatan merupakan langkah maju dalam mengoptimalkan manfaat teknologi untuk kesehatan masyarakat. Aplikasi ini dirancang untuk menyederhanakan proses medis dan administratif, mempercepat akses ke informasi kesehatan, dan mendukung upaya kesehatan preventif. Dengan fitur yang mudah digunakan, aplikasi ini telah menjadi andalan banyak peserta BPJS Kesehatan dalam mengelola kesehatan mereka. Artikel ini mendalam menguraikan fitur-fitur aplikasi, seperti akses instan ke informasi medis, kemampuan untuk berkomunikasi dengan dokter, dan bagaimana aplikasi ini membantu mengatasi tantangan kesehatan saat ini di Indonesia, serta pandangan ke depan tentang inovasi yang akan diintegrasikan dalam versi masa depan aplikasi.",
-      "tanggal": "2024-10-29",
+      "tanggal": "29/10/2024",
       "dilihat": "1025"
     },
-    {
+    "16": {
       "judul": "Aplikasi JKN Mobile Mempermudah Akses Layanan Kesehatan Mental",
       "isi": "Dalam upaya mendukung kesehatan mental masyarakat, Aplikasi JKN Mobile telah memperkenalkan fitur baru yang mempermudah akses ke layanan kesehatan mental. Fitur ini dirancang untuk memberikan dukungan psikologis dan konseling dari para ahli melalui platform digital. Aplikasi ini memungkinkan pengguna untuk secara anonim berkonsultasi dengan psikolog dan psikiater, membantu mereka mendapatkan bantuan yang diperlukan tanpa stigma. Artikel ini menjelaskan lebih dari 250 kata mengenai manfaat fitur baru ini, bagaimana itu mengubah pendekatan kesehatan mental di Indonesia, dan dampak positifnya terhadap pengguna aplikasi.",
-      "tanggal": "2024-11-01",
+      "tanggal": "01/11/2024",
       "dilihat": "950"
     },
-    {
+    "17": {
       "judul": "Aplikasi JKN Mobile: Katalis Perubahan dalam Layanan Kesehatan Primer",
       "isi": "Sebagai katalis perubahan dalam layanan kesehatan primer, Aplikasi JKN Mobile telah memperkenalkan serangkaian inovasi yang bertujuan untuk meningkatkan efisiensi dan kualitas layanan kesehatan di Indonesia. Aplikasi ini menyediakan fasilitas pendaftaran online, pengingat jadwal kunjungan, dan akses cepat ke hasil laboratorium, yang semuanya dapat diakses dengan mudah dari smartphone. Artikel ini mendiskusikan bagaimana Aplikasi JKN Mobile telah mempengaruhi pelayanan kesehatan di tingkat dasar, termasuk peningkatan keterjangkauan dan kemudahan akses untuk populasi di daerah terpencil.",
-      "tanggal": "2024-11-03",
+      "tanggal": "03/11/2024",
       "dilihat": "1220"
     },
-    {
+    "18": {
       "judul": "Integrasi Aplikasi JKN Mobile dengan Layanan Darurat untuk Respons yang Lebih Cepat",
       "isi": "Aplikasi JKN Mobile kini terintegrasi dengan layanan darurat, memungkinkan respons yang lebih cepat dan efisien dalam situasi kedaruratan medis. Fitur ini menghubungkan pengguna dengan layanan ambulans dan rumah sakit terdekat, memastikan bahwa bantuan medis dapat diterima dalam waktu singkat. Artikel ini menjelaskan implementasi dan manfaat dari integrasi ini, bagaimana itu membantu meningkatkan tingkat kelangsungan hidup dan efisiensi dalam penanganan keadaan darurat medis.",
-      "tanggal": "2024-11-05",
+      "tanggal": "05/11/2024",
       "dilihat": "1350"
     },
-    {
+    "19": {
       "judul": "Peningkatan Layanan Telemedisin Melalui Aplikasi JKN Mobile",
       "isi": "Aplikasi JKN Mobile telah mengambil langkah besar dalam peningkatan layanan telemedisin. Melalui aplikasi ini, pengguna dapat melakukan konsultasi virtual dengan dokter dan ahli kesehatan tanpa perlu keluar rumah. Fitur ini sangat bermanfaat bagi penduduk di daerah yang kekurangan fasilitas kesehatan. Artikel ini mengeksplorasi fitur telemedisin dalam aplikasi, manfaatnya bagi pengguna, dan bagaimana ini mendukung tujuan pemerintah untuk meningkatkan akses layanan kesehatan.",
-      "tanggal": "2024-11-07",
+      "tanggal": "07/11/2024",
       "dilihat": "1015"
     },
-    {
+    "20": {
       "judul": "Aplikasi JKN Mobile Meningkatkan Akses Informasi Vaksinasi",
       "isi": "Di tengah upaya nasional untuk meningkatkan cakupan vaksinasi, Aplikasi JKN Mobile telah menjadi alat penting dalam menyediakan informasi dan pendaftaran vaksinasi. Aplikasi ini menyediakan jadwal vaksinasi, lokasi pusat vaksinasi, dan mengelola pencatatan hasil vaksinasi. Artikel ini membahas secara detail bagaimana aplikasi ini membantu masyarakat mendapatkan akses informasi vaksinasi yang tepat dan terpercaya, serta mendukung kebijakan kesehatan publik.",
-      "tanggal": "2024-11-09",
+      "tanggal": "09/11/2024",
       "dilihat": "1180"
     },
-    {
+    "21": {
       "judul": "Fitur Baru di Aplikasi JKN Mobile Memudahkan Pemantauan Kondisi Kronis",
       "isi": "Aplikasi JKN Mobile terus berinovasi dengan memperkenalkan fitur baru yang memudahkan pemantauan kondisi kesehatan kronis. Fitur ini memungkinkan pengguna untuk secara rutin memeriksa dan mencatat parameter kesehatan seperti tekanan darah, gula darah, dan lainnya. Artikel ini menjelaskan fitur ini dalam detail, bagaimana pengguna bisa menggunakannya untuk memantau kondisi kesehatan mereka, dan implikasi positifnya terhadap manajemen penyakit kronis di Indonesia.",
-      "tanggal": "2024-11-11",
+      "tanggal": "11/11/2024",
       "dilihat": "1100"
     },
-    {
+    "22": {
       "judul": "Kemudahan Penggunaan Aplikasi JKN Mobile Dorong Peningkatan Literasi Kesehatan",
       "isi": "Aplikasi JKN Mobile tidak hanya memudahkan akses layanan kesehatan, tetapi juga mendukung peningkatan literasi kesehatan di kalangan masyarakat. Dengan antarmuka yang ramah pengguna, aplikasi ini menyediakan informasi kesehatan yang mudah dipahami dan dapat diakses oleh semua lapisan masyarakat. Artikel ini menguraikan fitur edukatif aplikasi, bagaimana ini membantu masyarakat memahami lebih baik tentang kesehatan dan penyakit, serta dampaknya terhadap perilaku kesehatan masyarakat.",
-      "tanggal": "2024-11-13",
+      "tanggal": "13/11/2024",
       "dilihat": "950"
     },
-    {
+    "23": {
       "judul": "Aplikasi JKN Mobile sebagai Alat Bantu Pengelolaan Apotek dan Resep Elektronik",
       "isi": "Aplikasi JKN Mobile telah memperkenalkan fitur yang memudahkan pengelolaan apotek dan resep elektronik, memungkinkan peserta untuk mendapatkan obat dengan lebih cepat dan mudah. Fitur ini mengintegrasikan sistem resep elektronik dengan apotek terdaftar, memudahkan proses pengambilan obat dan mengurangi kesalahan medis. Artikel ini mengeksplorasi bagaimana aplikasi telah mengubah cara peserta mengakses obat-obatan dan meningkatkan kepuasan mereka terhadap layanan BPJS Kesehatan.",
-      "tanggal": "2024-11-15",
+      "tanggal": "15/11/2024",
       "dilihat": "1020"
     },
-    {
+    "24": {
       "judul": "Integrasi Data Kesehatan Pasien Melalui Aplikasi JKN Mobile Tingkatkan Efisiensi Layanan",
       "isi": "Integrasi data kesehatan pasien melalui Aplikasi JKN Mobile telah meningkatkan efisiensi layanan kesehatan di banyak fasilitas. Dengan menyediakan akses mudah ke riwayat medis pasien, aplikasi ini memungkinkan penyedia layanan kesehatan untuk membuat keputusan medis yang lebih informasi dan tepat waktu. Artikel ini menjelaskan teknologi di balik integrasi data ini, manfaatnya bagi pasien dan penyedia layanan, serta bagaimana ini berkontribusi pada penyederhanaan administrasi medis di seluruh sistem kesehatan.",
-      "tanggal": "2024-11-17",
+      "tanggal": "17/11/2024",
       "dilihat": "1230"
     }
-  ]
+  }
 }

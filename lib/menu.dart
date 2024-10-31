@@ -3,9 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jkn_gamification/berita_page.dart';
 import 'package:jkn_gamification/home_page.dart';
+import 'package:jkn_gamification/login_page.dart';
 import 'package:jkn_gamification/service/navbar_visibility_provider.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class Menu extends StatefulWidget {
@@ -19,11 +21,18 @@ class _MenuState extends State<Menu> {
 
   late bool isNavBarVisible;
 
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
   @override
   void initState() {
     super.initState();
     _controller = PersistentTabController(initialIndex: 0);
   }
+
 
   List<Widget> _buildScreens() {
     return [
@@ -117,7 +126,30 @@ class blankPage extends StatelessWidget {
         title: Text(pageName), // Menggunakan parameter di AppBar
       ),
       body: Center(
-        child: Text("Welcome to $pageName"),
+        child: pageName == "Profil" ?
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFC5FFE6)), // Warna merah muda
+              ),
+              onPressed: () async {
+                SharedPreferences prefs = await SharedPreferences.getInstance();
+                await prefs.clear();
+
+                Navigator.pop(context);
+              },
+              child: Container(
+                height: 40,
+                width: 100,
+                child:  Row(
+                  children: [
+                    Icon(Icons.logout, color: Colors.black,),
+                    Container( width: 4,),
+                    Text("Logout", style:  TextStyle(color: Colors.black),)
+                  ],
+                )
+              )
+            )
+        : Text("Welcome to $pageName")
       ),
     );
   }
