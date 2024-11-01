@@ -1,11 +1,16 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:jkn_gamification/membaca_berita_page.dart';
-import 'package:jkn_gamification/service/navbar_visibility_provider.dart';
 import 'package:provider/provider.dart';
 
 
 class BeritaPage extends StatefulWidget {
+
+  final BuildContext menuContext;
+
+  BeritaPage({Key? key, required this.menuContext}) : super(key: key);
+
   @override
   _BeritaPageState createState() => _BeritaPageState();
 }
@@ -26,6 +31,9 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
   final List<String> _buttons = ['Rekomendasi', 'Berita Utama', 'Testimoni', 'Tips Sehat', 'Gaya Hidup'];
 
 
+  DateTime parseDate(String date) {
+    return DateFormat('dd-MM-yyyy').parse(date);
+  }
 
   @override
   void initState() {
@@ -60,8 +68,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
         }
       };
 
-      // Mengurutkan artikel berdasarkan tanggal, menggunakan DateTime.parse untuk konversi string ke DateTime
-      allArticles.sort((a, b) => DateTime.parse(b["tanggal"]).compareTo(DateTime.parse(a["tanggal"])));
+      allArticles.sort((a, b) => parseDate(b["tanggal"]).compareTo(parseDate(a["tanggal"])));
 
 
       setState(() {
@@ -238,9 +245,8 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
   Widget artikelCard(String judul, String isi, String dilihat, String imagePath, String tanggal) {
     return InkWell(
       onTap: () {
-        Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(false);
         Navigator.push(
-          context,
+          widget.menuContext,
           MaterialPageRoute(
             builder: (context) => MembacaBeritaPage(
                 judul: judul,
@@ -250,9 +256,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
                 tanggal: tanggal
             ),
           ),
-        ).then((_) {
-          Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(true);
-        });
+        );
       },
       child: Container(
         width: 420, // Lebar card, sesuaikan sesuai kebutuhan
@@ -292,9 +296,8 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
   Widget beritaCard(String judul, String isi, String dilihat, String imagePath, String tanggal) {
     return InkWell(
       onTap: () {
-        Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(false);
         Navigator.push(
-          context,
+          widget.menuContext,
           MaterialPageRoute(
             builder: (context) => MembacaBeritaPage(
                 judul: judul,
@@ -304,9 +307,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
                 tanggal: tanggal
             ),
           ),
-        ).then((_) {
-          Provider.of<NavBarVisibilityProvider>(context, listen: false).setVisible(true);
-        });
+        );
       },
       child: Card(
         margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),

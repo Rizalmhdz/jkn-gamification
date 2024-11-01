@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:jkn_gamification/berita_page.dart';
 import 'package:jkn_gamification/home_page.dart';
 import 'package:jkn_gamification/login_page.dart';
-import 'package:jkn_gamification/service/navbar_visibility_provider.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -17,9 +16,6 @@ class Menu extends StatefulWidget {
 
 class _MenuState extends State<Menu> {
   late PersistentTabController _controller;
-
-
-  late bool isNavBarVisible;
 
 
   @override
@@ -36,11 +32,11 @@ class _MenuState extends State<Menu> {
 
   List<Widget> _buildScreens() {
     return [
-      HomePage(),
-      BeritaPage(),
+      HomePage(menuContext: context,),
+      BeritaPage(menuContext: context,),
       blankPage(pageName: "Kartu"),
       blankPage(pageName: "FAQ"),
-      blankPage(pageName: "Profil"),
+      profilePage(pageName: "Profil", menuContext: context,),
     ];
   }
 
@@ -61,7 +57,7 @@ class _MenuState extends State<Menu> {
       ),
       PersistentBottomNavBarItem(
           icon: Icon(Icons.credit_card_rounded, color: Colors.white),
-          activeColorPrimary: isNavBarVisible ? Colors.blue : Colors.transparent, // Set active color
+          activeColorPrimary: Colors.blue, // Set active color
           inactiveColorPrimary: Colors.grey,
           title: ("Kartu"),
       ),
@@ -83,7 +79,6 @@ class _MenuState extends State<Menu> {
 
   @override
   Widget build(BuildContext context) {
-    isNavBarVisible = Provider.of<NavBarVisibilityProvider>(context).isVisible;
     return PersistentTabView(
       context,
       controller: _controller,
@@ -96,7 +91,7 @@ class _MenuState extends State<Menu> {
       popBehaviorOnSelectedNavBarItemPress: PopBehavior.once,
       padding: const EdgeInsets.only(top: 8),
       backgroundColor: Colors.white,
-      isVisible: isNavBarVisible,
+      isVisible: true,
       animationSettings: const NavBarAnimationSettings(
         navBarItemAnimation: ItemAnimationSettings( // Navigation Bar's items animation properties.
           duration: Duration(milliseconds: 400),
@@ -122,6 +117,7 @@ class blankPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(pageName), // Menggunakan parameter di AppBar
       ),
@@ -150,6 +146,48 @@ class blankPage extends StatelessWidget {
               )
             )
         : Text("Welcome to $pageName")
+      ),
+    );
+  }
+}
+
+class profilePage extends StatelessWidget {
+  final String pageName;
+  final BuildContext menuContext;
+  const profilePage({Key? key, required this.pageName, required this.menuContext}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(pageName), // Menggunakan parameter di AppBar
+      ),
+      body: Center(
+          child: pageName == "Profil" ?
+          ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFC5FFE6)), // Warna merah muda
+              ),
+              onPressed: () async {
+                SharedPreferences prefs = await SharedPreferences.getInstance();
+                await prefs.clear();
+                Navigator.pushReplacement(
+                  menuContext,
+                  MaterialPageRoute(builder: (context) => LoginPage()));
+              },
+              child: Container(
+                  height: 40,
+                  width: 100,
+                  child:  Row(
+                    children: [
+                      Icon(Icons.logout, color: Colors.black,),
+                      Container( width: 4,),
+                      Text("Logout", style:  TextStyle(color: Colors.black),)
+                    ],
+                  )
+              )
+          )
+              : Text("Welcome to $pageName")
       ),
     );
   }

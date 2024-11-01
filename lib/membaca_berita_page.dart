@@ -132,6 +132,7 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(56.0),
         child: Stack(

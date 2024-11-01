@@ -2,11 +2,16 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:jkn_gamification/innovation%20page/game_on_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
 class HomePage extends StatefulWidget {
+  final BuildContext menuContext;
+
+  // Konstruktor dengan parameter title
+  HomePage({Key? key, required this.menuContext}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -37,6 +42,7 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         Map<dynamic, dynamic> dataList = snapshot.value as Map<dynamic, dynamic>;
         _userNickName = dataList["nama"];
+        prefs.setString("nama_lengkap", _userNickName);
         print('User Nickname: $_userNickName');
       });
     } else {
@@ -153,9 +159,13 @@ class _HomePageState extends State<HomePage> {
             bottom: 20,   // Atur jarak dari atas
             child: FloatingActionButton(
               backgroundColor: Color(0xFFC5FFE6),
-              child: Icon(Icons.gamepad, size: 40, color: Color(0xFF096891),),  // Menambahkan ikon game controller
+              child: Image.asset('assets/icons/computer-game.png',),  // Menambahkan ikon game controller
               onPressed: () {
 
+                Navigator.push(
+                  widget.menuContext,
+                  MaterialPageRoute(builder: (context) => GameOnPage()),
+                );
               },
               shape: CircleBorder(), // Membuat button menjadi bentuk lingkaran sempurna
             ),
