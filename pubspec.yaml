@@ -72,6 +72,7 @@ flutter:
      - assets/berita/
      - assets/icons/
      - assets/banners/
+     - assets/avatars/
 
 
   # To add assets to your application, add an assets section, like this:

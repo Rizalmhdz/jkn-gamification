@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:jkn_gamification/innovation%20page/leaderboard_page.dart';
+import 'package:jkn_gamification/innovation%20page/user_stats_page.dart';
 import 'package:jkn_gamification/menu.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -146,7 +147,7 @@ class _GameOnPageState extends State<GameOnPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           verticalDirection: VerticalDirection.down,
                           children: [
-                            menuCard('user stats.png', 'User Stats', blankPage(pageName: "User Stats")),
+                            menuCard('user stats.png', 'User Stats', UserStatsPage()),
                             menuCard('leaderboard.png', 'Leaderboard', LeaderboardPage()),
                             menuCard('reedem poin.png', 'Reedem Poin', blankPage(pageName: "Reedem Poin")),
                           ],
