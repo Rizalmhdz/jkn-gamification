@@ -383,21 +383,43 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
             ),
           Container(
               decoration: BoxDecoration(
-                color: Color(0xFFF0F0F0),
+                // color: Color(0xFFF0F0F0),
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: TabBar(
-                controller: _tabController,
-                tabs: [
-                  Tab(text: "Tab 1"),
-                  Tab(text: "Tab 2"),
-                ],
+              child: Theme(
+                data: Theme.of(context).copyWith(
+                  // Override primary color and accent color used by the tab bar
+                  primaryColor: Color(0xFF096891),
+                  colorScheme: ColorScheme.light().copyWith(
+                    primary: Color(0xFF096891),
+                  ),
+                  tabBarTheme: TabBarTheme(
+                    labelColor: Color(0xFF096891), // Active tab label color
+                    unselectedLabelColor: Colors.grey, // Unselected tab label color
+                    indicator: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          color: Color(0xFF096891), // Color of the bottom border (indicator)
+                          width: 3.0, // Thickness of the indicator
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                child: TabBar(
+                  controller: _tabController,
+                  tabs: [
+                    Tab(text: "Sedang Berlangsung"),
+                    Tab(text: "Riwayat Task"),
+                  ],
+                ),
               ),
+
           ),
           Expanded(child:
             Container(
               width: screenWidth,
-              color: Color(0xFFF0F0F0),
+              // color: Color(0xFFF0F0F0),
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: DefaultTabController(
                 length: 2, // Total 2 tab
@@ -408,9 +430,11 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
                     ListView.builder(
                       itemCount: 20, // Jumlah item yang ingin ditampilkan
                       itemBuilder: (context, index) {
-                        return ListTile(
-                          leading: Icon(Icons.star),
-                          title: Text("Item ${index + 1} in Tab 1"),
+                        return itemListTask(
+                          index + 1,
+                          'Nama Task ${index + 1}',
+                          'tanggal task ${index + 1}',
+                            index % 2 == 0 ? true : false
                         );
                       },
                     ),
@@ -429,27 +453,6 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
               ),
             ),
           ),
-
-          // CustomScrollView(
-          //   controller: _scrollController,
-          //   slivers: <Widget>[
-          //     SliverList(
-          //       delegate: SliverChildBuilderDelegate(
-          //             (BuildContext context, int index) {
-          //           return itemListLeaderboard(
-          //             index + 1,
-          //             index >= 27 ? '1' : '${index + 1}',
-          //             'User $index',
-          //             '${index}12345231212576',
-          //             'Kalimantan Selatan',
-          //             (15 - index) * 213,
-          //           );
-          //         },
-          //         childCount: 50, // Display 50 items
-          //       ),
-          //     ),
-          //   ],
-          // )
         ],
       ),
     );
@@ -462,67 +465,90 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
     return  Container(
         width: screenWidth - 40,
         height: 80,
-        margin: EdgeInsets.only(left: 20, right: 20, bottom: 10, top: rank == 1 ? 10 : 0),
+        margin: EdgeInsets.only(left: 20, right: 20, bottom: 10, top: no == 1 ? 10 : 0),
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: colorItem,
           borderRadius: BorderRadius.circular(100),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+        child: Stack(
           children: [
-            Container(
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        '#$no',
-                        style: TextStyle(
-                            fontSize: '#$no'.length > 4 ? 16 : 18,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF096891)
-                        ),
+            Positioned(
+              top: '#$no'.length > 4 ? 14 : 10,
+                left: 12,
+                child:  Container(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            'ID TASK',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.normal,
+                                color: Color(0xFF096891),
+                                height: 1
+                            ),
+                          ),
+
+                          Text(
+                            '#$no',
+                            style: TextStyle(
+                                fontSize: '#$no'.length > 4 ? 16 : 20,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF096891)
+                            ),
+                          ),
+                        ]
+                    ),
+                ),
+            ),
+
+            Positioned(
+              left: 80,
+              top: 12,
+              child:
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '$namaTask',
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF096891),
+                          height: 1
                       ),
-                    ]
+                    ),
+                    Text(
+                      '$tanggalTask',
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.normal,
+                          color: Color(0xFF096891)
+                      ),
+                    ),
+                  ],
                 ),
-                width: 50
             ),
-            Container(width: 10),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '$namaTask',
-                  style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF096891),
-                      height: 1
-                  ),
-                ),
-                Text(
-                  '$tanggalTask',
-                  style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.normal,
-                      color: Color(0xFF096891)
-                  ),
-                ),
-              ],
-            ),
-            Container(
-              padding: EdgeInsets.all(2),
-              decoration: BoxDecoration(
-                color: isDone ? Colors.green : Colors.yellow,
-                shape: isDone ? BoxShape.rectangle : BoxShape.circle,
-              ),
-              child: Icon(
-                isDone ? Icons.check : Icons.error_outline,
-                color: Colors.white, // Icon color
-                size: 12, // Icon size
-              ),
+
+            Positioned(
+                top: isDone ? 16 : 12,
+                right: isDone ? 20 : 16,
+                child: Container(
+                    padding: isDone ? EdgeInsets.all(2) : EdgeInsets.all(6),
+                    decoration: BoxDecoration(
+                      color: isDone ? Colors.green : Colors.orange,
+                      shape: isDone ? BoxShape.rectangle : BoxShape.circle,
+                    ),
+                    child: Icon(
+                      isDone ? Icons.check : Icons.error_outline,
+                      color: isDone ? Colors.white : Colors.white, // Icon color
+                      size: 20, // Icon size
+                    ),
+                  )
             )
+
           ],
         )
     );

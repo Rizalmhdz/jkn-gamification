@@ -1,5 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:jkn_gamification/innovation%20page/leaderboard_page.dart';
 import 'package:jkn_gamification/innovation%20page/user_stats_page.dart';
 import 'package:jkn_gamification/menu.dart';
@@ -16,10 +17,39 @@ class _GameOnPageState extends State<GameOnPage> {
   String _userId = "";
   String namaPanggilan = "";
 
+  late double screenWidth;
+  late double screenHeight;
+
+  final List<Map<dynamic, dynamic>> todayTask = [];
+
   @override
   void initState() {
     super.initState();
     getData();
+  }
+
+  bool isTodayTask(String tanggalTask){
+    DateTime today = DateTime.now();
+    String formattedToday = DateFormat('dd-MM-yyyy').format(today);
+
+    DateTime parsedDate = DateFormat('dd-MM-yyyy').parse(tanggalTask);
+
+    if (today.isAtSameMomentAs(parsedDate)) {
+      return true;
+    // } else if (today.isBefore(parsedDate)) {
+    //   return false;
+    // } else if (today.isAfter(parsedDate)) {
+    //   return false;
+    } else {
+      return false;
+    }
+  }
+
+  List<int> parseStringToIntList(String numberString) {
+    return numberString
+        .split(',')
+        .map((s) => int.parse(s.trim()))
+        .toList();
   }
 
   Future<void> getData() async {
@@ -38,6 +68,51 @@ class _GameOnPageState extends State<GameOnPage> {
     } else {
       print('User ID tidak ditemukan');
     }
+
+    final DatabaseReference taskUserRef = ref.child('users/$_userId/task_user');
+    taskUserRef.onValue.listen((DatabaseEvent event) async {
+      final data = event.snapshot.value;
+
+      if (data != null) {
+        setState(() {
+          List<int> taskIds = parseStringToIntList(data.toString());
+          print("taskUser : $taskIds");
+
+          if (taskIds.isNotEmpty) {
+            for (int id in taskIds) {
+              final taskRef = ref.child('tasks/$id');
+              taskRef.get().then((snapshot) {
+                if (snapshot.exists) {
+                  final taskData = snapshot.value as Map<dynamic, dynamic>;
+                  final String taskDate = taskData['timestamp'];
+
+                  if (isTodayTask(taskDate)) {
+                    setState(() {
+                      todayTask.add(taskData);
+                    });
+                    print("Task ID $id ditambahkan.");
+                    print(taskData);
+                    print("todayTask : $todayTask");
+                  } else {
+                    print("Task ID $id bukan hari ini.");
+                  }
+                } else {
+                  print("Task dengan ID $id tidak ada.");
+                }
+              }).catchError((error) {
+                print("Error ketika mengambil data tasks: $error");
+              });
+            }
+          } else {
+            print("No tasks found for user.");
+          }
+        });
+      } else {
+        print('Task user "$_userId" tidak ditemukan');
+      }
+    });
+
+
   }
 
   String getNickname(String fullName) {
@@ -49,18 +124,10 @@ class _GameOnPageState extends State<GameOnPage> {
     }
   }
 
-
-
-
-  List<Map<String, dynamic>> tasks = [
-    {'title': "Minum Obat", 'description': "Jangan lupa minum obat hipertensi", 'time': "10:00 AM"},
-    {'title': "Kunjungan Faskes", 'description': "Mengunjungi Faskes Kinibalu untuk cek mata", 'time': "11:00 AM"},
-    {'title': "Kunjungan Faskes", 'description': "Mengunjungi Faskes Kinibalu untuk cek mata", 'time': "11:00 AM"},
-  ];
-
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
+    screenWidth = MediaQuery.of(context).size.width;
+    screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Stack(
         children: [
@@ -117,11 +184,11 @@ class _GameOnPageState extends State<GameOnPage> {
                                       children: [
                                         Text(
                                           'Hello $namaPanggilan..',
-                                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xFF096891)),
                                         ),
                                         Text(
                                           'Selesaikan misiimu hari ini',
-                                          style: TextStyle(fontSize: 12),
+                                          style: TextStyle(fontSize: 12, color: Color(0xFF096891)),
                                         ),
                                       ],
 
@@ -142,7 +209,7 @@ class _GameOnPageState extends State<GameOnPage> {
                       ),
                       SizedBox(height: 10),
                       Container(
-                        height: 180,
+                        height: 160,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           verticalDirection: VerticalDirection.down,
@@ -163,15 +230,36 @@ class _GameOnPageState extends State<GameOnPage> {
                       ),
                       SizedBox(height: 10),
                       Expanded(
-                        child: ListView.builder(
-                          itemCount: tasks.length,
-                          scrollDirection: Axis.horizontal,
+                        child: todayTask.length > 0 ?ListView.builder(
+                          itemCount: todayTask.length,
+                          scrollDirection: Axis.vertical,
                           itemBuilder: (context, index) {
-                            // Memastikan data yang diteruskan ke TaskCard benar
-                            return TaskCard( tasks[index]["title"],tasks[index]["description"], tasks[index]["time"]
+                            print("todayTask : ${todayTask.length}");
+                            return TaskCard(
+                                todayTask[index]["kategori_task"],
+                                todayTask[index]["timestamp"]
                             );
                           },
-                        ),
+                        ) : Container(
+                          child: Center(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                    "Tugas Hari ini Tidak Ditemukan",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black45,
+                                      height: 4
+                                    ),
+                                ),
+                                Image.asset('assets/icons/no-data.png', height: 150,),
+                              ],
+                            ),
+                          ),
+
+                        )
                       ),
                     ],
                   ),
@@ -200,7 +288,6 @@ class _GameOnPageState extends State<GameOnPage> {
           );
         }, // Tambahkan parameter onTap untuk menangani aksi saat kartu diklik
         child: Card(
-          color: Color(0xFFC5FFE6),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -222,27 +309,69 @@ class _GameOnPageState extends State<GameOnPage> {
   }
 
 
-  Widget TaskCard(String title, String description, String time) {
+  Widget TaskCard(String title, String time, {String namaObat = "", String alamatFaskes = ""}) {
+    String imagePath = '';
+    String deskripsi = '';
+    String pukul =  DateFormat('HH:mm').format(DateFormat('dd-MM-yyyy HH:mm:ss').parse(time));
+
+
+
+
+    switch (title) {
+      case 'Meminum Obat':
+        imagePath = 'assets/icons/meminum obat.png';
+        deskripsi = 'Jangan lupa minum obat "$namaObat".';
+        break;
+      case 'Kunjungan Faskes':
+        imagePath = 'assets/icons/kunjungan faskes.png';
+        deskripsi = 'Jangan lupa anda ada jadwal berkunjung ke Faskes "$alamatFaskes" hari ini.';
+        break;
+      case 'Skrining Kesehatan':
+        imagePath = 'assets/icons/skrining.png';
+        deskripsi = 'Lakukan Skrining Kesehatan Hari ini';
+        break;
+      case 'Membaca Berita':
+        imagePath = 'assets/icons/membaca berita.png';
+        deskripsi = 'Jangan Lupa Membaca Berita Kesehatan Hari ini';
+        break;
+      default:
+        imagePath = 'assets/icons/poin.png';
+        deskripsi = 'Informasi tidak tersedia.';
+    }
+
     return Card(
+      color: Color(0xFFC5FFE6),
       elevation: 2,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child:
+        Row(
           children: [
-            Text(title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            SizedBox(height: 8),
-            Text(description),
-            SizedBox(height: 8),
-            Row(
+            Container(
+              width: (screenWidth - 20 - 20) * ( 5/ 8 ),
+              child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.access_time, color: Colors.grey,),
-                Container(width: 5,),
-                Text(time, style: TextStyle(color: Colors.grey)),
+                Text(title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF096891))),
+                SizedBox(height: 2),
+                Text(deskripsi, style: TextStyle(color: Color(0xFF096891))),
+                SizedBox(height: 8),
+                Row(
+                  children: [
+                    Icon(Icons.access_time, color: Colors.grey,),
+                    Container(width: 5,),
+                    Text(pukul, style: TextStyle(color: Colors.grey)),
+                  ],
+                ),
               ],
             ),
+            ),
+
+
+            Image.asset(imagePath, height: 80,)
           ],
         ),
+
       ),
     );
   }

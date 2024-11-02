@@ -123,50 +123,38 @@
       "nama_faskes": "RS Kanker Nasional"
     }
   },
-  "kategori_task": [
-    {
-      "id": "1",
+  "kategori_task": {
+    "1": {
       "nama_kategori": "Meminum Obat",
       "poin": 10
     },
-    {
-      "id": "2",
+    "2": {
       "nama_kategori": "Kunjungan Faskes",
       "poin": 40
     },
-    {
-      "id": "3",
+    "3": {
       "nama_kategori": "Skrining Kesehatan",
       "poin": 50
     },
-    {
-      "id": "4",
+    "4": {
       "nama_kategori": "Membaca Berita",
       "poin": 15
     }
-  ],
-  "leaderboard": {
-    "1234567890123": 290,
-    "1234567890123456": 550,
-    "1234567890123457": 950,
-    "1234567890123458": 1600,
-    "1234567890123459": 400,
-    "1234567890123460": 800,
-    "1234567890123461": 600,
-    "1234567890123462": 1050,
-    "1234567890123463": 500,
-    "1234567890123464": 100,
-    "1234567890124": 700,
-    "1234567890125": 1820,
-    "1234567890126": 1900,
-    "1234567890127": 160,
-    "1234567890128": 100,
-    "1234567890129": 450,
-    "1234567890130": 100,
-    "1234567890131": 100,
-    "1234567890132": 100,
-    "1234567890133": 1200
   },
+  "leaderboard": {
+    "1234567890123": {"jumlah_poin": 290, "avatarname": "Agus", "avatar": "1"},
+    "1234567890123456": {"jumlah_poin": 550, "avatarname": "Budi", "avatar": "2"},
+    "1234567890123461": {"jumlah_poin": 600, "avatarname": "Nurul", "avatar": "3"},
+    "1234567890123462": {"jumlah_poin": 1050, "avatarname": "Putri", "avatar": "4"},
+    "1234567890123463": {"jumlah_poin": 500, "avatarname": "Rina", "avatar": "5"},
+    "1234567890123464": {"jumlah_poin": 100, "avatarname": "Tommy", "avatar": "6"},
+    "1234567890124": {"jumlah_poin": 700, "avatarname": "Citra", "avatar": "7"},
+    "1234567890130": {"jumlah_poin": 100, "avatarname": "Maya", "avatar": "8"},
+    "1234567890131": {"jumlah_poin": 100, "avatarname": "Oki", "avatar": "9"},
+    "1234567890132": {"jumlah_poin": 100, "avatarname": "Qori", "avatar": "10"},
+    "1234567890133": {"jumlah_poin": 1200, "avatarname": "Siti", "avatar": "11"}
+  },
+
   "obat": {
     "O001": {
       "deskripsi": "Antipiretik dan analgesik untuk menurunkan demam dan menghilangkan nyeri",
@@ -746,11 +734,14 @@
   "tasks": {
     "1": {
       "id_tasks": 1,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123",
-      "timestamp": "30-10-2024 10:00:00"
+      "timestamp": "30-10-2024 10:00:00",
+      "detail": {
+        "id_berita": 1
+      }
     },
     "2": {
       "detail": {
@@ -773,7 +764,7 @@
       },
       "id_tasks": 3,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123",
       "timestamp": "30-10-2024 10:10:00"
@@ -788,7 +779,7 @@
       },
       "id_tasks": 4,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123",
       "timestamp": "30-10-2024 10:15:00"
@@ -803,7 +794,7 @@
       },
       "id_tasks": 5,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 150,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123",
       "timestamp": "30-10-2024 10:20:00"
@@ -818,7 +809,7 @@
       },
       "id_tasks": 6,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 150,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123",
       "timestamp": "30-10-2024 10:25:00"
@@ -833,11 +824,14 @@
     },
     "8": {
       "id_tasks": 8,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123456",
-      "timestamp": "30-10-2024 10:35:00"
+      "timestamp": "30-10-2024 10:35:00",
+      "detail": {
+        "id_berita": 2
+      }
     },
     "9": {
       "detail": {
@@ -860,7 +854,7 @@
       },
       "id_tasks": 10,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123456",
       "timestamp": "30-10-2024 10:45:00"
@@ -875,7 +869,7 @@
       },
       "id_tasks": 11,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 200,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123456",
       "timestamp": "30-10-2024 10:50:00"
@@ -894,18 +888,21 @@
       },
       "id_tasks": 13,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890123456",
       "timestamp": "30-10-2024 11:00:00"
     },
     "14": {
       "id_tasks": 14,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890124",
-      "timestamp": "30-10-2024 11:05:00"
+      "timestamp": "30-10-2024 11:05:00",
+      "detail": {
+        "id_berita": 3
+      }
     },
     "15": {
       "detail": {
@@ -928,7 +925,7 @@
       },
       "id_tasks": 16,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 100,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890124",
       "timestamp": "30-10-2024 11:15:00"
@@ -943,11 +940,14 @@
     },
     "18": {
       "id_tasks": 18,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890125",
-      "timestamp": "30-10-2024 11:25:00"
+      "timestamp": "30-10-2024 11:25:00",
+      "detail": {
+        "id_berita": 4
+      }
     },
     "19": {
       "detail": {
@@ -970,7 +970,7 @@
       },
       "id_tasks": 20,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890125",
       "timestamp": "30-10-2024 11:35:00"
@@ -985,7 +985,7 @@
       },
       "id_tasks": 21,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 300,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890125",
       "timestamp": "30-10-2024 11:40:00"
@@ -1000,7 +1000,7 @@
       },
       "id_tasks": 22,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890125",
       "timestamp": "30-10-2024 11:45:00"
@@ -1015,7 +1015,7 @@
       },
       "id_tasks": 23,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 300,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890125",
       "timestamp": "30-10-2024 11:50:00"
@@ -1034,18 +1034,21 @@
       },
       "id_tasks": 25,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890125",
       "timestamp": "30-10-2024 12:00:00"
     },
     "26": {
       "id_tasks": 26,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123457",
-      "timestamp": "30-10-2024 12:05:00"
+      "timestamp": "30-10-2024 12:05:00",
+      "detail": {
+        "id_berita": 5
+      }
     },
     "27": {
       "detail": {
@@ -1068,7 +1071,7 @@
       },
       "id_tasks": 28,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123457",
       "timestamp": "30-10-2024 12:15:00"
@@ -1083,7 +1086,7 @@
       },
       "id_tasks": 29,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 300,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123457",
       "timestamp": "30-10-2024 12:20:00"
@@ -1098,11 +1101,14 @@
     },
     "31": {
       "id_tasks": 31,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123460",
-      "timestamp": "30-10-2024 12:30:00"
+      "timestamp": "30-10-2024 12:30:00",
+      "detail": {
+        "id_berita": 6
+      }
     },
     "32": {
       "detail": {
@@ -1125,7 +1131,7 @@
       },
       "id_tasks": 33,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 12:40:00"
@@ -1140,7 +1146,7 @@
       },
       "id_tasks": 34,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 150,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 12:45:00"
@@ -1155,7 +1161,7 @@
       },
       "id_tasks": 35,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 12:50:00"
@@ -1170,7 +1176,7 @@
       },
       "id_tasks": 36,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 100,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 12:55:00"
@@ -1185,11 +1191,14 @@
     },
     "38": {
       "id_tasks": 38,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123458",
-      "timestamp": "30-10-2024 13:05:00"
+      "timestamp": "30-10-2024 13:05:00",
+      "detail": {
+        "id_berita": 7
+      }
     },
     "39": {
       "detail": {
@@ -1212,7 +1221,7 @@
       },
       "id_tasks": 40,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123458",
       "timestamp": "30-10-2024 13:15:00"
@@ -1227,7 +1236,7 @@
       },
       "id_tasks": 41,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 200,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123458",
       "timestamp": "30-10-2024 13:20:00"
@@ -1242,11 +1251,14 @@
     },
     "43": {
       "id_tasks": 43,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "123456789012747",
-      "timestamp": "30-10-2024 13:30:00"
+      "timestamp": "30-10-2024 13:30:00",
+      "detail": {
+        "id_berita": 8
+      }
     },
     "44": {
       "detail": {
@@ -1254,7 +1266,7 @@
       },
       "id_tasks": 44,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "123456789012747",
       "timestamp": "30-10-2024 13:35:00"
@@ -1267,13 +1279,317 @@
       "user_id": "123456789012747",
       "timestamp": "30-10-2024 13:40:00"
     },
+    "users": {
+      "1234567890123": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Merdeka No. 1, Jakarta Pusat",
+          "jenis_kelamin": "Laki-laki",
+          "nama": "Agus Setiawan",
+          "tanggal_lahir": "01-01-1990",
+          "tempat_lahir": "Jakarta",
+          "provinsi": "DKI Jakarta"
+        },
+        "kunjungan": {
+          "01-10-2024": "RM001",
+          "15-11-2024": null
+        },
+        "stats": {
+          "jumlah_poin": 290,
+          "kategori_stats": "Silver",
+          "avatarname": "Agus",
+          "avatar": "1",
+          "rank": 15
+        },
+        "task_user": "1, 2, 3, 4, 5, 6, 7",
+        "user_data": {
+          "jenis_id": "jkn_id",
+          "no_id": "1234567890123",
+          "password": "password001"
+        }
+      },
+      "1234567890123456": {
+        "biodata": {
+          "Agama": "Kristen",
+          "alamat": "Jl. Pahlawan No. 2, Bandung",
+          "jenis_kelamin": "Laki-laki",
+          "nama": "Budi Santoso",
+          "tanggal_lahir": "05-02-1988",
+          "tempat_lahir": "Bandung",
+          "provinsi": "Kalimantan Selatan"
+        },
+        "kunjungan": {
+          "05-10-2024": "RM002",
+          "20-11-2024": null
+        },
+        "stats": {
+          "jumlah_poin": 550,
+          "kategori_stats": "Gold",
+          "avatarname": "Budi",
+          "avatar": "2",
+          "rank": 10
+        },
+        "task_user": "8, 9, 10, 11, 12, 13",
+        "user_data": {
+          "jenis_id": "nik",
+          "no_id": "1234567890123456",
+          "password": "password002"
+        }
+      },
+      "1234567890123461": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Andalas No. 14, Padang",
+          "jenis_kelamin": "Perempuan",
+          "nama": "Nurul Aini",
+          "tanggal_lahir": "12-02-1993",
+          "tempat_lahir": "Padang",
+          "provinsi": "DKI Jakarta"
+        },
+        "kunjungan": {
+          "02-11-2024": "RM013"
+        },
+        "stats": {
+          "jumlah_poin": 600,
+          "kategori_stats": "Silver",
+          "avatarname": "Nurul",
+          "avatar": "3",
+          "rank": 11
+        },
+        "task_user": "56, 57, 58",
+        "user_data": {
+          "jenis_id": "nik",
+          "no_id": "1234567890123461",
+          "password": "password014"
+        }
+      },
+      "1234567890123462": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Sudirman No. 16, Pekanbaru",
+          "jenis_kelamin": "Perempuan",
+          "nama": "Putri Amelia",
+          "tanggal_lahir": "25-04-1994",
+          "tempat_lahir": "Pekanbaru",
+          "provinsi": "Kalimantan Selatan"
+        },
+        "kunjungan": {
+          "06-11-2024": "RM014"
+        },
+        "stats": {
+          "jumlah_poin": 1050,
+          "kategori_stats": "Gold",
+          "avatarname": "Putri",
+          "avatar": "4",
+          "rank": 5
+        },
+        "task_user": "61, 62, 63, 64",
+        "user_data": {
+          "jenis_id": "nik",
+          "no_id": "1234567890123462",
+          "password": "password016"
+        }
+      },
+      "1234567890123463": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Soekarno Hatta No. 18, Balikpapan",
+          "jenis_kelamin": "Perempuan",
+          "nama": "Rina Susanti",
+          "tanggal_lahir": "18-06-1990",
+          "tempat_lahir": "Balikpapan",
+          "provinsi": "DKI Jakarta"
+        },
+        "kunjungan": {
+          "10-11-2024": "RM015"
+        },
+        "stats": {
+          "jumlah_poin": 500,
+          "kategori_stats": "Silver",
+          "avatarname": "Rina",
+          "avatar": "5",
+          "rank": 14
+        },
+        "task_user": "67, 68, 69",
+        "user_data": {
+          "jenis_id": "nik",
+          "no_id": "1234567890123463",
+          "password": "password018"
+        }
+      },
+      "1234567890123464": {
+        "biodata": {
+          "Agama": "Kristen",
+          "alamat": "Jl. Gatot Subroto No. 20, Medan",
+          "jenis_kelamin": "Laki-laki",
+          "nama": "Tommy Pranata",
+          "tanggal_lahir": "05-08-1987",
+          "tempat_lahir": "Medan",
+          "provinsi": "Kalimantan Selatan"
+        },
+        "kunjungan": {
+          "14-11-2024": null
+        },
+        "stats": {
+          "jumlah_poin": 100,
+          "kategori_stats": "Bronze",
+          "avatarname": "Tommy",
+          "avatar": "6",
+          "rank": 21
+        },
+        "task_user": "74, 75",
+        "user_data": {
+          "jenis_id": "nik",
+          "no_id": "1234567890123464",
+          "password": "password020"
+        }
+      },
+      "1234567890124": {
+        "biodata": {
+          "Agama": "Hindu",
+          "alamat": "Jl. Mawar No. 3, Surabaya",
+          "jenis_kelamin": "Perempuan",
+          "nama": "Citra Lestari",
+          "tanggal_lahir": "12-03-1995",
+          "tempat_lahir": "Surabaya",
+          "provinsi": "DKI Jakarta"
+        },
+        "kunjungan": {
+          "10-10-2024": "RM003"
+        },
+        "stats": {
+          "jumlah_poin": 700,
+          "kategori_stats": "Gold",
+          "avatarname": "Citra",
+          "avatar": "7",
+          "rank": 7
+        },
+        "task_user": "14, 15, 16, 17",
+        "user_data": {
+          "jenis_id": "jkn_id",
+          "no_id": "1234567890124",
+          "password": "password003"
+        }
+      },
+      "1234567890130": {
+        "biodata": {
+          "Agama": "Kristen",
+          "alamat": "Jl. Sam Ratulangi No. 13, Manado",
+          "jenis_kelamin": "Perempuan",
+          "nama": "Maya Sari",
+          "tanggal_lahir": "05-01-1991",
+          "tempat_lahir": "Manado",
+          "provinsi": "Kalimantan Selatan"
+        },
+        "kunjungan": {
+          "30-10-2024": null
+        },
+        "stats": {
+          "jumlah_poin": 100,
+          "kategori_stats": "Bronze",
+          "avatarname": "Maya",
+          "avatar": "8",
+          "rank": 19
+        },
+        "task_user": "54, 55",
+        "user_data": {
+          "jenis_id": "jkn_id",
+          "no_id": "1234567890130",
+          "password": "password013"
+        }
+      },
+      "1234567890131": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Gajah Mada No. 15, Pontianak",
+          "jenis_kelamin": "Laki-laki",
+          "nama": "Oki Setiawan",
+          "tanggal_lahir": "18-03-1988",
+          "tempat_lahir": "Pontianak",
+          "provinsi": "DKI Jakarta"
+        },
+        "kunjungan": {
+          "04-11-2024": null
+        },
+        "stats": {
+          "jumlah_poin": 100,
+          "kategori_stats": "Bronze",
+          "avatarname": "Oki",
+          "avatar": "9",
+          "rank": 18
+        },
+        "task_user": "59, 60",
+        "user_data": {
+          "jenis_id": "jkn_id",
+          "no_id": "1234567890131",
+          "password": "password015"
+        }
+      },
+      "1234567890132": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Tjilik Riwut No. 17, Palangkaraya",
+          "jenis_kelamin": "Laki-laki",
+          "nama": "Qori Rahman",
+          "tanggal_lahir": "10-05-1989",
+          "tempat_lahir": "Palangkaraya",
+          "provinsi": "Kalimantan Selatan"
+        },
+        "kunjungan": {
+          "08-11-2024": null
+        },
+        "stats": {
+          "jumlah_poin": 100,
+          "kategori_stats": "Bronze",
+          "avatarname": "Qori",
+          "avatar": "10",
+          "rank": 17
+        },
+        "task_user": "65, 66",
+        "user_data": {
+          "jenis_id": "jkn_id",
+          "no_id": "1234567890132",
+          "password": "password017"
+        }
+      },
+      "1234567890133": {
+        "biodata": {
+          "Agama": "Islam",
+          "alamat": "Jl. Hasan Basri No. 19, Banjarmasin",
+          "jenis_kelamin": "Perempuan",
+          "nama": "Siti Aminah",
+          "tanggal_lahir": "25-07-1991",
+          "tempat_lahir": "Banjarmasin",
+          "provinsi": "Kalimantan Selatan"
+        },
+        "kunjungan": {
+          "12-11-2024": "RM016"
+        },
+        "stats": {
+          "jumlah_poin": 1200,
+          "kategori_stats": "Gold",
+          "avatarname": "Siti",
+          "avatar": "11",
+          "rank": 6
+        },
+        "task_user": "70, 71, 72, 73",
+        "user_data": {
+          "jenis_id": "jkn_id",
+          "no_id": "1234567890133",
+          "password": "password019"
+        }
+      }
+    },
     "46": {
       "id_tasks": 46,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123459",
-      "timestamp": "30-10-2024 13:45:00"
+      "timestamp": "30-10-2024 13:45:00",
+      "detail": {
+        "id_berita": 9
+      }
     },
     "47": {
       "detail": {
@@ -1296,7 +1612,7 @@
       },
       "id_tasks": 48,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123459",
       "timestamp": "30-10-2024 13:55:00"
@@ -1311,7 +1627,7 @@
       },
       "id_tasks": 49,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 100,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123459",
       "timestamp": "30-10-2024 14:00:00"
@@ -1326,11 +1642,14 @@
     },
     "51": {
       "id_tasks": 51,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890128",
-      "timestamp": "30-10-2024 14:10:00"
+      "timestamp": "30-10-2024 14:10:00",
+      "detail": {
+        "id_berita": 10
+      }
     },
     "52": {
       "detail": {
@@ -1338,7 +1657,7 @@
       },
       "id_tasks": 52,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890128",
       "timestamp": "30-10-2024 14:15:00"
@@ -1353,11 +1672,14 @@
     },
     "54": {
       "id_tasks": 54,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890129",
-      "timestamp": "30-10-2024 14:25:00"
+      "timestamp": "30-10-2024 14:25:00",
+      "detail": {
+        "id_berita": 11
+      }
     },
     "55": {
       "detail": {
@@ -1380,7 +1702,7 @@
       },
       "id_tasks": 56,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890129",
       "timestamp": "30-10-2024 14:35:00"
@@ -1410,11 +1732,14 @@
     },
     "59": {
       "id_tasks": 59,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123460",
-      "timestamp": "30-10-2024 14:50:00"
+      "timestamp": "30-10-2024 14:50:00",
+      "detail": {
+        "id_berita": 12
+      }
     },
     "60": {
       "detail": {
@@ -1437,7 +1762,7 @@
       },
       "id_tasks": 61,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 15:00:00"
@@ -1452,7 +1777,7 @@
       },
       "id_tasks": 62,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 200,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 15:05:00"
@@ -1471,7 +1796,7 @@
       },
       "id_tasks": 64,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 15:15:00"
@@ -1486,7 +1811,7 @@
       },
       "id_tasks": 65,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 200,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 15:20:00"
@@ -1501,7 +1826,7 @@
       },
       "id_tasks": 66,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 15:25:00"
@@ -1516,7 +1841,7 @@
       },
       "id_tasks": 67,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 170,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123460",
       "timestamp": "30-10-2024 15:30:00"
@@ -1531,11 +1856,14 @@
     },
     "69": {
       "id_tasks": 69,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890130",
-      "timestamp": "30-10-2024 15:40:00"
+      "timestamp": "30-10-2024 15:40:00",
+      "detail": {
+        "id_berita": 13
+      }
     },
     "70": {
       "detail": {
@@ -1543,7 +1871,7 @@
       },
       "id_tasks": 70,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890130",
       "timestamp": "30-10-2024 15:45:00"
@@ -1551,18 +1879,21 @@
     "71": {
       "id_tasks": 71,
       "kategori_task": "Skrining Kesehatan",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 50,
       "status": "belum selesai",
       "user_id": "1234567890130",
       "timestamp": "30-10-2024 15:50:00"
     },
     "72": {
       "id_tasks": 72,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123461",
-      "timestamp": "30-10-2024 15:55:00"
+      "timestamp": "30-10-2024 15:55:00",
+      "detail": {
+        "id_berita": 14
+      }
     },
     "73": {
       "detail": {
@@ -1585,7 +1916,7 @@
       },
       "id_tasks": 74,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123461",
       "timestamp": "30-10-2024 16:05:00"
@@ -1600,7 +1931,7 @@
       },
       "id_tasks": 75,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 140,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123461",
       "timestamp": "30-10-2024 16:10:00"
@@ -1623,18 +1954,21 @@
       },
       "id_tasks": 77,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 270,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123461",
       "timestamp": "30-10-2024 16:20:00"
     },
     "78": {
       "id_tasks": 78,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890131",
-      "timestamp": "30-10-2024 16:25:00"
+      "timestamp": "30-10-2024 16:25:00",
+      "detail": {
+        "id_berita": 15
+      }
     },
     "79": {
       "detail": {
@@ -1642,7 +1976,7 @@
       },
       "id_tasks": 79,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890131",
       "timestamp": "30-10-2024 16:30:00"
@@ -1650,18 +1984,21 @@
     "80": {
       "id_tasks": 80,
       "kategori_task": "Skrining Kesehatan",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 50,
       "status": "belum selesai",
       "user_id": "1234567890131",
       "timestamp": "30-10-2024 16:35:00"
     },
     "81": {
       "id_tasks": 81,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123462",
-      "timestamp": "30-10-2024 16:40:00"
+      "timestamp": "30-10-2024 16:40:00",
+      "detail": {
+        "id_berita": 16
+      }
     },
     "82": {
       "detail": {
@@ -1684,7 +2021,7 @@
       },
       "id_tasks": 83,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123462",
       "timestamp": "30-10-2024 16:50:00"
@@ -1699,7 +2036,7 @@
       },
       "id_tasks": 84,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 300,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123462",
       "timestamp": "30-10-2024 16:55:00"
@@ -1718,7 +2055,7 @@
       },
       "id_tasks": 86,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890123462",
       "timestamp": "30-10-2024 17:05:00"
@@ -1733,7 +2070,7 @@
       },
       "id_tasks": 87,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 200,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123462",
       "timestamp": "30-10-2024 17:10:00"
@@ -1756,26 +2093,32 @@
       },
       "id_tasks": 89,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 310,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123462",
       "timestamp": "30-10-2024 17:20:00"
     },
     "90": {
       "id_tasks": 90,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890132",
-      "timestamp": "30-10-2024 17:25:00"
+      "timestamp": "30-10-2024 17:25:00",
+      "detail": {
+        "id_berita": 17
+      }
     },
     "91": {
       "id_tasks": 91,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123463",
-      "timestamp": "30-10-2024 17:30:00"
+      "timestamp": "30-10-2024 17:30:00",
+      "detail": {
+        "id_berita": 18
+      }
     },
     "92": {
       "detail": {
@@ -1798,7 +2141,7 @@
       },
       "id_tasks": 93,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890123463",
       "timestamp": "30-10-2024 17:40:00"
@@ -1813,7 +2156,7 @@
       },
       "id_tasks": 94,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 210,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123463",
       "timestamp": "30-10-2024 17:45:00"
@@ -1836,18 +2179,21 @@
       },
       "id_tasks": 96,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 100,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890123463",
       "timestamp": "30-10-2024 17:55:00"
     },
     "97": {
       "id_tasks": 97,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890133",
-      "timestamp": "30-10-2024 18:00:00"
+      "timestamp": "30-10-2024 18:00:00",
+      "detail": {
+        "id_berita": 19
+      }
     },
     "98": {
       "detail": {
@@ -1870,7 +2216,7 @@
       },
       "id_tasks": 99,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890133",
       "timestamp": "30-10-2024 18:10:00"
@@ -1885,7 +2231,7 @@
       },
       "id_tasks": 100,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 150,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890133",
       "timestamp": "30-10-2024 18:15:00"
@@ -1900,7 +2246,7 @@
       },
       "id_tasks": 101,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 10,
       "status": "belum selesai",
       "user_id": "1234567890133",
       "timestamp": "30-10-2024 18:20:00"
@@ -1915,7 +2261,7 @@
       },
       "id_tasks": 102,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 100,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890133",
       "timestamp": "30-10-2024 18:25:00"
@@ -1938,18 +2284,21 @@
       },
       "id_tasks": 104,
       "kategori_task": "Meminum Obat",
-      "poin_diperoleh": 760,
+      "poin_diperoleh": 10,
       "status": "selesai",
       "user_id": "1234567890133",
       "timestamp": "30-10-2024 18:35:00"
     },
     "105": {
       "id_tasks": 105,
-      "kategori_task": "Melengkapi Biodata",
-      "poin_diperoleh": 100,
+      "kategori_task": "Membaca Berita",
+      "poin_diperoleh": 15,
       "status": "selesai",
       "user_id": "1234567890123464",
-      "timestamp": "30-10-2024 18:40:00"
+      "timestamp": "30-10-2024 18:40:00",
+      "detail": {
+        "id_berita": 20
+      }
     },
     "106": {
       "detail": {
@@ -1957,7 +2306,7 @@
       },
       "id_tasks": 106,
       "kategori_task": "Kunjungan Faskes",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 40,
       "status": "belum selesai",
       "user_id": "1234567890123464",
       "timestamp": "30-10-2024 18:45:00"
@@ -1965,12 +2314,14 @@
     "107": {
       "id_tasks": 107,
       "kategori_task": "Skrining Kesehatan",
-      "poin_diperoleh": 0,
+      "poin_diperoleh": 50,
       "status": "belum selesai",
       "user_id": "1234567890123464",
       "timestamp": "30-10-2024 18:50:00"
     }
   },
+
+
 
   "users": {
     "1234567890123": {
