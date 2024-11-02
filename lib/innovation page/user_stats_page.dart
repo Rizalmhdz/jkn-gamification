@@ -16,13 +16,13 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
   late TabController _tabController;
   double lastScrollOffset = 0.0;
 
-  int poin = 99999;
-  int rank = 33;
-  int rankLokal = 4;
+  int poin = 0;
+  int rank = 0;
+  int rankLokal = 0;
 
 
   int stickyRank = 8;
-  int _showStickyHeader = 1;
+  String provinsiUser = '';
 
   bool editMode = false;
 
@@ -46,17 +46,49 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
       _userId = prefs.getString('user_id')!;
     });
 
-    final ref = FirebaseDatabase.instance.ref();
-    final snapshot = await ref.child('users/$_userId/biodata').get();
+    final refUser = FirebaseDatabase.instance.ref();
+    final snapshot = await refUser.child('users/$_userId').get();
     if (snapshot.exists) {
       setState(() {
-        Map<dynamic, dynamic> dataList = snapshot.value as Map<dynamic, dynamic>;
+        Map<dynamic, dynamic> dataList = snapshot.child('biodata').value as Map<dynamic, dynamic>;
         namaUser = dataList["nama"];
+        provinsiUser = snapshot.child("provinsi").value.toString();
       });
     } else {
       print('User ID tidak ditemukan');
     }
+
+    final ref = FirebaseDatabase.instance.ref('leaderboard');
+    ref.onValue.listen((DatabaseEvent event) {
+      final data = event.snapshot.value as Map<dynamic, dynamic>?;
+      print('Data: $data');
+      if (data != null) {
+        var entries = data.entries.map((e) => Map<dynamic, dynamic>.from(e.value as Map)).toList();
+        entries.sort((a, b) => (b['jumlah_poin'] as int).compareTo(a['jumlah_poin'] as int));
+
+        var localEntries = entries.where((entry) => entry['provinsi'] == provinsiUser).toList();
+        localEntries.sort((a, b) => (b['jumlah_poin'] as int).compareTo(a['jumlah_poin'] as int));
+
+        setState(() {
+          rank = entries.indexWhere((entry) => entry['user_id'] == _userId) + 1;
+          rankLokal = localEntries.indexWhere((entry) => entry['user_id'] == _userId) + 1;
+          poin =  entries[rank - 1]["jumlah_poin"];
+        });
+
+        if (rank == 0) {
+          print('User ID $_userId tidak ditemukan di All Rank leaderboard');
+        }
+        if (rankLokal == 0) {
+          print('User ID $_userId tidak ditemukan di local rank leaderboard');
+        }
+      } else {
+        print('Tidak ada data');
+      }
+    }, onError: (error) {
+      print('Error listening to leaderboard changes: $error');
+    });
   }
+
 
   String getNickname(String fullName) {
     List<String> names = fullName.split(' ');

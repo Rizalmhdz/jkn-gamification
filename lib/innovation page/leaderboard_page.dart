@@ -8,34 +8,36 @@ class LeaderboardPage extends StatefulWidget {
   _LeaderboardPageState createState() => _LeaderboardPageState();
 }
 
-class _LeaderboardPageState extends State<LeaderboardPage> {
+class _LeaderboardPageState extends State<LeaderboardPage> with SingleTickerProviderStateMixin{
   String _userId = "";
   String namaPanggilan = "";
   bool allRank = true;
   late double screenWidth;
   late double screenHeight;
   ScrollController _scrollController = ScrollController();
+  late TabController _tabController;
   double lastScrollOffset = 0.0;
 
+  List<Map<dynamic, dynamic>> leaderboadRanks = [];
+  int userRankAll = 0;
 
-  int stickyRank = 8;
+  List<Map<dynamic, dynamic>> leaderboadLocalRanks = [];
+  int userLocalRank = 0;
+
+
   int _showStickyHeader = 1;
 
 
   @override
   void initState() {
     super.initState();
-    getData();
-    setState(() {
-      if (stickyRank > 9) _showStickyHeader = 2;
-      // print("showStickyHeader = $_showStickyHeader");
-      // print('(screenHeight - 200) / 85) = ${(screenHeight - 200 - 85) / 85}');
-    });
     _scrollController.addListener(_onScroll);
+    _tabController = TabController(length: 2, vsync: this);
+    getLeaderboardData();
   }
 
   void _onScroll() {
-    double stickyHeaderPosition = (85) * (stickyRank - 1) + 200;
+    double stickyHeaderPosition = (85) * (userRankAll - 1) + 200;
     double currentOffset = _scrollController.offset;
 
     bool isRankInView = currentOffset < stickyHeaderPosition &&
@@ -44,10 +46,10 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
     setState(() {
       if (!isRankInView && currentOffset <= stickyHeaderPosition - (screenHeight - 200)) {
         _showStickyHeader = 2;
-        print("Sticky Bawah");
+        // print("Sticky Bawah");
       } else if (!isRankInView && currentOffset >= stickyHeaderPosition) {
         _showStickyHeader = 0;
-        print("Sticky Atas");
+        // print("Sticky Atas");
       } else {
         // Remove sticky if the rank is in the viewport
         _showStickyHeader = 1;
@@ -56,30 +58,80 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
   }
 
 
-
   @override
   void dispose() {
     _scrollController.dispose();
+    _tabController.dispose();
     super.dispose();
   }
 
-  Future<void> getData() async {
+  void switchToAllRank() {
+    setState(() {
+      allRank = true;
+      _tabController.animateTo(0); // Switch to the first tab
+    });
+  }
+
+  void switchToLocalRank() {
+    setState(() {
+      allRank = false;
+      _tabController.animateTo(1); // Switch to the second tab
+    });
+  }
+
+  Future<void> getLeaderboardData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
-      _userId = prefs.getString('user_id')!;
+      _userId = prefs.getString('user_id') ?? '';
     });
+    String userProvince = '';
 
-    final ref = FirebaseDatabase.instance.ref();
-    final snapshot = await ref.child('users/$_userId/biodata').get();
+
+    final refUser = FirebaseDatabase.instance.ref();
+    final snapshot = await refUser.child('users/$_userId/biodata').get();
     if (snapshot.exists) {
       setState(() {
-        Map<dynamic, dynamic> dataList = snapshot.value as Map<dynamic, dynamic>;
-        namaPanggilan = getNickname(dataList["nama"]);
+        userProvince = snapshot.child("provinsi").value.toString();
       });
     } else {
       print('User ID tidak ditemukan');
     }
+    final ref = FirebaseDatabase.instance.ref('leaderboard');
+    ref.onValue.listen((DatabaseEvent event) {
+      final data = event.snapshot.value as Map<dynamic, dynamic>?;
+      print('Data: $data');
+      if (data != null) {
+        var entries = data.entries.map((e) => Map<dynamic, dynamic>.from(e.value as Map)).toList();
+        entries.sort((a, b) => (b['jumlah_poin'] as int).compareTo(a['jumlah_poin'] as int));
+
+        var localEntries = entries.where((entry) => entry['provinsi'] == userProvince).toList();
+        localEntries.sort((a, b) => (b['jumlah_poin'] as int).compareTo(a['jumlah_poin'] as int));
+
+        setState(() {
+          leaderboadRanks = entries;
+          leaderboadLocalRanks = localEntries;
+          userRankAll = entries.indexWhere((entry) => entry['user_id'] == _userId) + 1;
+          userLocalRank = localEntries.indexWhere((entry) => entry['user_id'] == _userId) + 1;
+
+          if (userRankAll > 9) _showStickyHeader = 2;
+          print('Global rank of User ID $_userId is $userRankAll');
+          print('Local rank of User ID $_userId in $userProvince is $userLocalRank');
+        });
+
+        if (userRankAll == 0) {
+          print('User ID $_userId tidak ditemukan di All Rank leaderboard');
+        }
+        if (userLocalRank == 0) {
+          print('User ID $_userId tidak ditemukan di local rank leaderboard');
+        }
+      } else {
+        print('Tidak ada data');
+      }
+    }, onError: (error) {
+      print('Error listening to leaderboard changes: $error');
+    });
   }
+
 
   String getNickname(String fullName) {
     List<String> names = fullName.split(' ');
@@ -89,11 +141,7 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
       return names[1];
     }
   }
-  List<Map<String, dynamic>> tasks = [
-    {'title': "Minum Obat", 'description': "Jangan lupa minum obat hipertensi", 'time': "10:00 AM"},
-    {'title': "Kunjungan Faskes", 'description': "Mengunjungi Faskes Kinibalu untuk cek mata", 'time': "11:00 AM"},
-    {'title': "Kunjungan Faskes", 'description': "Mengunjungi Faskes Kinibalu untuk cek mata", 'time': "11:00 AM"},
-  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -149,55 +197,45 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
                       left: 35,
                       child: Row(
                         children: [
-                          Container(
-                            margin: EdgeInsets.only(right: 10), // Add spacing between the buttons
-                            child: ElevatedButton(
-                              onPressed: () {
-                                setState(() {
-                                  allRank = true;
-                                });
-                              },
-                              child: Text('KESELURUHAN',
-                                style: TextStyle(
-                                    color: !allRank? Color(0xFF096891) : Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: !allRank? Color(0xFFC5FFE6) : Color(0xFF096891),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(color: Color(0xFF096891), width: !allRank ? 2 : 0),// Rounded corners
-                                ),
-                              ),
-                            ),
-                          ),
                           ElevatedButton(
-                            onPressed: () {
-                              setState(() {
-                                allRank = false;
-                              });
-                            },
+                            onPressed: switchToAllRank,
                             child: Text(
-                              'LOKAL RANK',
+                              'KESELURUHAN',
                               style: TextStyle(
-                                  color: allRank? Color(0xFF096891) : Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12
+                                color: allRank ? Colors.white : Color(0xFF096891),
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: allRank? Color(0xFFC5FFE6) : Color(0xFF096891),
+                              backgroundColor: allRank ? Color(0xFF096891) : Color(0xFFC5FFE6),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30), // Rounded corners
-                                side: BorderSide(color: Color(0xFF096891), width: allRank ? 2 : 0), // Dark cyan outline
+                                borderRadius: BorderRadius.circular(30),
+                                side: BorderSide(color: Color(0xFF096891), width: !allRank ? 2 : 0),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 10), // Space between buttons
+                          ElevatedButton(
+                            onPressed: switchToLocalRank,
+                            child: Text(
+                              'LOKAL RANK',
+                              style: TextStyle(
+                                color: !allRank ? Colors.white : Color(0xFF096891),
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: !allRank ? Color(0xFF096891) : Color(0xFFC5FFE6),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                                side: BorderSide(color: Color(0xFF096891), width: allRank ? 2 : 0),
                               ),
                             ),
                           ),
                         ],
                       ),
                     ),
+
                   ],
                 ),
               ),
@@ -205,62 +243,125 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
           ),
         ),
       ),
-      body: Stack(
+      body: TabBarView(
+        controller: _tabController,
         children: [
-          CustomScrollView(
-            controller: _scrollController,
-            slivers: <Widget>[
-              if (_showStickyHeader == 0)
-                SliverPersistentHeader(
-                  pinned: true,
-                  delegate: _StickyHeaderDelegate(
+          Stack(
+            children: [
+              CustomScrollView(
+                controller: _scrollController,
+                slivers: <Widget>[
+                  if (_showStickyHeader == 0)
+                    SliverPersistentHeader(
+                      pinned: true,
+                      delegate: _StickyHeaderDelegate(
+                        child: itemListLeaderboard(
+                          userRankAll,
+                          leaderboadRanks[userRankAll - 1]["avatar"].toString(),
+                          leaderboadRanks[userRankAll - 1]["avatarname"],
+                          leaderboadRanks[userRankAll - 1]["user_id"],
+                          leaderboadRanks[userRankAll - 1]["provinsi"],
+                          leaderboadRanks[userRankAll - 1]["jumlah_poin"],
+                        ),
+                      ),
+                    ),
+                  SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                          (BuildContext context, int index) {
+                        return itemListLeaderboard(
+                          index+1,
+                          leaderboadRanks[index]["avatar"].toString(),
+                          leaderboadRanks[index]["avatarname"],
+                          leaderboadRanks[index]["user_id"],
+                          leaderboadRanks[index]["provinsi"],
+                          leaderboadRanks[index]["jumlah_poin"],
+                        );
+                      },
+                      childCount: leaderboadRanks.length, // Display 50 items
+                    ),
+                  ),
+                ],
+              ),
+              if (_showStickyHeader == 2)
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: Container(
+                    padding: EdgeInsets.only(top: 10),
+                    color: Color(0xFFC9C9C9),
                     child: itemListLeaderboard(
-                      stickyRank,
-                      stickyRank >= 27 ? '1' : '${stickyRank + 1}',
-                      'User $stickyRank',
-                      '${stickyRank}12345231212576',
-                      'Kalimantan Selatan',
-                      (15 - stickyRank) * 213,
+                      userRankAll,
+                      leaderboadRanks[userRankAll - 1]["avatar"].toString(),
+                      leaderboadRanks[userRankAll - 1]["avatarname"],
+                      leaderboadRanks[userRankAll - 1]["user_id"],
+                      leaderboadRanks[userRankAll - 1]["provinsi"],
+                      leaderboadRanks[userRankAll - 1]["jumlah_poin"],
                     ),
                   ),
                 ),
-              SliverList(
-                delegate: SliverChildBuilderDelegate(
-                      (BuildContext context, int index) {
-                    return itemListLeaderboard(
-                      index + 1,
-                      index >= 27 ? '1' : '${index + 1}',
-                      'User $index',
-                      '${index}12345231212576',
-                      'Kalimantan Selatan',
-                      (15 - index) * 213,
-                    );
-                  },
-                  childCount: 50, // Display 50 items
-                ),
-              ),
             ],
           ),
-          if (_showStickyHeader == 2)
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Container(
-                padding: EdgeInsets.only(top: 10),
-                color: Color(0xFFC9C9C9),
-                child: itemListLeaderboard(
-                  stickyRank,
-                  stickyRank >= 27 ? '1' : '${stickyRank + 1}',
-                  'User $stickyRank',
-                  '${stickyRank}12345231212576',
-                  'Kalimantan Selatan',
-                  (15 - stickyRank) * 213,
-                ),
+          Stack(
+            children: [
+              CustomScrollView(
+                controller: _scrollController,
+                slivers: <Widget>[
+                  if (_showStickyHeader == 0)
+                    SliverPersistentHeader(
+                      pinned: true,
+                      delegate: _StickyHeaderDelegate(
+                        child: itemListLeaderboard(
+                          userLocalRank,
+                          leaderboadLocalRanks[userLocalRank - 1]["avatar"].toString(),
+                          leaderboadLocalRanks[userLocalRank - 1]["avatarname"],
+                          leaderboadLocalRanks[userLocalRank - 1]["user_id"],
+                          leaderboadLocalRanks[userLocalRank - 1]["provinsi"],
+                          leaderboadLocalRanks[userLocalRank - 1]["jumlah_poin"],
+                        ),
+                      ),
+                    ),
+                  SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                          (BuildContext context, int index) {
+                        return itemListLeaderboard(
+                          index+1,
+                          leaderboadLocalRanks[index]["avatar"].toString(),
+                          leaderboadLocalRanks[index]["avatarname"],
+                          leaderboadLocalRanks[index]["user_id"],
+                          leaderboadLocalRanks[index]["provinsi"],
+                          leaderboadLocalRanks[index]["jumlah_poin"],
+                        );
+                      },
+                      childCount: leaderboadLocalRanks.length, // Display 50 items
+                    ),
+                  ),
+                ],
               ),
-            ),
+              if (_showStickyHeader == 2)
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: Container(
+                    padding: EdgeInsets.only(top: 10),
+                    color: Color(0xFFC9C9C9),
+                    child: itemListLeaderboard(
+                      userLocalRank,
+                      leaderboadLocalRanks[userLocalRank - 1]["avatar"].toString(),
+                      leaderboadLocalRanks[userLocalRank - 1]["avatarname"],
+                      leaderboadLocalRanks[userLocalRank - 1]["user_id"],
+                      leaderboadLocalRanks[userLocalRank - 1]["provinsi"],
+                      leaderboadLocalRanks[userLocalRank - 1]["jumlah_poin"],
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ],
       ),
+
+
     );
   }
 
