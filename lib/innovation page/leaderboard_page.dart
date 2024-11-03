@@ -385,67 +385,75 @@ class _LeaderboardPageState extends State<LeaderboardPage> with SingleTickerProv
           color: colorItem,
           borderRadius: BorderRadius.circular(100),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+        child: Stack(
           children: [
-            Container(
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        '#$rank',
-                        style: TextStyle(
-                            fontSize: '#$rank'.length > 4 ? 16 : 18,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF096891)
-                        ),
-                      ),
-                    ]
-                ),
-                width: 50
-            ),
-
-            Image.asset('assets/avatars/$avatarImg.png'),
-            Container(width: 10),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  '$avatarName',
-                  style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF096891),
-                    height: 1
-                  ),
+                Container(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            '#$rank',
+                            style: TextStyle(
+                                fontSize: '#$rank'.length > 4 ? 16 : 18,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF096891)
+                            ),
+                          ),
+                        ]
+                    ),
+                    width: 50
                 ),
-                Text(
-                  'ID : $user_id',
-                  style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.normal,
-                      color: Color(0xFF096891)
-                  ),
-                ),
-                Row(
+
+                Image.asset('assets/avatars/$avatarImg.png'),
+                Container(width: 10),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(Icons.location_on, color: Colors.black54,size: 12,),
-                    Container(width: 6,),
                     Text(
-                      provinsi,
+                      '$avatarName',
                       style: TextStyle(
-                          fontSize: 10,
+                          fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black54
+                          color: Color(0xFF096891),
+                          height: 1
                       ),
+                    ),
+                    Text(
+                      'ID : $user_id',
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.normal,
+                          color: Color(0xFF096891)
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Icon(Icons.location_on, color: Colors.black54,size: 12,),
+                        Container(width: 6,),
+                        Text(
+                          provinsi,
+                          style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black54
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
+
               ],
             ),
-            Container(width: '$poin'.length > 4 ? 10 : 30),
-            Column(
+            Positioned(
+              top: 6,
+                right: 24,
+                child:
+              Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
@@ -454,7 +462,7 @@ class _LeaderboardPageState extends State<LeaderboardPage> with SingleTickerProv
                       fontSize: 35,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFF096891),
-                    height: 1
+                      height: 1
                   ),
                 ),
                 Text(
@@ -463,13 +471,15 @@ class _LeaderboardPageState extends State<LeaderboardPage> with SingleTickerProv
                       fontSize: 12,
                       fontWeight: FontWeight.normal,
                       color: Color(0xFF096891),
-                    height: 1
+                      height: 1
                   ),
                 )
               ],
             )
+            )
           ],
         )
+
     );
   }
 }

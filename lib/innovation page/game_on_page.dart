@@ -2,6 +2,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jkn_gamification/innovation%20page/leaderboard_page.dart';
+import 'package:jkn_gamification/innovation%20page/reedem_page.dart';
 import 'package:jkn_gamification/innovation%20page/user_stats_page.dart';
 import 'package:jkn_gamification/menu.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -216,14 +217,13 @@ class _GameOnPageState extends State<GameOnPage> {
                           children: [
                             menuCard('user stats.png', 'User Stats', UserStatsPage()),
                             menuCard('leaderboard.png', 'Leaderboard', LeaderboardPage()),
-                            menuCard('reedem poin.png', 'Reedem Poin', blankPage(pageName: "Reedem Poin")),
+                            menuCard('reedem poin.png', 'Reedem Poin', ReedemPage()),
                           ],
                         ),
                       ),
 
 
                       SizedBox(height: 20),
-                      // Tasks Section
                       Text(
                         'Tugas Hari Ini',
                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -246,7 +246,7 @@ class _GameOnPageState extends State<GameOnPage> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Text(
-                                    "Tugas Hari ini Tidak Ditemukan",
+                                    "Tidak Ada Tugas Yang Berlangsung",
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,

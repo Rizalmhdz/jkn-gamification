@@ -42,7 +42,7 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
 
   double _progress = 0.0;
   Timer? _timer;
-  int _timeRemaining = 30;
+  int _timeRemaining = 60;
   bool _isComplete = false;
   bool _popupShown = false;
   String userId =  "";
@@ -151,16 +151,12 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
       print('User ID is not available.');
       return;
     }
-    // final DateTime now = DateTime.now();
-    // final String newTaskId = DateFormat('yyyyMMddHHmmss', 'id_ID').format(now);
-    // final String formattedDate = DateFormat('dd-MM-yyyy hh:mm:ss', 'id_ID').format(now);
-
     try {
       final DataSnapshot snapshot = (await ref.child('tasks').once()).snapshot;
       if (snapshot.value != null) {
         final List<dynamic> tasks = snapshot.value as List<dynamic>;
 
-        final int newTaskId = tasks.length + 1;
+        final int newTaskId = tasks.length;
 
         final String newTaskKey = newTaskId.toString();
 
@@ -169,7 +165,7 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
           final DateTime now = DateTime.now();
           formattedDate = DateFormat('dd-MM-yyyy HH:mm:ss', 'id_ID').format(now);
 
-          print(formattedDate); // Output akan berbentuk "dd-MM-yyyy HH:mm:ss", contoh: "03-11-2024 17:30:45"
+          print(formattedDate);
         });
         final Map<String, dynamic> newTask = {
           'id_tasks': newTaskId,
@@ -310,7 +306,7 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
                 ),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                  child: Image.asset(widget.imagePath, fit: BoxFit.cover),
+                  child: Image.asset(widget.imagePath, width: screenWidth,),
                 ),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),

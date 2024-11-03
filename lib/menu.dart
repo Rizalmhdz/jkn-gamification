@@ -45,32 +45,32 @@ class _MenuState extends State<Menu> {
       PersistentBottomNavBarItem(
           icon: Icon(Icons.home),
           title: ("Home"),
-          activeColorPrimary: Colors.blue,   // Set active color
-          inactiveColorPrimary: Colors.grey, // Set inactive color
+          activeColorPrimary: Colors.blue,
+          inactiveColorPrimary: Colors.grey,
       ),
       PersistentBottomNavBarItem(
 
           icon: Icon(Icons.article),
-          activeColorPrimary: Colors.blue,   // Set active color
+          activeColorPrimary: Colors.blue,
           inactiveColorPrimary: Colors.grey,
           title: ("Berita")
       ),
       PersistentBottomNavBarItem(
           icon: Icon(Icons.credit_card_rounded, color: Colors.white),
-          activeColorPrimary: Colors.blue, // Set active color
+          activeColorPrimary: Colors.blue,
           inactiveColorPrimary: Colors.grey,
           title: ("Kartu"),
       ),
       PersistentBottomNavBarItem(
           icon: Icon(Icons.forum),
-          activeColorPrimary: Colors.blue, // Set active color
+          activeColorPrimary: Colors.blue,
           inactiveColorPrimary: Colors.grey,
           title: ("FAQ")
       ),
       PersistentBottomNavBarItem(
 
           icon: Icon(Icons.account_circle_rounded),
-          activeColorPrimary: Colors.blue,   // Set active color
+          activeColorPrimary: Colors.blue,
           inactiveColorPrimary: Colors.grey,
           title: ("Profile"),
       ),
@@ -84,20 +84,20 @@ class _MenuState extends State<Menu> {
       controller: _controller,
       screens: _buildScreens(),
       items: _navBarsItems(),
-      handleAndroidBackButtonPress: true, // Default is true.
-      resizeToAvoidBottomInset: true, // This needs to be true if you want to move up the screen on a non-scrollable screen when keyboard appears. Default is true.
-      stateManagement: true, // Default is true.
+      handleAndroidBackButtonPress: true,
+      resizeToAvoidBottomInset: true,
+      stateManagement: true,
       hideNavigationBarWhenKeyboardAppears: true,
       popBehaviorOnSelectedNavBarItemPress: PopBehavior.once,
       padding: const EdgeInsets.only(top: 8),
       backgroundColor: Colors.white,
       isVisible: true,
       animationSettings: const NavBarAnimationSettings(
-        navBarItemAnimation: ItemAnimationSettings( // Navigation Bar's items animation properties.
+        navBarItemAnimation: ItemAnimationSettings(
           duration: Duration(milliseconds: 400),
           curve: Curves.ease,
         ),
-        screenTransitionAnimation: ScreenTransitionAnimationSettings( // Screen transition animation on change of selected tab.
+        screenTransitionAnimation: ScreenTransitionAnimationSettings(
           animateTabTransition: true,
           duration: Duration(milliseconds: 200),
           screenTransitionAnimationType: ScreenTransitionAnimationType.fadeIn,
@@ -105,7 +105,7 @@ class _MenuState extends State<Menu> {
       ),
       confineToSafeArea: true,
       navBarHeight: kBottomNavigationBarHeight,
-      navBarStyle: NavBarStyle.style15, // Choose the nav bar style with this property
+      navBarStyle: NavBarStyle.style15,
     );
   }
 }
@@ -125,7 +125,7 @@ class blankPage extends StatelessWidget {
         child: pageName == "Profil" ?
             ElevatedButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFC5FFE6)), // Warna merah muda
+                backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFC5FFE6)),
               ),
               onPressed: () async {
                 SharedPreferences prefs = await SharedPreferences.getInstance();

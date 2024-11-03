@@ -90,10 +90,8 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
       'avatarname': selectedAvatarname,
     };
 
-    // Update data in Firebase
     ref.child('users/$_userId/stats').update(updateData).then((_) {
       ref.child('leaderboard/$_userId').update(updateData).then((_) {
-        // On successful update, sync the local state
         setState(() {
           savedAvatar = selectedAvatar;
           savedAvatarname = selectedAvatarname;
@@ -151,6 +149,7 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
                   onGoingTasks.add(taskData);
                 } else {
                   riwayatTasks.add(taskData);
+                  sortTasks();
                 }
               });
             } else {
@@ -160,6 +159,7 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
             print("Error ketika mengambil data tasks: $error");
           });
         });
+
       } else {
         print('Task user "$_userId" tidak ditemukan');
       }
@@ -203,6 +203,15 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
       return names[1];
     }
   }
+
+  void sortTasks() {
+    riwayatTasks.sort((a, b) {
+      DateTime timestampA = parseCustomDateTime(a['timestamp']);
+      DateTime timestampB = parseCustomDateTime(b['timestamp']);
+      return timestampB.compareTo(timestampA); // Urutkan dari yang terbaru ke yang terlama
+    });
+  }
+
 
 
   @override
