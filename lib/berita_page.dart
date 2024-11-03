@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jkn_gamification/membaca_berita_page.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class BeritaPage extends StatefulWidget {
@@ -43,42 +44,77 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
     _tabController = TabController(length: 3, vsync: this);
   }
 
-  Future<void> setupDataListener() async {
-    print("Memulai pengambilan data...");
-    final DatabaseReference ref = FirebaseDatabase.instance.ref('berita');
-    final DatabaseEvent snapshot = await ref.once();
+  List<int> parseStringToIntList(String numberString) {
+    return numberString
+        .split(',')
+        .map((s) => int.parse(s.trim()))
+        .toList();
+  }
 
-    List<Map<String, dynamic>> allArticles = [];
+  Future<List<int>> fetchTasksByCategory(String userId, String category) async {
+    DatabaseReference taskRef = FirebaseDatabase.instance.ref('tasks');
+    DatabaseEvent event = await taskRef.once();
+    List<int> taskIds = [];
 
-    if (snapshot.snapshot.exists) {
-      print('Data tersedia');
-      List<Map<String, dynamic>> allArticles = [];
-      List<dynamic> dataList = snapshot.snapshot.value as List<dynamic>;
-      for (int i = 0; i < dataList.length; i++) {
-        var data = dataList[i];
+    if (event.snapshot.exists) {
+      // List<dynamic> tasks = event.snapshot.value as List<dynamic>;
+      print('test : ${event.snapshot.value}');
+
+      List<dynamic> tasks = event.snapshot.value as List<dynamic>;
+      for (int i = 0; i < tasks.length; i++) {
+        var data = tasks[i];
         if (data != null) {
-          Map<dynamic, dynamic> articleData = data as Map<dynamic, dynamic>;
-          allArticles.add({
-            "key": i,  // Menyimpan key dari setiap data
-            "judul": articleData["judul"],
-            "isi": articleData["isi"],
-            "tanggal": articleData["tanggal"],
-            "dilihat": articleData["dilihat"]
-          });
+          if (data['user_id'] == userId && data['kategori_task'] == category) {
+            data['detail'] != null && data['detail']['id_berita'] != null  ? taskIds.add(int.parse(data['detail']['id_berita'].toString()!)) : print("data[$i]['detail']['id_berita'] == null");
+          }
         }
-      };
-
-      allArticles.sort((a, b) => parseDate(b["tanggal"]).compareTo(parseDate(a["tanggal"])));
-
-
-      setState(() {
-        latestArticles = allArticles.take(6).toList();
-        otherNews = allArticles.skip(6).toList();
-      });
-      print("Data berhasil dimuat: ${allArticles.length} artikel terbaru.");
-    } else {
-      print('Data tidak tersedia.');
+      }
     }
+
+    return taskIds;
+  }
+
+
+  void setupDataListener() async {
+    DatabaseReference ref = FirebaseDatabase.instance.ref('berita');
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    ref.onValue.listen((DatabaseEvent event) async {
+
+      String userId = prefs.getString('user_id') ?? '';
+      List<int> readArticleIds = await fetchTasksByCategory(userId, 'Membaca Berita');
+
+      if (event.snapshot.exists) {
+        print('Data tersedia');
+        List<Map<String, dynamic>> allArticles = [];
+        List<dynamic> dataList = event.snapshot.value as List<dynamic>;
+        for (int i = 0; i < dataList.length; i++) {
+          var data = dataList[i];
+          if (data != null) {
+            Map<dynamic, dynamic> articleData = data as Map<dynamic, dynamic>;
+            bool isRead = readArticleIds.contains((i));
+            allArticles.add({
+              "key": articleData["id_berita"],  // Menyimpan key dari setiap data
+              "judul": articleData["judul"],
+              "isi": articleData["isi"],
+              "tanggal": articleData["tanggal"],
+              "dilihat": articleData["dilihat"],
+              "dibaca": isRead
+            });
+          }
+        }
+        allArticles.sort((a, b) => parseDate(b["tanggal"]).compareTo(parseDate(a["tanggal"])));
+
+
+        setState(() {
+          latestArticles = allArticles.take(6).toList();
+          otherNews = allArticles.skip(6).toList();
+        });
+        print("Data berhasil dimuat: ${allArticles.length} artikel terbaru.");
+      } else {
+        print('Data tidak tersedia.');
+      }
+    });
   }
 
 
@@ -198,11 +234,13 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
                       Map<String, dynamic> article = latestArticles[index];
 
                       return artikelCard(
+                          article["key"].toString(),
                         article["judul"],
                         article["isi"],
                         article["dilihat"],
                         "assets/berita/${article["key"]}.jpg",
-                        article["tanggal"]
+                        article["tanggal"],
+                          article["dibaca"]
                       );
                     }),
                   ],
@@ -219,11 +257,13 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
               return Column(
                 children: [
                   beritaCard(
+                      article["key"].toString(),
                         article["judul"],
                         article["isi"],
                         article["dilihat"],
                         "assets/berita/${article["key"]}.jpg",
-                        article["tanggal"]
+                        article["tanggal"],
+                      article["dibaca"]
                     ),
                   index < otherNews.length - 1?
                       Container(
@@ -242,18 +282,23 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
       );
     }
 
-  Widget artikelCard(String judul, String isi, String dilihat, String imagePath, String tanggal) {
+  Widget artikelCard(String id, String judul, String isi, String dilihat, String imagePath, String tanggal, bool isRead) {
     return InkWell(
       onTap: () {
         Navigator.push(
           widget.menuContext,
           MaterialPageRoute(
             builder: (context) => MembacaBeritaPage(
+                idBerita: id,
                 judul: judul,
                 isi: isi,
                 dilihat: dilihat,
                 imagePath: imagePath,
-                tanggal: tanggal
+                tanggal: tanggal,
+                diBaca: isRead,
+                onArticleRead: () {
+                  setupDataListener();
+                },
             ),
           ),
         );
@@ -268,43 +313,69 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
           ),
           elevation: 2,
           margin: EdgeInsets.only(left: 20, bottom: 5),
-          child: Column(
-            children: <Widget>[
-              Image.asset(
-                imagePath,
-                height: 180,
-                width: double.infinity,
-                fit: BoxFit.cover,
+          child: Stack(
+            children: [
+              Column(
+                children: <Widget>[
+                  Image.asset(
+                    imagePath,
+                    height: 180,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      judul,
+                      style: TextStyle(
+                        fontWeight: FontWeight.normal,
+                        fontSize: 14.0,
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  judul,
-                  style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    fontSize: 14.0,
+              isRead ? Positioned(
+                top: 20,
+                right: 20,
+                child: Container(
+                  width: 40, // Set the width of the container slightly larger than the icon
+                  height: 40, // Set the height of the container slightly larger than the icon
+                  decoration: BoxDecoration(
+                    color: Colors.white, // Set the background color of the container to white
+                    borderRadius: BorderRadius.circular(20), // Use a large enough value to create a rounded effect
+                  ),
+                  child: Center(
+                    child: Image.asset('assets/icons/done.png', width: 30),
                   ),
                 ),
-              ),
+              ) :  Container()
+
             ],
           ),
+
         ),
       ),
     );
   }
 
-  Widget beritaCard(String judul, String isi, String dilihat, String imagePath, String tanggal) {
+  Widget beritaCard(String id, String judul, String isi, String dilihat, String imagePath, String tanggal, bool isRead) {
     return InkWell(
       onTap: () {
         Navigator.push(
           widget.menuContext,
           MaterialPageRoute(
             builder: (context) => MembacaBeritaPage(
+              idBerita: id,
                 judul: judul,
                 isi: isi,
                 dilihat: dilihat,
                 imagePath: imagePath,
-                tanggal: tanggal
+                tanggal: tanggal,
+              diBaca: isRead,
+              onArticleRead: () {
+              setupDataListener();
+            },
             ),
           ),
         );
@@ -318,6 +389,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
           width: double.infinity, // Atur lebar untuk mengisi space tersedia
           child: Stack(
             children: <Widget>[
+
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
@@ -346,6 +418,8 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
                 left: 115, // Menyesuaikan left agar sesuai dengan `title`
                 child: Row(
                   children: [
+                    isRead ? Image.asset('assets/icons/done.png', width: 20) : Container(),
+                    SizedBox(width: 5),
                     Icon(Icons.visibility, size: 20, color: Colors.grey),
                     SizedBox(width: 5),
                     Text(dilihat, style: TextStyle(fontSize: 12, color: Colors.grey)),
@@ -362,7 +436,7 @@ class _BeritaPageState extends State<BeritaPage> with SingleTickerProviderStateM
                     Text(tanggal, style: TextStyle(fontSize: 12, color: Colors.grey)),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),

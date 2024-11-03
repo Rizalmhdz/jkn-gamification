@@ -86,17 +86,19 @@ class _UserStatsPageState extends State<UserStatsPage> with SingleTickerProvider
   Future<void> updateAvatarData() async {
     final ref = FirebaseDatabase.instance.ref();
     final updateData = {
-      'stats/avatar': selectedAvatar.toString(),
-      'stats/avatarname': selectedAvatarname,
+      'avatar': selectedAvatar.toString(),
+      'avatarname': selectedAvatarname,
     };
 
     // Update data in Firebase
-    ref.child('users/$_userId').update(updateData).then((_) {
-      // On successful update, sync the local state
-      setState(() {
-        savedAvatar = selectedAvatar;
-        savedAvatarname = selectedAvatarname;
-        editMode = false;
+    ref.child('users/$_userId/stats').update(updateData).then((_) {
+      ref.child('leaderboard/$_userId').update(updateData).then((_) {
+        // On successful update, sync the local state
+        setState(() {
+          savedAvatar = selectedAvatar;
+          savedAvatarname = selectedAvatarname;
+          editMode = false;
+        });
       });
       print("Avatar data updated successfully");
     }).catchError((error) {

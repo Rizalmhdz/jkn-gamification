@@ -2,20 +2,32 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'dart:async';
+import 'package:intl/date_symbol_data_local.dart';
+
+import 'package:shared_preferences/shared_preferences.dart';
 
 class MembacaBeritaPage extends StatefulWidget {
+  final String idBerita;
   final String judul;
   final String isi;
   final String dilihat;
   final String imagePath;
   final String tanggal;
+  final bool diBaca;
+  final VoidCallback onArticleRead;
+
 
   MembacaBeritaPage({
+    required this.idBerita,
     required this.judul,
     required this.isi,
     required this.dilihat,
     required this.imagePath,
     required this.tanggal,
+    required this.diBaca,
+    required this.onArticleRead
+
+
   });
 
   @override
@@ -33,6 +45,7 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
   int _timeRemaining = 30;
   bool _isComplete = false;
   bool _popupShown = false;
+  String userId =  "";
 
   String formatTanggal(String tanggal) {
     DateFormat inputFormat = DateFormat('dd-MM-yyyy');
@@ -111,12 +124,12 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
         builder: (BuildContext context) {
           return AlertDialog(
             title: Text("Selamat!"),
-            content: Text("Anda Telah Menyelesaikan Tugas Membaca Berita, Anda mendapatkan 10 poin"),
+            content: Text("Anda Telah Menyelesaikan Tugas Membaca Berita, Anda mendapatkan 15 poin"),
             actions: <Widget>[
               TextButton(
-                onPressed: (
-
-                    ) {
+                onPressed: () async {
+                  await createNewTask();
+                  widget.onArticleRead();
                   Navigator.of(context).pop();
                 },
                 child: Text("OK"),
@@ -127,6 +140,75 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
       );
     }
   }
+
+  Future<void> createNewTask() async {
+    final DatabaseReference ref = FirebaseDatabase.instance.ref();
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String beritaId = widget.idBerita;
+    String? userId = prefs.getString('user_id');
+
+    if (userId == null) {
+      print('User ID is not available.');
+      return;
+    }
+    // final DateTime now = DateTime.now();
+    // final String newTaskId = DateFormat('yyyyMMddHHmmss', 'id_ID').format(now);
+    // final String formattedDate = DateFormat('dd-MM-yyyy hh:mm:ss', 'id_ID').format(now);
+
+    try {
+      final DataSnapshot snapshot = (await ref.child('tasks').once()).snapshot;
+      if (snapshot.value != null) {
+        final List<dynamic> tasks = snapshot.value as List<dynamic>;
+
+        final int newTaskId = tasks.length + 1;
+
+        final String newTaskKey = newTaskId.toString();
+
+        String formattedDate = "";
+        await initializeDateFormatting('id_ID', null).then((_) {
+          final DateTime now = DateTime.now();
+          formattedDate = DateFormat('dd-MM-yyyy HH:mm:ss', 'id_ID').format(now);
+
+          print(formattedDate); // Output akan berbentuk "dd-MM-yyyy HH:mm:ss", contoh: "03-11-2024 17:30:45"
+        });
+        final Map<String, dynamic> newTask = {
+          'id_tasks': newTaskId,
+          'kategori_task': 'Membaca Berita',
+          'poin_diperoleh': 15,
+          'status': 'selesai',
+          'user_id': userId,
+          'timestamp': formattedDate,
+          'detail': {
+            'id_berita': beritaId,
+          },
+        };
+
+
+        await ref.child('tasks/$newTaskKey').set(newTask);
+
+
+        final DatabaseEvent userEvent = await ref.child('users/$userId/task_user').once();
+        String updatedTaskUser = userEvent.snapshot.value != null ? '${userEvent.snapshot.value}, $newTaskId' : newTaskId.toString();
+        await ref.child('users/$userId/task_user').set(updatedTaskUser);
+
+        final DataSnapshot userPointsSnapshot = (await ref.child('users/$userId/stats/jumlah_poin').once()).snapshot;
+        final int updatedPoints = (userPointsSnapshot.value as int?) ?? 0 + 15;
+        await ref.child('users/$userId/stats/jumlah_poin').set(updatedPoints);
+
+        final DataSnapshot leaderboardSnapshot = (await ref.child('leaderboard/$userId/jumlah_poin').once()).snapshot;
+        await ref.child('leaderboard/$userId/jumlah_poin').set(((leaderboardSnapshot.value as int?) ?? 0) + 15);
+
+        print('New task added successfully for user $userId!');
+      } else {
+        print('Unexpected data format in tasks node. Expected Map.');
+      }
+    } catch (e) {
+      print('An error occurred while adding the new task: $e');
+    }
+  }
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -240,7 +322,7 @@ class _MembacaBeritaPageState extends State<MembacaBeritaPage> {
               ],
             ),
           ),
-          Positioned(
+          widget.diBaca ? Container() : Positioned(
             bottom: 20,
             right: 20,
             child: Container(
