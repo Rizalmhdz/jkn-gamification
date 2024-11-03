@@ -258,7 +258,6 @@ class _GameOnPageState extends State<GameOnPage> {
                               ],
                             ),
                           ),
-
                         )
                       ),
                     ],
